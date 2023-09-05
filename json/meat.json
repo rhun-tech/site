@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "meal": "Bacon",
+        "meat": "Bacon",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🐖"
+    },
+    {
+        "id": "2",
+        "meal": "Beef Ribeye",
+        "meat": "Beef Ribeye",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🐂"
+    },
+    {
+        "id": "3",
+        "meal": "Beef Chuck",
+        "meat": "Beef Chuck",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🐂"
+    },
+    {
+        "id": "4",
+        "meal": "Chicken Ground",
+        "meat": "Chicken Ground",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🐓"
+    },
+    {
+        "id": "5",
+        "meal": "Chicken Whole",
+        "meat": "Chicken Whole",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🐓"
+    },
+    {
+        "id": "6",
+        "meal": "Lamb Rack",
+        "meat": "Lamb Rack",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🐑"
+    },
+    {
+        "id": "7",
+        "meal": "Pork Chop",
+        "meat": "Pork Chop",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🐖"
+    },
+    {
+        "id": "8",
+        "meal": "Salmon",
+        "meat": "Salmon",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🐟"
+    },
+    {
+        "id": "9",
+        "meal": "Turkey",
+        "meat": "Turkey",
+        "dairy": "",
+        "produce": "",
+        "other": "",
+        "icon": "🦃"
+    }
+]

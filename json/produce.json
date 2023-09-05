@@ -1,0 +1,146 @@
+[
+    {
+        "id": "1",
+        "meal": "Apple",
+        "meat": "",
+        "dairy": "",
+        "produce": "Apple",
+        "other": "",
+        "icon": "🍏"
+    },
+    {
+        "id": "2",
+        "meal": "Avocado",
+        "meat": "",
+        "dairy": "",
+        "produce": "Avocado",
+        "other": "",
+        "icon": "🥑"
+    },
+    {
+        "id": "3",
+        "meal": "Banana",
+        "meat": "",
+        "dairy": "",
+        "produce": "Banana",
+        "other": "",
+        "icon": "🍌"
+    },
+    {
+        "id": "4",
+        "meal": "Bell Pepper",
+        "meat": "",
+        "dairy": "",
+        "produce": "Bell Pepper",
+        "other": "",
+        "icon": "🫑"
+    },
+    {
+        "id": "5",
+        "meal": "Broccoli",
+        "meat": "",
+        "dairy": "",
+        "produce": "Broccoli",
+        "other": "",
+        "icon": "🥦"
+    },
+    {
+        "id": "6",
+        "meal": "Cherry",
+        "meat": "",
+        "dairy": "",
+        "produce": "Cherry",
+        "other": "",
+        "icon": "🍒"
+    },
+    {
+        "id": "7",
+        "meal": "Cucumber",
+        "meat": "",
+        "dairy": "",
+        "produce": "Cucumber",
+        "other": "",
+        "icon": "🥒"
+    },
+    {
+        "id": "8",
+        "meal": "Eggplant",
+        "meat": "",
+        "dairy": "",
+        "produce": "Eggplant",
+        "other": "",
+        "icon": "🍆"
+    },
+    {
+        "id": "9",
+        "meal": "Garlic",
+        "meat": "",
+        "dairy": "",
+        "produce": "Garlic",
+        "other": "",
+        "icon": "🧄"
+    },
+    {
+        "id": "10",
+        "meal": "Hot Pepper",
+        "meat": "",
+        "dairy": "",
+        "produce": "Hot Pepper",
+        "other": "",
+        "icon": "🌶"
+    },
+    {
+        "id": "11",
+        "meal": "Nuts",
+        "meat": "",
+        "dairy": "",
+        "produce": "Nuts",
+        "other": "",
+        "icon": "🥜"
+    },
+    {
+        "id": "12",
+        "meal": "Onion",
+        "meat": "",
+        "dairy": "",
+        "produce": "Onion",
+        "other": "",
+        "icon": "🧅"
+    },
+    {
+        "id": "13",
+        "meal": "Tomato",
+        "meat": "",
+        "dairy": "",
+        "produce": "Tomato",
+        "other": "",
+        "icon": "🍅"
+    },
+    {
+        "id": "14",
+        "meal": "Pineapple",
+        "meat": "",
+        "dairy": "",
+        "produce": "Pineapple",
+        "other": "",
+        "icon": "🍍"
+    },
+    {
+        "id": "15",
+        "meal": "Strawberry",
+        "meat": "",
+        "dairy": "",
+        "produce": "Strawberry",
+        "other": "",
+        "icon": "🍓"
+    },
+    {
+        "id": "16",
+        "meal": "Watermelon",
+        "meat": "",
+        "dairy": "",
+        "produce": "Watermelon",
+        "other": "",
+        "icon": "🍉"
+    }
+]

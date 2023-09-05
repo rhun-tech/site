@@ -1,0 +1,128 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rhun</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../css/rhun.css">
+
+  <script src="/js/header.js" type="text/javascript" defer></script>
+  <script src="/js/theme.js" type="text/javascript" defer></script>
+
+  <script>
+    function shuffleText(inputText) {
+      var characters = inputText.split('');
+
+      // Create three different versions of shuffled text
+      var shuffledText1 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+      var shuffledText2 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+      var shuffledText3 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+      var shuffledText4 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+      var shuffledText5 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+      var shuffledText6 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+      var shuffledText7 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+      var shuffledText8 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+      var shuffledText9 = characters.slice().sort(function () { return 0.5 - Math.random(); }).join('');
+
+      return [shuffledText1, shuffledText2, shuffledText3, shuffledText4, shuffledText5, shuffledText6, shuffledText7, shuffledText8, shuffledText9];
+    }
+
+    function updateshuffledText() {
+      var input = document.getElementById('inputText');
+      var userInput = input.value;
+
+      var shuffledTextArray = shuffleText(userInput);
+
+      document.getElementById('shuffledText1').textContent = shuffledTextArray[0];
+      document.getElementById('shuffledText2').textContent = shuffledTextArray[1];
+      document.getElementById('shuffledText3').textContent = shuffledTextArray[2];
+      document.getElementById('shuffledText4').textContent = shuffledTextArray[3];
+      document.getElementById('shuffledText5').textContent = shuffledTextArray[4];
+      document.getElementById('shuffledText6').textContent = shuffledTextArray[5];
+      document.getElementById('shuffledText7').textContent = shuffledTextArray[6];
+      document.getElementById('shuffledText8').textContent = shuffledTextArray[7];
+      document.getElementById('shuffledText9').textContent = shuffledTextArray[8];
+    }
+  </script>
+
+</head>
+
+<body data-bs-theme="dark" class="container p-1 mt-1">
+  <header-component></header-component>
+  <div class="text-center pb-2 h2 rhun-text">
+    Shuffle
+  </div>
+  <div class="bg-body-tertiary p-3 rounded-2" id="fademe">
+    <div class="pb-3">
+      <label for="inputText" class="form-label">Text to shuffle</label>
+      <input type="text" class="form-control custom-input rhun-text" id="inputText" oninput="updateshuffledText()">
+    </div>
+
+    <div class="pb-3">Results</div>
+
+    <div class="row">
+      <div class="col"><span id="shuffledText1">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span>
+    </div>
+      <div class="col"><span id="shuffledText2">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span></div>
+      <div class="col"><span id="shuffledText3">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span></div>
+    </div>
+    <div class="row">
+      <div class="col"><span id="shuffledText4">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span></div>
+      <div class="col"><span id="shuffledText5">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span></div>
+      <div class="col"><span id="shuffledText6">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span></div>
+    </div>
+    <div class="row">
+      <div class="col"><span id="shuffledText7">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span></div>
+      <div class="col"><span id="shuffledText8">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span></div>
+      <div class="col"><span id="shuffledText9">
+        <p class="placeholder-glow">
+          <span class="placeholder rounded col-3"></span>
+        </p>
+      </span></div>
+    </div>
+  </div>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="/js/fade.js" type="text/javascript" defer></script>
+</body>
+
+</html>

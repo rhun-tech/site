@@ -1,0 +1,171 @@
+[
+    {
+        "id": "1",
+        "meal": "Black Bean Quesadillas",
+        "meat": "",
+        "dairy": [
+            "Shredded Cheese",
+            "Sour Cream"
+        ],
+        "produce": [
+            "Red Onion",
+            "Poblano Pepper",
+            "Jalapeno",
+            "Lime",
+            "Habanero",
+            "Avocado",
+            "Tomato"
+        ],
+        "other": [
+            "Tortilla",
+            "Black Beans"
+        ],
+        "icon": "🌮"
+    },
+    {
+        "id": "2",
+        "meal": "Chicken Enchilada Soup",
+        "meat": "Chicken Thigh",
+        "dairy": [
+            "Cheddar Cheese Block",
+            "Sour Cream"
+        ],
+        "produce": [
+            "Onion",
+            "Lime",
+            "Garlic"
+        ],
+        "other": [
+            "Tortilla Strips",
+            "Canned Green Chilies",
+            "Enchilada Sauce",
+            "Diced Tomatoe",
+            "Black Beans"
+        ],
+        "icon": "🍲"
+    },
+    {
+        "id": "3",
+        "meal": "Cheesy Fajitas",
+        "meat": "Chicken Breast",
+        "dairy": [
+            "Cheese",
+            "Sour Cream"
+        ],
+        "produce": [
+            "Red Onion",
+            "Bell Pepper",
+            "Jalapeno",
+            "Lime"
+        ],
+        "other": [
+            "Tortilla"
+        ],
+        "icon": "🌮"
+    },
+    {
+        "id": "4",
+        "meal": "Chicken Shawarma",
+        "meat": "Chicken Thigh",
+        "dairy": [
+            "Sour Cream"
+        ],
+        "produce": [
+            "Roma Tomato",
+            "Zucchini",
+            "Green Onion",
+            "Ginger"
+        ],
+        "other": [
+            "Couscous",
+            "Hummus"
+        ],
+        "icon": "🍛"
+    },
+    {
+        "id": "5",
+        "meal": "Hearty Salmon Meunière",
+        "meat": "Salmon",
+        "dairy": [
+            "Butter"
+        ],
+        "produce": [
+            ""
+        ],
+        "other": [
+            "Flour"
+        ],
+        "icon": "🍣"
+    },
+    {
+        "id": "6",
+        "meal": "Hungarian Goulash",
+        "meat": "Beef Chuck",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "White Onion",
+            "Garlic"
+        ],
+        "other": [
+            "Tomato Paste",
+            "Red Wine",
+            "Marjoram",
+            "Spaetzle"
+        ],
+        "icon": "🍲"
+    },
+    {
+        "id": "7",
+        "meal": "Pork Bibimbap",
+        "meat": "Pork",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Carrot",
+            "Zucchini",
+            "Green Onion",
+            "Ginger"
+        ],
+        "other": [
+            "Rice"
+        ],
+        "icon": "🍛"
+    },
+    {
+        "id": "8",
+        "meal": "Ricotta Pasta",
+        "meat": [
+            ""
+        ],
+        "dairy": [
+            "Ricotta",
+            "Parmesan"
+        ],
+        "produce": [
+            "Lemon"
+        ],
+        "other": [
+            "Pasta"
+        ],
+        "icon": "🍲"
+    },
+    {
+        "id": "9",
+        "meal": "Spiced Roast Chicken",
+        "meat": "Chicken Whole",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Potato",
+            "Salad"
+        ],
+        "other": [
+            ""
+        ],
+        "icon": "🍗"
+    }
+]

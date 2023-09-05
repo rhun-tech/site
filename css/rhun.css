@@ -1,0 +1,213 @@
+/* Rhun */
+
+:root {
+    --background-color: #2D2E29;
+    --border-color: #C3497340;
+    --text-color: #f5f5f5;
+    --text-fade-color: #C3497340;
+    --button-color: #C3497340;
+    --button-color-hover: #C34973;
+    --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?color=whitesmoke');
+}
+:root.red {
+    --background-color: #2D2E29;
+    --border-color: #EAD95F;
+    --text-color: #C34973;
+    --text-fade-color: #C3497340;
+    --button-color: #EAD95F40;
+    --button-color-hover: #EAD95F;
+    --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?color=%23c34973');
+}
+
+:root.blue {
+    --background-color: #2D2E29;
+    --border-color: #A7D5E9;
+    --text-color: #789CF3;
+    --text-fade-color: #789CF340;
+    --button-color: #A7D5E940;
+    --button-color-hover: #A7D5E9;
+    --theme-icon: url('https://api.iconify.design/game-icons/rune-sword.svg?color=%23789cf3&rotate=270deg');
+}
+
+:root.green {
+    --background-color: #2D2E29;
+    --border-color: #A383F1;
+    --text-color: #BCD755;
+    --text-fade-color: #BCD75540;
+    --button-color: #A383F140;
+    --button-color-hover: #A383F1;
+    --theme-icon: url('https://api.iconify.design/game-icons/herbs-bundle.svg?color=%23bcd755');
+}
+
+.placeholder {
+    color: var(--button-color)
+}
+
+.theme-icon {
+    content: var(--theme-icon);
+}
+
+.sc1 {
+    stop-color: var(--text-color);
+    stop-opacity: 1;
+}
+
+.sc2 {
+    stop-color: var(--border-color);
+    stop-opacity: 1;
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: var(--background-image)
+}
+
+a {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-color) !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rhun-2 {
+    font-size: 2em;
+}
+
+.rhun-10 {
+    font-size: 10em;
+}
+
+.rhun-background {
+    background-color: #2D2E29;
+}
+
+.rhun-text {
+    color: var(--text-color);
+}
+
+.rhun-red {
+    color: #C34973;
+}
+
+.rhun-red-opacity-25 {
+    color: #C3497340;
+}
+
+.rhun-orange {
+    color: #EAD95F;
+}
+
+.rhun-yellow {
+    color: #c8c7ac;
+}
+
+.rhun-green {
+    color: #BCD755;
+}
+
+.rhun-light-blue {
+    color: #A7D5E9;
+}
+
+.rhun-dark-blue {
+    color: #789CF3;
+}
+
+.rhun-purple {
+    color: #A383F1;
+}
+
+.rhun-pink {
+    color: #B978CC;
+}
+
+.rhun-gradient {
+    mask-image: linear-gradient(to right, #A383F1, transparent);
+}
+
+.rhun-border {
+    border: 2px solid var(--border-color) !important;
+}
+
+.rhun-button {
+    background-color: var(--button-color);
+}
+
+.rhun-button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.active {
+    color: var(--text-color) !important;
+}
+
+/* Bootstrap Overrides */
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link {
+    background-color: var(--background-color);
+    /* Inactive pill background color */
+    color: var(--text-color);
+    /* Inactive pill text color */
+    font-weight: bold;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--button-color);
+    /* Active pill background color */
+    color: var(--text-color);
+    /* Active pill text color */
+    font-weight: bold;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: var(--button-color-hover);
+    /* Active pill background color */
+    color: var(--text-color);
+    /* Active pill text color */
+    font-weight: bold;
+}
+
+.form-check-input:checked,
+.form-check-input:hover {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    box-shadow: 0 0 0 0.25rem var(--text-fade-color) !important;
+}
+
+/* Adjust the color of the selected label text */
+.form-check-input:checked~.form-check-label {
+    color: var(--text-color);
+}
+
+.custom-input:focus,
+.custom-input:hover {
+    color: var(--text-color);
+    border-color: var(--text-color) !important;
+    box-shadow: 0 0 0 0.25rem var(--text-fade-color) !important;
+}
+
+/* Javascript Support */
+#fademe {
+    opacity: 0;
+    transition: 2s;
+}
+
+/* Loading */
+#loading {
+    display: none;
+}

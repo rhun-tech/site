@@ -1,0 +1,123 @@
+[
+    {
+        "id": "1",
+        "meal": "Roast Chicken Leftover Soup",
+        "meat": "Leftover Chicken",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Onion",
+            "Carrot",
+            "Celery"
+        ],
+        "other": [
+            ""
+        ],
+        "icon": "🥣"
+    },
+    {
+        "id": "2",
+        "meal": "Roast Chicken Leftover Tortilla Soup",
+        "meat": "Leftover Chicken",
+        "dairy": [
+            "Shredded Cheese"
+        ],
+        "produce": [
+            "Squash",
+            "Zucchini"
+        ],
+        "other": [
+            "Canned Green Chilies"
+        ],
+        "icon": "🥣"
+    },
+    {
+        "id": "3",
+        "meal": "Chicken Schnitzel",
+        "meat": "Chicken",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Potato",
+            "Green Beans"
+        ],
+        "other": [
+            "Honey",
+            "Dijon Mustard"
+        ],
+        "icon": "🥔"
+    },
+    {
+        "id": "4",
+        "meal": "Mushroom Gnocchi",
+        "meat": "",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Mushroom",
+            "Garlic",
+            "Green Onion"
+        ],
+        "other": [
+            "Gnocchi"
+        ],
+        "icon": "🍄"
+    },
+    {
+        "id": "5",
+        "meal": "Bulgogi Bowls",
+        "meat": "Pork",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Carrot",
+            "Garlic",
+            "Green Onion"
+        ],
+        "other": [
+            "Rice"
+        ],
+        "icon": "🍲"
+    },
+    {
+        "id": "6",
+        "meal": "Gyro Bulgur Bowls",
+        "meat": "Chicken",
+        "dairy": [
+            "Yogurt"
+        ],
+        "produce": [
+            "Shallot",
+            "Garlic",
+            "Tomato",
+            "Dill"
+        ],
+        "other": [
+            "Pita"
+        ],
+        "icon": "🥙"
+    },
+    {
+        "id": "7",
+        "meal": "Salad",
+        "meat": "",
+        "dairy": [
+            "Feta"
+        ],
+        "produce": [
+            "Salad Greens",
+            "Shallot",
+            "Garlic",
+            "Tomato",
+            "Dill"
+        ],
+        "other": [
+            "Chickpeas"
+        ],
+        "icon": "🥗"
+    }
+]
