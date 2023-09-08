@@ -29,22 +29,22 @@ class Header extends HTMLElement {
                         <div class="bg-body-tertiary p-3 rounded-2">
                             <div class="row pb-3">
                                 <a href="Library.html" class="col-9" type="button">Library</a>
-                                <span class="iconify rhun-text fs-4 col-3" data-icon="game-icons:bookshelf"></span>
+                                <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:bookshelf"></span>
                             </div>
     
                             <div class="row pb-3">
                                 <a href="Code.html" class="col-9" type="button">Code</a>
-                                <span class="iconify rhun-text fs-4 col-3" data-icon="game-icons:scroll-quill"></span>
+                                <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:scroll-quill"></span>
                             </div>
     
                             <div class="row pb-3">
                                 <a href="Shopper.html" class="col-9" type="button">Shopper</a>
-                                <span class="iconify rhun-text fs-4 col-3" data-icon="game-icons:meat"></span>
+                                <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:meat"></span>
                             </div>
     
                             <div class="row pb-3">
                                 <a href="Shuffle.html" class="col-9" type="button">Shuffle</a>
-                                <span class="iconify rhun-text fs-4 col-3" data-icon="game-icons:notebook"></span>
+                                <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:book-pile"></span>
                             </div>
                         </div>
     
@@ -90,7 +90,7 @@ class Header extends HTMLElement {
     
                     </div>
                 </div>
-                <span class="position-absolute bottom-0 end-0"><span class="theme-icon" style="width: 200px;"></span></span>
+                <span class="position-absolute bottom-0 end-0"><span class="theme-icon" style="width: 100px;"></span></span>
             </div>
         </div>
     </nav>
