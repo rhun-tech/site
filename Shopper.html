@@ -21,18 +21,22 @@
   </div>
 
   <div class="bg-body-tertiary p-3 rounded-2 mb-3">
-    <label for="inputText" class="form-label">This is a feature that helps you build a
-      shopping list.</label>
+    <label for="inputText" class="form-label">Build a
+      shopping list</label>
 
-    <select id="menu" class="form-control custom-input rhun-text rounded-2 mb-3" onchange="menuFunction()">
-      <div class="custom-input rhun-text">
-        <option value="">Selection Options</option>
-        <option value="lunch">Lunch</option>
-        <option value="dinner">Dinner</option>
-        <option value="meat">Meat</option>
-        <option value="produce">Produce</option>
+    <div class="row">
+      <div class="col-auto">
+        <select id="menu" class="form-control custom-input rhun-text rounded-2 mb-3" onchange="menuFunction()">
+          <div class="custom-input rhun-text">
+            <option value="">Selection Options</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="meat">Meat</option>
+            <option value="produce">Produce</option>
+          </div>
+        </select>
       </div>
-    </select>
+    </div>
 
     <div class="row">
       <div class="col">
@@ -46,7 +50,7 @@
       <div class="fw-bold pb-4">Shopping List</div>
       <button class="btn rhun-button rhun-text ms-auto" id="liveToastBtn"
         onclick="copyShoppingListToClipboard(); setupToast();">
-        <span class="iconify" data-icon="game-icons:book-pile"></span>
+        <span class="iconify rhun-2" data-icon="game-icons:notebook"></span>
       </button>
     </div>
     <div id="shoppingList">
@@ -88,11 +92,11 @@
       <div id="liveToast" class="toast rhun-border" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
           <span class="theme-icon" style="width: 100px;""></span>
-          <strong class="me-auto"></strong>
-          <small></small>
+          <strong class=" me-auto"></strong>
+            <small></small>
 
-          <button type="button" class="btn rhun-2" data-bs-dismiss="toast" aria-label="Close"><span
-              class="iconify rhun-text" data-icon="fa6-solid:square-xmark"></span></button>
+            <button type="button" class="btn rhun-2" data-bs-dismiss="toast" aria-label="Close"><span
+                class="iconify rhun-text" data-icon="fa6-solid:square-xmark"></span></button>
 
         </div>
         <div class="toast-body">
