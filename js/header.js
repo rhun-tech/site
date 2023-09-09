@@ -10,8 +10,8 @@ class Header extends HTMLElement {
             <a class="navbar-brand rhun-text fw-bold rhun-2" href="Index.html">Rhun</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                 aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <div class="fw-bold ms-auto">
-                    <span class="iconify rhun-text rhun-3" data-icon="game-icons:dungeon-gate"></span>
+                <div class="fw-bold h1 ms-auto">
+                    <span class="iconify rhun-text" data-icon="game-icons:dungeon-gate"></span>
                 </div>
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark rhun-border rounded " tabindex="-1" id="offcanvasDarkNavbar"
