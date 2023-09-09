@@ -1,0 +1,292 @@
+[
+    {
+        "id": "1",
+        "meal": "Black Bean Quesadillas",
+        "meat": "",
+        "dairy": [
+            "Shredded Cheese",
+            "Sour Cream"
+        ],
+        "produce": [
+            "Red Onion",
+            "Poblano Pepper",
+            "Jalapeno",
+            "Lime",
+            "Habanero",
+            "Avocado",
+            "Tomato"
+        ],
+        "other": [
+            "Tortilla",
+            "Black Beans"
+        ],
+        "icon": "🌮"
+    },
+    {
+        "id": "2",
+        "meal": "Bulgogi Bowls",
+        "meat": "Pork",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Carrot",
+            "Garlic",
+            "Green Onion"
+        ],
+        "other": [
+            "Rice"
+        ],
+        "icon": "🍲"
+    },
+    {
+        "id": "3",
+        "meal": "Cheesy Fajitas",
+        "meat": "Chicken Breast",
+        "dairy": [
+            "Cheese",
+            "Sour Cream"
+        ],
+        "produce": [
+            "Red Onion",
+            "Bell Pepper",
+            "Jalapeno",
+            "Lime"
+        ],
+        "other": [
+            "Tortilla"
+        ],
+        "icon": "🌮"
+    },
+    {
+        "id": "4",
+        "meal": "Chicken Enchilada Soup",
+        "meat": "Chicken Thigh",
+        "dairy": [
+            "Cheddar Cheese Block",
+            "Sour Cream"
+        ],
+        "produce": [
+            "Onion",
+            "Lime",
+            "Garlic"
+        ],
+        "other": [
+            "Tortilla Strips",
+            "Canned Green Chilies",
+            "Enchilada Sauce",
+            "Diced Tomatoe",
+            "Black Beans"
+        ],
+        "icon": "🍲"
+    },
+    {
+        "id": "5",
+        "meal": "Chicken Schnitzel",
+        "meat": "Chicken",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Potato",
+            "Green Beans"
+        ],
+        "other": [
+            "Honey",
+            "Dijon Mustard"
+        ],
+        "icon": "🥔"
+    },
+    {
+        "id": "6",
+        "meal": "Chicken Shawarma",
+        "meat": "Chicken Thigh",
+        "dairy": [
+            "Sour Cream"
+        ],
+        "produce": [
+            "Roma Tomato",
+            "Zucchini",
+            "Green Onion",
+            "Ginger"
+        ],
+        "other": [
+            "Couscous",
+            "Hummus"
+        ],
+        "icon": "🍛"
+    },
+    {
+        "id": "7",
+        "meal": "Gyro Bulgur Bowls",
+        "meat": "Chicken",
+        "dairy": [
+            "Yogurt"
+        ],
+        "produce": [
+            "Shallot",
+            "Garlic",
+            "Tomato",
+            "Dill"
+        ],
+        "other": [
+            "Pita"
+        ],
+        "icon": "🥙"
+    },
+    {
+        "id": "8",
+        "meal": "Hearty Salmon Meunière",
+        "meat": "Salmon",
+        "dairy": [
+            "Butter"
+        ],
+        "produce": [
+            ""
+        ],
+        "other": [
+            "Flour"
+        ],
+        "icon": "🍣"
+    },
+    {
+        "id": "9",
+        "meal": "Hungarian Goulash",
+        "meat": "Beef Chuck",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "White Onion",
+            "Garlic"
+        ],
+        "other": [
+            "Tomato Paste",
+            "Red Wine",
+            "Marjoram",
+            "Spaetzle"
+        ],
+        "icon": "🍲"
+    },
+    {
+        "id": "10",
+        "meal": "Mushroom Gnocchi",
+        "meat": "",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Mushroom",
+            "Garlic",
+            "Green Onion"
+        ],
+        "other": [
+            "Gnocchi"
+        ],
+        "icon": "🍄"
+    },
+    {
+        "id": "11",
+        "meal": "Pork Bibimbap",
+        "meat": "Pork",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Carrot",
+            "Zucchini",
+            "Green Onion",
+            "Ginger"
+        ],
+        "other": [
+            "Rice"
+        ],
+        "icon": "🍛"
+    },
+    {
+        "id": "12",
+        "meal": "Ricotta Pasta",
+        "meat": [
+            ""
+        ],
+        "dairy": [
+            "Ricotta",
+            "Parmesan"
+        ],
+        "produce": [
+            "Lemon"
+        ],
+        "other": [
+            "Pasta"
+        ],
+        "icon": "🍲"
+    },
+    {
+        "id": "13",
+        "meal": "Roast Chicken Leftover Soup",
+        "meat": "Leftover Chicken",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Onion",
+            "Carrot",
+            "Celery"
+        ],
+        "other": [
+            ""
+        ],
+        "icon": "🥣"
+    },
+    {
+        "id": "14",
+        "meal": "Roast Chicken Leftover Tortilla Soup",
+        "meat": "Leftover Chicken",
+        "dairy": [
+            "Shredded Cheese"
+        ],
+        "produce": [
+            "Squash",
+            "Zucchini"
+        ],
+        "other": [
+            "Canned Green Chilies"
+        ],
+        "icon": "🥣"
+    },
+    {
+        "id": "15",
+        "meal": "Salad",
+        "meat": "",
+        "dairy": [
+            "Feta"
+        ],
+        "produce": [
+            "Salad Greens",
+            "Shallot",
+            "Garlic",
+            "Tomato",
+            "Dill"
+        ],
+        "other": [
+            "Chickpeas"
+        ],
+        "icon": "🥗"
+    },
+    {
+        "id": "16",
+        "meal": "Spiced Roast Chicken",
+        "meat": "Chicken Whole",
+        "dairy": [
+            ""
+        ],
+        "produce": [
+            "Potato",
+            "Salad"
+        ],
+        "other": [
+            ""
+        ],
+        "icon": "🍗"
+    }
+]
