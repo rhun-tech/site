@@ -147,7 +147,7 @@ function fetchJson(category) {
             return response.json();
         })
         .then(function (data) {
-            if (category === 'dinner' || category === 'lunch') {
+            if (category === 'meals' || category === 'lunch') {
                 appendMeal(data);
             } else if (category === 'meat' || category === 'produce') {
                 appendNonMeal(data);
@@ -195,7 +195,7 @@ function appendNonMeal(NonMealData) {
 function createMealButton(data) {
     var button = document.createElement("button");
     button.innerHTML = data.icon + " " + data.meal + '\n';
-    button.className = "btn rhun-button rhun-text mx-1 my-1"; // Apply Bootstrap button classes
+    button.className = "btn rhun-button rhun-text mx-1 my-1";
     button.onclick = function () {
         addMeal(data.meal);
         addMeat(data.meat);
@@ -209,7 +209,7 @@ function createMealButton(data) {
 function createNonMealButton(data) {
     var button = document.createElement("button");
     button.innerHTML = data.icon + " " + data.meal + '\n';
-    button.className = "btn rhun-button rhun-text mx-1 my-1"; // Apply Bootstrap button classes
+    button.className = "btn rhun-button rhun-text mx-1 my-1";
     button.onclick = function () {
         addMeat(data.meat);
         addProduce(data.produce);
