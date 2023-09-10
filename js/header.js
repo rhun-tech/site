@@ -97,6 +97,29 @@ class Header extends HTMLElement {
     
     <br><br><br><br>
       `;
+
+        var themeChanger = document.querySelector('#theme-changer'),
+            root = document.querySelector(':root'),
+            themeRadios = document.querySelectorAll('input[name="theme"]'),
+            currentTheme = sessionStorage.getItem("theme") || 'default';
+
+        themeChanger.classList.remove('hidden');
+
+        themeRadios.forEach(function (radio) {
+            radio.addEventListener('change', function (e) {
+                currentTheme = this.value;
+                root.className = currentTheme;
+                sessionStorage.setItem('theme', currentTheme);
+            });
+
+            if (radio.value === currentTheme) {
+                radio.checked = true;
+            }
+        });
+
+        if (currentTheme !== 'default') {
+            root.className = currentTheme;
+        }
     }
 }
 
