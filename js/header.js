@@ -27,24 +27,32 @@ class Header extends HTMLElement {
                 <div class="offcanvas-body">
                     <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="myTab" role="tablist">
                         <div class="bg-body-tertiary p-3 rounded-2">
-                            <div class="row pb-3">
-                                <a href="Library.html" class="col-9" type="button">Library</a>
-                                <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:bookshelf"></span>
+                            <div class="pb-3">
+                                <a href="Library.html" class="row" type="button">
+                                    <span class="col-9">Library</span>
+                                    <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:bookshelf"></span>
+                                </a>
                             </div>
     
-                            <div class="row pb-3">
-                                <a href="Code.html" class="col-9" type="button">Code</a>
-                                <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:scroll-quill"></span>
+                            <div class="pb-3">
+                                <a href="Code.html" class="row" type="button">
+                                    <span class="col-9">Code</span>
+                                    <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:scroll-quill"></span>
+                                </a>
                             </div>
     
-                            <div class="row pb-3">
-                                <a href="Shopper.html" class="col-9" type="button">Shopper</a>
-                                <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:meat"></span>
+                            <div class="pb-3">
+                                <a href="Shopper.html" class="row" type="button">
+                                    <span class="col-9">Shopper</span>
+                                    <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:meat"></span>
+                                </a>
                             </div>
     
-                            <div class="row pb-3">
-                                <a href="Shuffle.html" class="col-9" type="button">Shuffle</a>
-                                <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:book-pile"></span>
+                            <div class="pb-3">
+                                <a href="Shuffle.html" class="row" type="button">
+                                    <span class="col-9">Shuffle</span>
+                                    <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:book-pile"></span>
+                                </a>
                             </div>
                         </div>
     
@@ -56,7 +64,8 @@ class Header extends HTMLElement {
     
                                 <div class="row p-2">
                                     <div class="form-check col">
-                                        <input class="form-check-input" type="radio" name="theme" id="theme1" value="" checked>
+                                        <input class="form-check-input" type="radio" name="theme" id="theme1" value=""
+                                            checked>
                                         <label class="form-check-label" for="theme1">
                                             Smoldering Glacier
                                         </label>
