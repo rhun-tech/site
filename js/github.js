@@ -14,7 +14,7 @@ function searchGitHubUser(username) {
             const userContainer = document.getElementById("user-info");
 
             userContainer.innerHTML = `
-                <h2>${user.login}</h2>
+                <div>User: ${user.login}</div>
                 <p>Public Repositories: ${user.public_repos}</p>
             `;
 
@@ -34,12 +34,26 @@ function searchGitHubUser(username) {
             repos.forEach((repo) => {
                 const listItem = document.createElement("li");
                 listItem.className = "list-group-item";
+                
+                // Create a link for the repository name
                 const repoLink = document.createElement("a");
                 repoLink.href = repo.html_url;
-                repoLink.textContent = repo.name;
+                repoLink.textContent = repo.full_name;
+                
+                // Create a <div> for the repository description
+                const repoDescription = document.createElement("div");
+                repoDescription.textContent = `Description: ${repo.description}`;
+                
+                // Create a <div> for the repository language
+                const repoLanguage = document.createElement("div");
+                repoLanguage.textContent = `Language: ${repo.language}`;
+                
                 listItem.appendChild(repoLink);
+                listItem.appendChild(repoDescription);
+                listItem.appendChild(repoLanguage);
                 userList.appendChild(listItem);
             });
+            
         })
         .catch((error) => {
             console.error(error);
