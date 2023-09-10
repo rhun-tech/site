@@ -96,7 +96,7 @@ class Header extends HTMLElement {
     </nav>
     
     <br><br><br><br>
-      `;
+    `;
 
         var themeChanger = document.querySelector('#theme-changer'),
             root = document.querySelector(':root'),
