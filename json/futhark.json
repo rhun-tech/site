@@ -1,0 +1,100 @@
+[
+    {
+        "name": "fehu",
+        "rune": "ᚠ"
+    },
+    {
+        "name": "uruz",
+        "rune": "ᚢ"
+    },
+    {
+        "name": "thurisaz",
+        "rune": "ᚦ"
+    },
+    {
+        "name": "ansuz",
+        "rune": "ᚨ"
+    },
+    {
+        "name": "raido",
+        "rune": "ᚱ"
+    },
+    {
+        "name": "kaunan",
+        "rune": "ᚲ"
+    },
+    {
+        "name": "gebo",
+        "rune": "ᚷ"
+    },
+    {
+        "name": "wunjo",
+        "rune": "ᚹ"
+    },
+
+    {
+        "name": "hagalaz",
+        "rune": "ᚺ"
+    },
+    {
+        "name": "naudiz",
+        "rune": "ᚾ"
+    },
+    {
+        "name": "isaz",
+        "rune": "ᛁ"
+    },
+    {
+        "name": "jera",
+        "rune": "ᛃ"
+    },
+    {
+        "name": "eihwaz",
+        "rune": "ᛇ"
+    },
+    {
+        "name": "pertho",
+        "rune": "ᛈ"
+    },
+    {
+        "name": "algiz",
+        "rune": "ᛉ"
+    },
+    {
+        "name": "sowilo",
+        "rune": "ᛊ"
+    },
+
+    {
+        "name": "tiwaz",
+        "rune": "ᛏ"
+    },
+    {
+        "name": "berkanan",
+        "rune": "ᛒ"
+    },
+    {
+        "name": "ehwaz",
+        "rune": "ᛖ"
+    },
+    {
+        "name": "mannaz",
+        "rune": "ᛗ"
+    },
+    {
+        "name": "laguz",
+        "rune": "ᛚ"
+    },
+    {
+        "name": "yngvi",
+        "rune": "ᛜ"
+    },
+    {
+        "name": "dagaz",
+        "rune": "ᛞ"
+    },
+    {
+        "name": "othala",
+        "rune": "ᛟ "
+    }
+]
