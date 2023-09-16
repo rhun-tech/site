@@ -9,6 +9,7 @@
     --button-color-hover: #C34973;
     --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?color=whitesmoke');
 }
+
 :root.red {
     --background-color: #2D2E29;
     --border-color: #EAD95F;
@@ -203,6 +204,12 @@ a:hover {
     color: var(--text-color);
     border-color: var(--text-color) !important;
     box-shadow: 0 0 0 0.25rem var(--text-fade-color) !important;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--background-color);
+    --bs-tooltip-color: var(--text-color);
+    --bs-tooltip-opacity: 1;
 }
 
 /* Javascript Support */

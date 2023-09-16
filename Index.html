@@ -18,10 +18,13 @@
 
   <div class="bg-body-tertiary p-3 rounded-2 mb-3">
     <div class="hstack pb-2">
-      <div class="btn rhun-button col-auto" id="liveToastBtn" onclick="getLocation()"><span class="iconify rhun-2"
-          data-icon="game-icons:sun-cloud"></span></div>
-      <div class="btn rhun-button col-auto ms-auto" id="liveToastBtnCard" onclick="fetchAndCreateCard()"><span
-          class="iconify rhun-2" data-icon="game-icons:card-random"></span></div>
+      <div class="btn rhun-button col-auto" id="liveToastBtn"
+        data-bs-title="Check your weather. Rhun.tech will need your location." data-bs-toggle="tooltip"
+        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" onclick="getLocation()"><span
+          class="iconify rhun-2" data-icon="game-icons:sun-cloud"></span></div>
+      <div class="btn rhun-button col-auto ms-auto" id="liveToastBtnCard" data-bs-title="Cast a rune!"
+        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+        onclick="fetchAndCreateCard()"><span class="iconify rhun-2" data-icon="game-icons:card-random"></span></div>
     </div>
   </div>
 
@@ -91,12 +94,10 @@
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div id="liveToast" class="toast rhun-border" role="alert" data-autohide="false">
         <div class="toast-header">
-          <span class="theme-icon" style="width: 100px;"></span>
-          <strong class="me-auto"></strong>
-          <small></small>
+          <strong class="rhun-text me-auto">Weather</strong>
 
           <button type="button" class="btn rhun-2" data-bs-dismiss="toast" aria-label="Close"><span
-              class="iconify rhun-text" data-icon="fa6-solid:square-xmark"></span></button>
+              class="iconify rhun-text opacity-50" data-icon="game-icons:closed-doors"></span></button>
 
         </div>
         <div class="toast-body">
@@ -114,12 +115,10 @@
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div id="liveToastCard" class="toast rhun-border" role="alert" data-autohide="false">
         <div class="toast-header">
-          <span class="theme-icon" style="width: 100px;"></span>
-          <strong class="me-auto"></strong>
-          <small></small>
+          <strong class="rhun-text me-auto">Rune Cast</strong>
 
           <button type="button" class="btn rhun-2" data-bs-dismiss="toast" aria-label="Close"><span
-              class="iconify rhun-text" data-icon="fa6-solid:square-xmark"></span></button>
+              class="iconify rhun-text opacity-50" data-icon="game-icons:closed-doors"></span></button>
 
         </div>
         <div class="toast-body">

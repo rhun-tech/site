@@ -14,7 +14,7 @@ class Header extends HTMLElement {
                     <span class="iconify rhun-text" data-icon="game-icons:dungeon-gate"></span>
                 </div>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark rhun-border rounded " tabindex="-1" id="offcanvasDarkNavbar"
+            <div class="offcanvas offcanvas-end text-bg-dark rhun-border rounded" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
     
                 <div class="offcanvas-header">
@@ -22,7 +22,7 @@ class Header extends HTMLElement {
                         id="offcanvasDarkNavbarLabel"><a href="Index.html">Rhun</a></div>
                     <button type="button" class="btn rhun-2 top-0 end-0 position-absolute" data-bs-dismiss="offcanvas"
                         aria-label="Close"><span class="iconify rhun-text"
-                            data-icon="fa6-solid:square-xmark"></span></button>
+                            data-icon="game-icons:closed-doors"></span></button>
                 </div>
                 <div class="offcanvas-body">
                     <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="myTab" role="tablist">
@@ -136,4 +136,7 @@ customElements.define('header-component', Header);
 
 window.onload = function () {
     document.getElementById("fademe").style.opacity = 1;
-  }
+}
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

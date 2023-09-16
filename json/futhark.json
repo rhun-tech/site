@@ -1,100 +1,122 @@
 [
     {
         "name": "fehu",
-        "rune": "ᚠ"
+        "rune": "ᚠ",
+        "inspiration": "inspiration"
     },
     {
         "name": "uruz",
-        "rune": "ᚢ"
+        "rune": "ᚢ",
+        "inspiration": "inspiration"
     },
     {
         "name": "thurisaz",
-        "rune": "ᚦ"
+        "rune": "ᚦ",
+        "inspiration": "inspiration"
     },
     {
         "name": "ansuz",
-        "rune": "ᚨ"
+        "rune": "ᚨ",
+        "inspiration": "inspiration"
     },
     {
         "name": "raido",
-        "rune": "ᚱ"
+        "rune": "ᚱ",
+        "inspiration": "inspiration"
     },
     {
         "name": "kaunan",
-        "rune": "ᚲ"
+        "rune": "ᚲ",
+        "inspiration": "inspiration"
     },
     {
         "name": "gebo",
-        "rune": "ᚷ"
+        "rune": "ᚷ",
+        "inspiration": "inspiration"
     },
     {
         "name": "wunjo",
-        "rune": "ᚹ"
+        "rune": "ᚹ",
+        "inspiration": "inspiration"
     },
-
     {
         "name": "hagalaz",
-        "rune": "ᚺ"
+        "rune": "ᚺ",
+        "inspiration": "inspiration"
     },
     {
         "name": "naudiz",
-        "rune": "ᚾ"
+        "rune": "ᚾ",
+        "inspiration": "inspiration"
     },
     {
         "name": "isaz",
-        "rune": "ᛁ"
+        "rune": "ᛁ",
+        "inspiration": "inspiration"
     },
     {
         "name": "jera",
-        "rune": "ᛃ"
+        "rune": "ᛃ",
+        "inspiration": "inspiration"
     },
     {
         "name": "eihwaz",
-        "rune": "ᛇ"
+        "rune": "ᛇ",
+        "inspiration": "inspiration"
     },
     {
         "name": "pertho",
-        "rune": "ᛈ"
+        "rune": "ᛈ",
+        "inspiration": "inspiration"
     },
     {
         "name": "algiz",
-        "rune": "ᛉ"
+        "rune": "ᛉ",
+        "inspiration": "inspiration"
     },
     {
         "name": "sowilo",
-        "rune": "ᛊ"
+        "rune": "ᛊ",
+        "inspiration": "inspiration"
     },
-
     {
         "name": "tiwaz",
-        "rune": "ᛏ"
+        "rune": "ᛏ",
+        "inspiration": "inspiration"
     },
     {
         "name": "berkanan",
-        "rune": "ᛒ"
+        "rune": "ᛒ",
+        "inspiration": "inspiration"
     },
     {
         "name": "ehwaz",
-        "rune": "ᛖ"
+        "rune": "ᛖ",
+        "inspiration": "inspiration"
     },
     {
         "name": "mannaz",
-        "rune": "ᛗ"
+        "rune": "ᛗ",
+        "inspiration": "inspiration"
     },
     {
         "name": "laguz",
-        "rune": "ᛚ"
+        "rune": "ᛚ",
+        "inspiration": "inspiration"
     },
     {
         "name": "yngvi",
-        "rune": "ᛜ"
+        "rune": "ᛜ",
+        "inspiration": "inspiration"
     },
     {
         "name": "dagaz",
-        "rune": "ᛞ"
+        "rune": "ᛞ",
+        "inspiration": "inspiration"
     },
     {
         "name": "othala",
-        "rune": "ᛟ "
+        "rune": "ᛟ",
+        "inspiration": "inspiration"
     }
 ]
