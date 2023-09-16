@@ -7,3 +7,13 @@ if (toastTrigger) {
     toastBootstrap.show()
   })
 }
+
+const toastTriggerCard = document.getElementById('liveToastBtnCard')
+const toastLiveExampleCard = document.getElementById('liveToastCard')
+
+if (toastTriggerCard) {
+  const toastBootstrapCard = bootstrap.Toast.getOrCreateInstance(toastLiveExampleCard)
+  toastTriggerCard.addEventListener('click', () => {
+    toastBootstrapCard.show()
+  })
+}

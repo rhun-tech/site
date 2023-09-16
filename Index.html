@@ -17,15 +17,11 @@
   <header-component></header-component>
 
   <div class="bg-body-tertiary p-3 rounded-2 mb-3">
-    <div class="pb-2">
-      <div class="btn rhun-button col" id="liveToastBtn" onclick="getLocation()"><span class="iconify rhun-2"
+    <div class="hstack pb-2">
+      <div class="btn rhun-button col-auto" id="liveToastBtn" onclick="getLocation()"><span class="iconify rhun-2"
           data-icon="game-icons:sun-cloud"></span></div>
-    </div>
-  </div>
-
-  <div class="bg-body-tertiary p-3 rounded-2 mb-3">
-    <div id="card-container">
-
+      <div class="btn rhun-button col-auto ms-auto" id="liveToastBtnCard" onclick="fetchAndCreateCard()"><span
+          class="iconify rhun-2" data-icon="game-icons:card-random"></span></div>
     </div>
   </div>
 
@@ -105,6 +101,29 @@
         </div>
         <div class="toast-body">
           <div id="weather-data">
+            <div class="placeholder-glow">
+              <div class="placeholder rounded col-12"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-body-tertiary rounded-2 mb-3">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToastCard" class="toast rhun-border" role="alert" data-autohide="false">
+        <div class="toast-header">
+          <span class="theme-icon" style="width: 100px;"></span>
+          <strong class="me-auto"></strong>
+          <small></small>
+
+          <button type="button" class="btn rhun-2" data-bs-dismiss="toast" aria-label="Close"><span
+              class="iconify rhun-text" data-icon="fa6-solid:square-xmark"></span></button>
+
+        </div>
+        <div class="toast-body">
+          <div id="card-container">
             <div class="placeholder-glow">
               <div class="placeholder rounded col-12"></div>
             </div>
