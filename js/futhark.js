@@ -12,11 +12,11 @@ function fetchAndCreateCard() {
       const cardHTML = `
           <div class="card rhun-text">
             <div class="card-body">
-              <div class="card-title">${randomRune.name}</div>
-              <span class="card-text col-auto">${randomRune.rune}</span>
-            </div>
-            <div class="card-footer">
-              <span>${randomRune.inspiration}</span>
+              <div class="hstack">
+                <div class="col-auto rhun-2 pe-3">${randomRune.rune}</div>
+                <div class="col-auto">${randomRune.name}</div>
+              </div>
+              <div>${randomRune.inspiration}</div>
             </div>
           </div>
         `;
