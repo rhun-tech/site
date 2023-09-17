@@ -133,7 +133,12 @@ a:hover {
 }
 
 .rhun-gradient {
-    mask-image: linear-gradient(to right, #A383F1, transparent);
+    background: linear-gradient(to right, var(--text-color), var(--border-color));
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* mask-image: linear-gradient(to right, var(--text-color), var(--border-color)); */
 }
 
 .rhun-border {
