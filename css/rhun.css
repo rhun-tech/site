@@ -4,40 +4,69 @@
     --background-color: #2D2E29;
     --border-color: #C3497340;
     --text-color: #f5f5f5;
+    --text-color-hover: #C3497340;
     --text-fade-color: #C3497340;
     --button-color: #C3497340;
     --button-color-hover: #C34973;
-    --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?color=whitesmoke');
+    --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?width=128&height=128');
+    --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
 }
 
 :root.red {
     --background-color: #2D2E29;
     --border-color: #EAD95F;
     --text-color: #C34973;
+    --text-color-hover: #EAD95F;
     --text-fade-color: #C3497340;
     --button-color: #EAD95F40;
     --button-color-hover: #EAD95F;
-    --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?color=%23c34973');
+    --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=128&height=128');
+    --gradient-style: radial-gradient(var(--button-color), var(--text-color), var(--text-color-hover));
 }
 
 :root.blue {
     --background-color: #2D2E29;
     --border-color: #A7D5E9;
     --text-color: #789CF3;
+    --text-color-hover: #A7D5E9;
     --text-fade-color: #789CF340;
     --button-color: #A7D5E940;
     --button-color-hover: #A7D5E9;
-    --theme-icon: url('https://api.iconify.design/game-icons/rune-sword.svg?color=%23789cf3&rotate=270deg');
+    --theme-icon: url('https://api.iconify.design/game-icons/rune-sword.svg?width=128&height=128&rotate=270deg');
+    --gradient-style: linear-gradient(to left, var(--button-color), var(--text-color-hover), var(--text-color));
 }
 
 :root.green {
     --background-color: #2D2E29;
     --border-color: #A383F1;
     --text-color: #BCD755;
+    --text-color-hover: #A383F1;
     --text-fade-color: #BCD75540;
     --button-color: #A383F140;
     --button-color-hover: #A383F1;
-    --theme-icon: url('https://api.iconify.design/game-icons/herbs-bundle.svg?color=%23bcd755');
+    --theme-icon: url('https://api.iconify.design/game-icons/herbs-bundle.svg?width=128&height=128');
+    --gradient-style: linear-gradient(to top, var(--text-color), var(--button-color), var(--text-color-hover));
+}
+
+.rhun-theme-icon {
+    mask-image: var(--theme-icon);
+    -webkit-mask-image: var(--theme-icon);
+    background-repeat: no-repeat;
+    background-position: contain;
+}
+
+.rhun-icon-gradient {
+    background: var(--gradient-style);
+    width: 128;
+    height: 128;
+    display: inline-block;
+}
+
+.rhun-icon-radial-gradient {
+    background: radial-gradient(var(--text-color), var(--button-color), var(--button-color-hover));
+    width: 64;
+    height: 64;
+    display: inline-block;
 }
 
 .placeholder {
@@ -48,20 +77,9 @@
     content: var(--theme-icon);
 }
 
-.sc1 {
-    stop-color: var(--text-color);
-    stop-opacity: 1;
-}
-
-.sc2 {
-    stop-color: var(--border-color);
-    stop-opacity: 1;
-}
-
 body {
     color: var(--text-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: var(--background-image)
 }
 
 a {
@@ -71,7 +89,7 @@ a {
 }
 
 a:hover {
-    color: var(--text-color) !important;
+    color: var(--text-color-hover) !important;
     font-weight: bold;
     text-decoration: none;
 }
@@ -94,6 +112,10 @@ a:hover {
 
 .rhun-text {
     color: var(--text-color);
+}
+
+.rhun-text:hover {
+    color: var(--text-color-hover);
 }
 
 .rhun-red {

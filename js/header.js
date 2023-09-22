@@ -28,30 +28,31 @@ class Header extends HTMLElement {
                     <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="myTab" role="tablist">
                         <div class="bg-body-tertiary p-3 rounded-2">
                             <div class="pb-3">
-                                <a href="Library.html" class="row" type="button">
+                                <a href="Library.html" class="row rhun-text" type="button">
                                     <span class="col-9">Library</span>
-                                    <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:bookshelf"></span>
+                                    <span class="iconify rhun-2 col-3"
+                                        data-icon="game-icons:bookshelf"></span>
                                 </a>
                             </div>
     
                             <div class="pb-3">
-                                <a href="Code.html" class="row" type="button">
+                                <a href="Code.html" class="row rhun-text" type="button">
                                     <span class="col-9">Code</span>
-                                    <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:scroll-quill"></span>
+                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:scroll-quill"></span>
                                 </a>
                             </div>
     
                             <div class="pb-3">
-                                <a href="Shopper.html" class="row" type="button">
+                                <a href="Shopper.html" class="row rhun-text" type="button">
                                     <span class="col-9">Shopper</span>
-                                    <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:meat"></span>
+                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:meat"></span>
                                 </a>
                             </div>
     
                             <div class="pb-3">
-                                <a href="Shuffle.html" class="row" type="button">
+                                <a href="Shuffle.html" class="row rhun-text" type="button">
                                     <span class="col-9">Shuffle</span>
-                                    <span class="iconify rhun-text rhun-2 col-3" data-icon="game-icons:book-pile"></span>
+                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:book-pile"></span>
                                 </a>
                             </div>
                         </div>
@@ -99,7 +100,12 @@ class Header extends HTMLElement {
     
                     </div>
                 </div>
-                <span class="position-absolute bottom-0 end-0"><span class="theme-icon" style="width: 100px;"></span></span>
+                <span class="position-absolute bottom-0 end-0">
+                    <div class="rhun-theme-icon">
+                        <div class="rhun-icon-gradient">
+                        </div>
+                    </div>
+                </span>
             </div>
         </div>
     </nav>
