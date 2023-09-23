@@ -57,7 +57,7 @@
         transform: translateY(64px);
       }
       50% {
-        transform: translateY(16px);
+        transform: translateY(8px);
       }
 }
 
