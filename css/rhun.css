@@ -48,6 +48,19 @@
     --gradient-style: linear-gradient(to top, var(--text-color), var(--button-color), var(--text-color-hover));
 }
 
+#moving-svg {
+    animation: moveUp 10s linear infinite;
+}
+
+@keyframes moveUp {
+    0%, 100% {
+        transform: translateY(64px);
+      }
+      50% {
+        transform: translateY(16px);
+      }
+}
+
 .rhun-theme-icon {
     mask-image: var(--theme-icon);
     -webkit-mask-image: var(--theme-icon);
