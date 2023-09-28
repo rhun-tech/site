@@ -33,7 +33,7 @@ function fetchVillage(latitude, longitude) {
     })
     .then(data => {
       // Return the village name from the API response
-      return data.address.village;
+      return data.display_name;
     })
     .catch(error => {
       console.error('Fetch error:', error);
@@ -44,27 +44,28 @@ function fetchVillage(latitude, longitude) {
 function displayWeatherData(data) {
   const weatherDataElement = document.getElementById('weather-data');
   const location = data.location;
+  const minutelyWeather = data.timelines.minutely;
   const dailyWeather = data.timelines.daily;
+
+  const currentWeather = minutelyWeather[0].values;
 
   const todayDailyWeather = dailyWeather[0].values;
   const tomorrowDailyWeather = dailyWeather[1].values;
 
   fetchVillage(location.lat, location.lon)
-    .then(villageName => {
+    .then(addressName => {
       const weatherInfo = `
-      <div class="hstack">
-        <div class="col-auto p-1">Village: ${villageName}</div>
-      </div>
       <div class="col-auto p-1">Today's forecast</div>
       <div class="hstack">
-        <div class="col-auto p-1">Low: ${celsiusToFahrenheit(todayDailyWeather.temperatureApparentMin)}</div>
-        <div class="col-auto p-1">High: ${celsiusToFahrenheit(todayDailyWeather.temperatureApparentMax)}</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(todayDailyWeather.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(todayDailyWeather.temperatureApparentMax)}</div>
       </div>
       <div class="col-auto p-1">Tomorrow's forecast</div>
       <div class="hstack">
-        <div class="col-auto p-1">Low: ${celsiusToFahrenheit(tomorrowDailyWeather.temperatureApparentMin)}</div>
-        <div class="col-auto p-1">High: ${celsiusToFahrenheit(tomorrowDailyWeather.temperatureApparentMax)}</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(tomorrowDailyWeather.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(tomorrowDailyWeather.temperatureApparentMax)}</div>
       </div>
+      <small class="p-1">${addressName}</small>
       `;
 
       weatherDataElement.innerHTML = weatherInfo;
