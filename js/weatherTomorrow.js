@@ -73,7 +73,8 @@ function displayWeatherData(data) {
 
 // Function to convert temperature from Celsius to Fahrenheit
 function celsiusToFahrenheit(celsius) {
-  return (celsius * 9 / 5) + 32;
+  const fahrenheit = Math.round((celsius * 9 / 5) + 32);
+  return fahrenheit;
 }
 
 // Function to get the user's current location and fetch weather data
