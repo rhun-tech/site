@@ -13,8 +13,8 @@ function fetchAndCreateCard() {
           <div class="card rhun-text">
             <div class="card-body">
               <div class="hstack">
-                <div class="col-auto rhun-2 pe-3">${randomRune.rune}</div>
-                <div class="col-auto">${randomRune.name}</div>
+                <div class="col-auto rhun-2 pe-3 rhun-text-secondary">${randomRune.rune}</div>
+                <div class="col-auto rhun-text-secondary">${randomRune.name}</div>
               </div>
               <div>${randomRune.inspiration}</div>
             </div>
