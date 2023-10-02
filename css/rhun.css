@@ -6,6 +6,7 @@
     --text-color: #f5f5f5;
     --text-color-hover: #C3497340;
     --text-fade-color: #C3497340;
+    --text-color-secondary: #C34973;
     --button-color: #C3497340;
     --button-color-hover: #C34973;
     --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?width=128&height=128');
@@ -18,6 +19,7 @@
     --text-color: #C34973;
     --text-color-hover: #EAD95F;
     --text-fade-color: #C3497340;
+    --text-color-secondary: #EAD95F;
     --button-color: #EAD95F40;
     --button-color-hover: #EAD95F;
     --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=128&height=128');
@@ -30,6 +32,7 @@
     --text-color: #789CF3;
     --text-color-hover: #A7D5E9;
     --text-fade-color: #789CF340;
+    --text-color-secondary: #A7D5E9;
     --button-color: #A7D5E940;
     --button-color-hover: #A7D5E9;
     --theme-icon: url('https://api.iconify.design/game-icons/rune-sword.svg?width=128&height=128&rotate=270deg');
@@ -42,23 +45,43 @@
     --text-color: #BCD755;
     --text-color-hover: #A383F1;
     --text-fade-color: #BCD75540;
+    --text-color-secondary: #A383F1;
     --button-color: #A383F140;
     --button-color-hover: #A383F1;
     --theme-icon: url('https://api.iconify.design/game-icons/herbs-bundle.svg?width=128&height=128');
-    --gradient-style: linear-gradient(to top, var(--text-color), var(--button-color), var(--text-color-hover));
+    --gradient-style: linear-gradient(to top, var(--text-color), var(--text-color-hover), var(--button-color));
 }
 
-#moving-svg {
-    animation: moveUp 10s linear infinite;
+#moving-svg-right {
+    animation: moveRight 13s linear infinite;
+    color: var(--text-color-secondary);
 }
 
-@keyframes moveUp {
-    0%, 100% {
-        transform: translateY(64px);
-      }
-      50% {
-        transform: translateY(8px);
-      }
+@keyframes moveRight {
+
+    0% {
+        transform: translateX(-20vw);
+    }
+
+    100% {
+        transform: translateX(80vw);
+    }
+}
+
+#moving-svg-left {
+    animation: moveLeft 13s linear infinite;
+    color: var(--text-color-secondary);
+}
+
+@keyframes moveLeft {
+
+    0% {
+        transform: translateX(80vw);
+    }
+
+    100% {
+        transform: translateX(-20vw);
+    }
 }
 
 .rhun-theme-icon {
@@ -125,6 +148,10 @@ a:hover {
 
 .rhun-text {
     color: var(--text-color);
+}
+
+.rhun-text-secondary {
+    color: var(--text-color-secondary);
 }
 
 .rhun-text:hover {

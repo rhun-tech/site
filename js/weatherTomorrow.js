@@ -49,27 +49,51 @@ function displayWeatherData(data) {
 
   const currentWeather = minutelyWeather[0].values;
 
-  const todayDailyWeather = dailyWeather[0].values;
-  const tomorrowDailyWeather = dailyWeather[1].values;
+  const dailyWeatherTime0 = dailyWeather[0].time;
+  const dailyWeather0 = dailyWeather[0].values;
+
+  const dailyWeatherTime1 = dailyWeather[1].time;
+  const dailyWeather1 = dailyWeather[1].values;
+
+  const dailyWeatherTime2 = dailyWeather[1].time;
+  const dailyWeather2 = dailyWeather[1].values;
 
   fetchVillage(location.lat, location.lon)
     .then(addressName => {
       const weatherInfo = `
-      <div class="col-auto p-1">Today's forecast</div>
+      <div class="col-auto p-1 rhun-text-secondary">Current Conditions</div>
       <div class="hstack">
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(todayDailyWeather.temperatureApparentMin)}</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(todayDailyWeather.temperatureApparentMax)}</div>
+        <div class="col-auto p-1">${celsiusToFahrenheit(currentWeather.temperatureApparent)}° F</div>
       </div>
-      <div class="col-auto p-1">Tomorrow's forecast</div>
+      <div class="col-auto p-1 rhun-text-secondary">Forecast</div>
       <div class="hstack">
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(tomorrowDailyWeather.temperatureApparentMin)}</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(tomorrowDailyWeather.temperatureApparentMax)}</div>
+        <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime0)}</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather0.temperatureApparentMin)}° F</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather0.temperatureApparentMax)}° F</div>
+      </div>
+      <div class="hstack">
+        <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime1)}</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather1.temperatureApparentMin)}° F</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather1.temperatureApparentMax)}° F</div>
+      </div>
+      <div class="hstack">
+        <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime2)}</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather2.temperatureApparentMin)}° F</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather2.temperatureApparentMax)}° F</div>
       </div>
       <small class="p-1">${addressName}</small>
       `;
 
       weatherDataElement.innerHTML = weatherInfo;
     });
+}
+
+// Function to format a date string to display as MM-DD
+function formatMonthAndDay(dateString) {
+  const date = new Date(dateString);
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${month}-${day}`;
 }
 
 // Function to convert temperature from Celsius to Fahrenheit
