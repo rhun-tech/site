@@ -9,7 +9,7 @@
     --text-color-secondary: #C34973;
     --button-color: #C3497340;
     --button-color-hover: #C34973;
-    --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?width=128&height=128');
+    --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
 }
 
@@ -22,7 +22,7 @@
     --text-color-secondary: #EAD95F;
     --button-color: #EAD95F40;
     --button-color-hover: #EAD95F;
-    --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=128&height=128');
+    --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--button-color), var(--text-color), var(--text-color-hover));
 }
 
@@ -35,7 +35,7 @@
     --text-color-secondary: #A7D5E9;
     --button-color: #A7D5E940;
     --button-color-hover: #A7D5E9;
-    --theme-icon: url('https://api.iconify.design/game-icons/rune-sword.svg?width=128&height=128&rotate=270deg');
+    --theme-icon: url('https://api.iconify.design/game-icons/rune-sword.svg?width=64&height=64&rotate=270deg');
     --gradient-style: linear-gradient(to left, var(--button-color), var(--text-color-hover), var(--text-color));
 }
 
@@ -48,7 +48,7 @@
     --text-color-secondary: #A383F1;
     --button-color: #A383F140;
     --button-color-hover: #A383F1;
-    --theme-icon: url('https://api.iconify.design/game-icons/herbs-bundle.svg?width=128&height=128');
+    --theme-icon: url('https://api.iconify.design/game-icons/herbs-bundle.svg?width=64&height=64');
     --gradient-style: linear-gradient(to top, var(--text-color), var(--text-color-hover), var(--button-color));
 }
 
@@ -93,13 +93,6 @@
 
 .rhun-icon-gradient {
     background: var(--gradient-style);
-    width: 128;
-    height: 128;
-    display: inline-block;
-}
-
-.rhun-icon-radial-gradient {
-    background: radial-gradient(var(--text-color), var(--button-color), var(--button-color-hover));
     width: 64;
     height: 64;
     display: inline-block;

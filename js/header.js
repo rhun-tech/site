@@ -30,8 +30,7 @@ class Header extends HTMLElement {
                             <div class="pb-3">
                                 <a href="Library.html" class="row rhun-text" type="button">
                                     <span class="col-9">Library</span>
-                                    <span class="iconify rhun-2 col-3"
-                                        data-icon="game-icons:bookshelf"></span>
+                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:bookshelf"></span>
                                 </a>
                             </div>
     
