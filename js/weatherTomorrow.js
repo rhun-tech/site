@@ -55,31 +55,39 @@ function displayWeatherData(data) {
   const dailyWeatherTime1 = dailyWeather[1].time;
   const dailyWeather1 = dailyWeather[1].values;
 
-  const dailyWeatherTime2 = dailyWeather[1].time;
-  const dailyWeather2 = dailyWeather[1].values;
+  const dailyWeatherTime2 = dailyWeather[2].time;
+  const dailyWeather2 = dailyWeather[2].values;
+
+  const dailyWeatherTime3 = dailyWeather[3].time;
+  const dailyWeather3 = dailyWeather[3].values;
 
   fetchVillage(location.lat, location.lon)
     .then(addressName => {
       const weatherInfo = `
       <div class="col-auto p-1 rhun-text-secondary">Current Conditions</div>
       <div class="hstack">
-        <div class="col-auto p-1">${celsiusToFahrenheit(currentWeather.temperatureApparent)}° F</div>
+        <div class="col-auto p-1">${celsiusToFahrenheit(currentWeather.temperatureApparent)}</div>
       </div>
       <div class="col-auto p-1 rhun-text-secondary">Forecast</div>
       <div class="hstack">
         <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime0)}</div>
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather0.temperatureApparentMin)}° F</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather0.temperatureApparentMax)}° F</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather0.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather0.temperatureApparentMax)}</div>
       </div>
       <div class="hstack">
         <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime1)}</div>
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather1.temperatureApparentMin)}° F</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather1.temperatureApparentMax)}° F</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather1.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather1.temperatureApparentMax)}</div>
       </div>
       <div class="hstack">
         <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime2)}</div>
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather2.temperatureApparentMin)}° F</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather2.temperatureApparentMax)}° F</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather2.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather2.temperatureApparentMax)}</div>
+      </div>
+      <div class="hstack">
+        <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime3)}</div>
+        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather3.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather3.temperatureApparentMax)}</div>
       </div>
       <small class="p-1">${addressName}</small>
       `;
