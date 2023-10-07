@@ -2,13 +2,13 @@
 
 :root {
     --background-color: #2D2E29;
-    --border-color: #C3497340;
-    --text-color: #f5f5f5;
-    --text-color-hover: #C3497340;
-    --text-fade-color: #C3497340;
-    --text-color-secondary: #C34973;
-    --button-color: #C3497340;
-    --button-color-hover: #C34973;
+    --border-color: #4D8EAA40;
+    --text-color: #B0C4DE;
+    --text-color-hover: #4D8EAA40;
+    --text-fade-color: #4D8EAA40;
+    --text-color-secondary: #C33C54;
+    --button-color: #4D8EAA40;
+    --button-color-hover: #C33C54;
     --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
 }
@@ -28,15 +28,15 @@
 
 :root.blue {
     --background-color: #2D2E29;
-    --border-color: #A7D5E9;
-    --text-color: #789CF3;
-    --text-color-hover: #A7D5E9;
+    --border-color: #A9A9A9;
+    --text-color: #8B4513;
+    --text-color-hover: #A9A9A9;
     --text-fade-color: #789CF340;
-    --text-color-secondary: #A7D5E9;
-    --button-color: #A7D5E940;
-    --button-color-hover: #A7D5E9;
-    --theme-icon: url('https://api.iconify.design/game-icons/rune-sword.svg?width=64&height=64&rotate=270deg');
-    --gradient-style: linear-gradient(to left, var(--button-color), var(--text-color-hover), var(--text-color));
+    --text-color-secondary: #228B22;
+    --button-color: #A9A9A940;
+    --button-color-hover: #228B22;
+    --theme-icon: url('https://api.iconify.design/game-icons/axe-in-stump.svg?width=64&height=64');
+    --gradient-style: linear-gradient(to bottom, var(--button-color), var(--text-color-hover), var(--text-color));
 }
 
 :root.green {

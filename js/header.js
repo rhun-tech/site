@@ -83,7 +83,7 @@ class Header extends HTMLElement {
                                     <div class="form-check col">
                                         <input class="form-check-input" type="radio" name="theme" id="theme3" value="blue">
                                         <label class="form-check-label" for="theme3">
-                                            Sword
+                                            Stumped Axe
                                         </label>
                                     </div>
                                     <div class="form-check col">
