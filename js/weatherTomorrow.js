@@ -106,8 +106,9 @@ function formatMonthAndDay(dateString) {
 
 // Function to convert temperature from Celsius to Fahrenheit
 function celsiusToFahrenheit(celsius) {
-  const fahrenheit = Math.round((celsius * 9 / 5) + 32);
-  return fahrenheit;
+  const celsiusRounded = Math.round(celsius);
+  const fahrenheitRounded = Math.round((celsius * 9 / 5) + 32);
+  return celsiusRounded + " / " + fahrenheitRounded;
 }
 
 // Function to get the user's current location and fetch weather data
