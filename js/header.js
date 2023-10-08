@@ -63,7 +63,7 @@ class Header extends HTMLElement {
                             <div id="theme-changer" class="hidden w-100">
     
                                 <div class="row p-2">
-                                    <div class="form-check col">
+                                    <div class="form-check col rhun-text">
                                         <input class="form-check-input" type="radio" name="theme" id="theme1" value=""
                                             checked>
                                         <label class="form-check-label" for="theme1">
@@ -71,7 +71,7 @@ class Header extends HTMLElement {
                                         </label>
                                     </div>
     
-                                    <div class="form-check col">
+                                    <div class="form-check col rhun-text">
                                         <input class="form-check-input" type="radio" name="theme" id="theme2" value="red">
                                         <label class="form-check-label" for="theme2">
                                             Autumn
@@ -80,13 +80,13 @@ class Header extends HTMLElement {
                                 </div>
     
                                 <div class="row p-2">
-                                    <div class="form-check col">
+                                    <div class="form-check col rhun-text">
                                         <input class="form-check-input" type="radio" name="theme" id="theme3" value="blue">
                                         <label class="form-check-label" for="theme3">
-                                            Stumped Axe
+                                            Ancient Sword
                                         </label>
                                     </div>
-                                    <div class="form-check col">
+                                    <div class="form-check col rhun-text">
                                         <input class="form-check-input" type="radio" name="theme" id="theme4" value="green">
                                         <label class="form-check-label" for="theme4">
                                             Gayfeather
@@ -97,18 +97,28 @@ class Header extends HTMLElement {
                             </div>
                         </div>
     
+                        <div class="pt-3"></div>
+    
+                        <div class="container bg-body-tertiary rounded p-3">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="rhun-theme-icon">
+                                        <div class="rhun-icon-gradient">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto rhun-text">
+                                    Color mode details coming soon.
+                                </div>
+                            </div>
+                        </div>
+    
                     </div>
                 </div>
-                <span class="position-absolute bottom-0 end-0">
-                    <div class="rhun-theme-icon">
-                        <div class="rhun-icon-gradient">
-                        </div>
-                    </div>
-                </span>
             </div>
         </div>
     </nav>
-    
+
     <br><br><br><br>
     `;
 

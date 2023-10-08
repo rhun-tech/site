@@ -28,15 +28,15 @@
 
 :root.blue {
     --background-color: #2D2E29;
-    --border-color: #A9A9A9;
-    --text-color: #8B4513;
-    --text-color-hover: #A9A9A9;
-    --text-fade-color: #789CF340;
-    --text-color-secondary: #228B22;
-    --button-color: #A9A9A940;
-    --button-color-hover: #228B22;
-    --theme-icon: url('https://api.iconify.design/game-icons/axe-in-stump.svg?width=64&height=64');
-    --gradient-style: linear-gradient(to bottom, var(--button-color), var(--text-color-hover), var(--text-color));
+    --border-color: #CD7F32;
+    --text-color: #999999;
+    --text-color-hover: #C0C0C0;
+    --text-fade-color: #C0C0C0;
+    --text-color-secondary: #FFD700;
+    --button-color: #8B4513;
+    --button-color-hover: #FFA500;
+    --theme-icon: url('https://api.iconify.design/game-icons/ancient-sword.svg?width=64&height=64&flip=horizontal');
+    --gradient-style: linear-gradient(to top, var(--button-color), var(--text-color-hover), var(--text-color));
 }
 
 :root.green {
