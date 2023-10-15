@@ -108,7 +108,7 @@ function formatMonthAndDay(dateString) {
 function celsiusToFahrenheit(celsius) {
   const celsiusRounded = Math.round(celsius);
   const fahrenheitRounded = Math.round((celsius * 9 / 5) + 32);
-  return celsiusRounded + " / " + fahrenheitRounded;
+  return fahrenheitRounded;
 }
 
 // Function to get the user's current location and fetch weather data
