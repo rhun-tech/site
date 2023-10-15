@@ -35,7 +35,7 @@
     --text-color-secondary: #FFD700;
     --button-color: #8B4513;
     --button-color-hover: #FFA500;
-    --theme-icon: url('https://api.iconify.design/game-icons/ancient-sword.svg?width=64&height=64&flip=horizontal');
+    --theme-icon: url('https://api.iconify.design/game-icons/ancient-sword.svg?width=64&height=64');
     --gradient-style: linear-gradient(to top, var(--button-color), var(--text-color-hover), var(--text-color));
 }
 
