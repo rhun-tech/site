@@ -49,8 +49,8 @@ class Header extends HTMLElement {
                             </div>
     
                             <div class="pb-3">
-                                <a href="Shuffle.html" class="row rhun-text" type="button">
-                                    <span class="col-9">Shuffle</span>
+                                <a href="Spells.html" class="row rhun-text" type="button">
+                                    <span class="col-9">Spells</span>
                                     <span class="iconify rhun-2 col-3" data-icon="game-icons:book-pile"></span>
                                 </a>
                             </div>
