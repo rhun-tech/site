@@ -4,7 +4,7 @@
     --background-color: #2D2E29;
     --border-color: #4D8EAA40;
     --text-color: #B0C4DE;
-    --text-color-hover: #4D8EAA40;
+    --text-color-hover: #B0C4DE;
     --text-fade-color: #4D8EAA40;
     --text-color-secondary: #C33C54;
     --button-color: #4D8EAA40;
@@ -17,7 +17,7 @@
     --background-color: #2D2E29;
     --border-color: #EAD95F;
     --text-color: #C34973;
-    --text-color-hover: #EAD95F;
+    --text-color-hover: #C34973;
     --text-fade-color: #C3497340;
     --text-color-secondary: #EAD95F;
     --button-color: #EAD95F40;
@@ -30,11 +30,11 @@
     --background-color: #2D2E29;
     --border-color: #CD7F32;
     --text-color: #999999;
-    --text-color-hover: #C0C0C0;
+    --text-color-hover: #999999;
     --text-fade-color: #C0C0C0;
     --text-color-secondary: #FFD700;
     --button-color: #8B4513;
-    --button-color-hover: #FFA500;
+    --button-color-hover: #CD7F32;
     --theme-icon: url('https://api.iconify.design/game-icons/ancient-sword.svg?width=64&height=64');
     --gradient-style: linear-gradient(to top, var(--button-color), var(--text-color-hover), var(--text-color));
 }
@@ -43,7 +43,7 @@
     --background-color: #2D2E29;
     --border-color: #A383F1;
     --text-color: #BCD755;
-    --text-color-hover: #A383F1;
+    --text-color-hover: #BCD755;
     --text-fade-color: #BCD75540;
     --text-color-secondary: #A383F1;
     --button-color: #A383F140;
