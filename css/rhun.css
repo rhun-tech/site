@@ -54,7 +54,7 @@
 
 #moving-svg-right {
     animation: moveRight 13s linear infinite;
-    color: var(--text-color-secondary);
+    color: var(--border-color);
 }
 
 @keyframes moveRight {
@@ -70,7 +70,7 @@
 
 #moving-svg-left {
     animation: moveLeft 13s linear infinite;
-    color: var(--text-color-secondary);
+    color: var(--border-color);
 }
 
 @keyframes moveLeft {
