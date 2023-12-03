@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-dark bg-dark fixed-top shadow">
         <div class="container-fluid">
             <a class="navbar-brand rhun-text fw-bold rhun-2" href="Index.html">Rhun</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
@@ -26,7 +26,7 @@ class Header extends HTMLElement {
                 </div>
                 <div class="offcanvas-body">
                     <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="myTab" role="tablist">
-                        <div class="bg-body-tertiary p-3 rounded-2">
+                        <div class="bg-body-tertiary p-3 rounded-2 shadow">
                             <div class="pb-3">
                                 <a href="Library.html" class="row rhun-text" type="button">
                                     <span class="col-9">Library</span>
@@ -58,7 +58,7 @@ class Header extends HTMLElement {
     
                         <div class="pt-3"></div>
     
-                        <div class="container bg-body-tertiary rounded p-3">
+                        <div class="container bg-body-tertiary rounded p-3 shadow">
                             <div class="rhun-text">Color Modes</div>
                             <div id="theme-changer" class="hidden w-100">
     
@@ -99,7 +99,7 @@ class Header extends HTMLElement {
     
                         <div class="pt-3"></div>
     
-                        <div class="container bg-body-tertiary rounded p-3">
+                        <div class="container bg-body-tertiary rounded p-3 shadow">
                             <div class="row">
                                 <div class="col-auto">
                                     <div class="rhun-theme-icon">
