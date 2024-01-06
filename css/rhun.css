@@ -288,7 +288,7 @@ a:hover {
     --bs-tooltip-arrow-height: 0;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
     border: 2px solid var(--button-color-hover) !important;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 
 /* Javascript Support */
