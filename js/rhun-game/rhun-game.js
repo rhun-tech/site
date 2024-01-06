@@ -3,8 +3,8 @@
 // Get the canvas and context
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
-
 const cornerRadius = 10;
+const randomBlockPattern = ctx.createPattern(createRandomBlockPattern(), 'repeat');
 
 // Define floor properties
 const floor = {
@@ -12,8 +12,34 @@ const floor = {
     y: canvas.height - 20,
     width: canvas.width,
     height: 20,
-    color: "#4D8EAA40"
+    color: randomBlockPattern
 };
+
+// Function to create a random block pattern
+function createRandomBlockPattern() {
+    const patternCanvas = document.createElement('canvas');
+    const patternCtx = patternCanvas.getContext('2d');
+    patternCanvas.width = 800; // Adjust the width based on your pattern
+    patternCanvas.height = 40; // Adjust the height based on your pattern
+
+    // Draw the random block pattern
+    patternCtx.fillStyle = '#4D8EAA40';
+    patternCtx.fillRect(0, 0, patternCanvas.width, patternCanvas.height);
+
+    patternCtx.fillStyle = '#B0C4DE';
+    const blockSize = 8;
+
+    // Randomly fill squares
+    for (let x = 0; x < patternCanvas.width; x += blockSize) {
+        for (let y = 0; y < patternCanvas.height; y += blockSize) {
+            if (Math.random() > 0.5) {
+                patternCtx.fillRect(x, y, blockSize, blockSize);
+            }
+        }
+    }
+
+    return patternCanvas;
+}
 
 // Define player properties
 const player = {

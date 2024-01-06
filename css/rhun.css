@@ -284,8 +284,8 @@ a:hover {
     --bs-tooltip-bg: var(--background-color);
     --bs-tooltip-color: var(--text-color);
     --bs-tooltip-opacity: 1;
-    --bs-tooltip-arrow-width: 0;
-    --bs-tooltip-arrow-height: 0;
+    --bs-tooltip-arrow-width: 1rem;
+    --bs-tooltip-arrow-height: 1rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
     border: 2px solid var(--button-color-hover) !important;
     border-radius: .5rem;
