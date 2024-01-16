@@ -2,7 +2,7 @@
 
 :root {
     --background-color: #212529;
-    --background-image: url('../images/4D8EAA.svg');
+    --background-image: url('../images/4D8EAA-Blurry.svg');
     --border-color: #4D8EAA40;
     --text-color: #B0C4DE;
     --text-color-hover: #B0C4DE;
@@ -16,7 +16,7 @@
 
 :root.red {
     --background-color: #212529;
-    --background-image: url('../images/C34973.svg');
+    --background-image: url('../images/C34973-Blurry.svg');
     --border-color: #EAD95F;
     --text-color: #C34973;
     --text-color-hover: #C34973;
@@ -30,7 +30,7 @@
 
 :root.blue {
     --background-color: #212529;
-    --background-image: url('../images/C0C0C0.svg');
+    --background-image: url('../images/C0C0C0-Blurry.svg');
     --border-color: #CD7F32;
     --text-color: #999999;
     --text-color-hover: #999999;
@@ -44,7 +44,7 @@
 
 :root.green {
     --background-color: #212529;
-    --background-image: url('../images/BCD755.svg');
+    --background-image: url('../images/BCD755-Blurry.svg');
     --border-color: #A383F1;
     --text-color: #BCD755;
     --text-color-hover: #BCD755;
@@ -56,17 +56,18 @@
     --gradient-style: linear-gradient(to top, var(--text-color), var(--text-color-hover), var(--button-color));
 }
 
-html, body {
-    height: 100vh; /* Ensure the HTML and body elements take up the full height of the viewport */
+html,
+body {
+    height: 100vh;
     width: 100vw;
 }
 
 body {
     color: var(--text-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: var(--background-image); 
+    background: var(--background-image);
     background-color: #212529;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     transition: opacity 2s ease;
 }
