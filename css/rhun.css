@@ -214,12 +214,22 @@ a:hover {
     border: 2px solid var(--border-color) !important;
 }
 
+.rhun-border-gradient {
+    border: 2px solid;
+    border-image: linear-gradient(to right, var(--border-color), var(--button-color-hover), var(--text-color));
+    border-image-slice: 1;
+}
+
 .rhun-button {
     background-color: var(--button-color);
 }
 
 .rhun-button:hover {
     background-color: var(--button-color-hover);
+}
+
+.rhun-cursor {
+    cursor: pointer;
 }
 
 .active {
