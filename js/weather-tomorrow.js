@@ -1,8 +1,9 @@
 const apiKeyWeather = 'Tohw5l3zWKrl1RrJCfwoa4Se6DIO2P9a';
+const geoApiKey = '65ad23d869b3f305308628iuraf245b';
 
 // Function to fetch weather data by latitude and longitude
 function fetchWeatherData(latitude, longitude) {
-  const apiUrlWeather = `https://api.tomorrow.io/v4/weather/forecast?location=${latitude},${longitude}&apikey=${apiKeyWeather}`;
+  const apiUrlWeather = `https://api.tomorrow.io/v4/weather/forecast?location=${latitude},${longitude}&units=imperial&apikey=${apiKeyWeather}`;
 
   return fetch(apiUrlWeather)
     .then(response => {
@@ -22,7 +23,7 @@ function fetchWeatherData(latitude, longitude) {
 }
 
 function fetchVillage(latitude, longitude) {
-  const apiUrlMap = `https://geocode.maps.co/reverse?lat=${latitude}&lon=${longitude}`;
+  const apiUrlMap = `https://geocode.maps.co/reverse?lat=${latitude}&lon=${longitude}&api_key=${geoApiKey}`;
 
   return fetch(apiUrlMap)
     .then(response => {
@@ -69,38 +70,38 @@ function displayWeatherData(data) {
       const weatherInfo = `
       <div class="col-auto p-1 rhun-text-secondary">Current Conditions</div>
       <div class="hstack">
-        <div class="col-auto p-1">${celsiusToFahrenheit(currentWeather.temperatureApparent)}</div>
+        <div class="col-auto p-1">${Math.round(currentWeather.temperatureApparent)}</div>
       </div>
       <div class="col-auto p-1 rhun-text-secondary">Forecast</div>
       <div class="hstack">
         <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime0)}</div>
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather0.temperatureApparentMin)}</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather0.temperatureApparentMax)}</div>
+        <div class="col-auto p-1">L: ${Math.round(dailyWeather0.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${Math.round(dailyWeather0.temperatureApparentMax)}</div>
         <div class="col-auto p-1">S: ${(dailyWeather0.snowAccumulationMax)}</div>
       </div>
       <div class="hstack">
         <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime1)}</div>
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather1.temperatureApparentMin)}</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather1.temperatureApparentMax)}</div>
-        <div class="col-auto p-1">S: ${(dailyWeather0.snowAccumulationMax)}</div>
+        <div class="col-auto p-1">L: ${Math.round(dailyWeather1.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${Math.round(dailyWeather1.temperatureApparentMax)}</div>
+        <div class="col-auto p-1">S: ${(dailyWeather1.snowAccumulationMax)}</div>
       </div>
       <div class="hstack">
         <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime2)}</div>
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather2.temperatureApparentMin)}</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather2.temperatureApparentMax)}</div>
-        <div class="col-auto p-1">S: ${(dailyWeather0.snowAccumulationMax)}</div>
+        <div class="col-auto p-1">L: ${Math.round(dailyWeather2.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${Math.round(dailyWeather2.temperatureApparentMax)}</div>
+        <div class="col-auto p-1">S: ${(dailyWeather2.snowAccumulationMax)}</div>
       </div>
       <div class="hstack">
         <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime3)}</div>
-        <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather3.temperatureApparentMin)}</div>
-        <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather3.temperatureApparentMax)}</div>
-        <div class="col-auto p-1">S: ${(dailyWeather0.snowAccumulationMax)}</div>
+        <div class="col-auto p-1">L: ${Math.round(dailyWeather3.temperatureApparentMin)}</div>
+        <div class="col-auto p-1">H: ${Math.round(dailyWeather3.temperatureApparentMax)}</div>
+        <div class="col-auto p-1">S: ${(dailyWeather3.snowAccumulationMax)}</div>
       </div>
       <div class="hstack">
       <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime4)}</div>
-      <div class="col-auto p-1">L: ${celsiusToFahrenheit(dailyWeather4.temperatureApparentMin)}</div>
-      <div class="col-auto p-1">H: ${celsiusToFahrenheit(dailyWeather4.temperatureApparentMax)}</div>
-      <div class="col-auto p-1">S: ${(dailyWeather0.snowAccumulationMax)}</div>
+      <div class="col-auto p-1">L: ${Math.round(dailyWeather4.temperatureApparentMin)}</div>
+      <div class="col-auto p-1">H: ${Math.round(dailyWeather4.temperatureApparentMax)}</div>
+      <div class="col-auto p-1">S: ${(dailyWeather4.snowAccumulationMax)}</div>
     </div>
       <small class="p-1">${addressName}</small>
       `;

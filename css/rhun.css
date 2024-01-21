@@ -8,6 +8,7 @@
     --text-color-hover: #B0C4DE;
     --text-fade-color: #4D8EAA40;
     --text-color-secondary: #C33C54;
+    --text-color-tertiary: #4D8EAA;
     --button-color: #4D8EAA40;
     --button-color-hover: #C33C54;
     --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?width=64&height=64');
@@ -22,6 +23,7 @@
     --text-color-hover: #C34973;
     --text-fade-color: #C3497340;
     --text-color-secondary: #EAD95F;
+    --text-color-tertiary: #B8860B; 
     --button-color: #EAD95F40;
     --button-color-hover: #EAD95F;
     --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=64&height=64');
@@ -31,14 +33,15 @@
 :root.blue {
     --background-color: #212529;
     --background-image: url('../images/C0C0C0-Blurry.svg');
-    --border-color: #CD7F32;
-    --text-color: #999999;
-    --text-color-hover: #999999;
-    --text-fade-color: #C0C0C0;
-    --text-color-secondary: #ea765f;
-    --button-color: #8B4513;
-    --button-color-hover: #CD7F32;
-    --theme-icon: url('https://api.iconify.design/game-icons/ancient-sword.svg?width=64&height=64');
+    --border-color: #96668C;
+    --text-color: #DE9435;
+    --text-color-hover: #DE9435;
+    --text-fade-color: #6BA090;
+    --text-color-secondary: #DE5A41;
+    --text-color-tertiary: #6BA090; 
+    --button-color: #38608440;
+    --button-color-hover: #96668C40;
+    --theme-icon: url('https://api.iconify.design/game-icons/night-sleep.svg?width=64&height=64');
     --gradient-style: linear-gradient(to top, var(--button-color), var(--text-color-hover), var(--text-color));
 }
 
@@ -50,6 +53,7 @@
     --text-color-hover: #BCD755;
     --text-fade-color: #BCD75540;
     --text-color-secondary: #A383F1;
+    --text-color-tertiary: #FF91A4;
     --button-color: #A383F140;
     --button-color-hover: #A383F1;
     --theme-icon: url('https://api.iconify.design/game-icons/herbs-bundle.svg?width=64&height=64');
@@ -160,6 +164,10 @@ a:hover {
 
 .rhun-text-secondary {
     color: var(--text-color-secondary);
+}
+
+.rhun-text-tertiary {
+    color: var(--text-color-tertiary);
 }
 
 .rhun-text:hover {
@@ -274,8 +282,8 @@ a:hover {
 
 .form-check-input:checked,
 .form-check-input:hover {
-    background-color: var(--text-color);
-    border-color: var(--text-color);
+    background-color: var(--text-color-secondary);
+    border-color: var(--text-color-tertiary);
     box-shadow: 0 0 0 0.25rem var(--text-fade-color) !important;
 }
 
