@@ -230,6 +230,10 @@ a:hover {
     border-image-slice: 1;
 }
 
+.rhun-border-radius {
+    border-radius: .5rem;
+}
+
 .rhun-button {
     background-color: var(--button-color);
 }

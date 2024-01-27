@@ -1,5 +1,27 @@
-const apiKeyWeather = '';
-const geoApiKey = '';
+let apiKeyWeather = '';
+let geoApiKey = '';
+
+// Function to prompt the user for API keys
+function promptForAPIKeys() {
+  const apiKeyWeatherInput = document.getElementById('weatherApiKey').value;
+  const geoApiKeyInput = document.getElementById('geoApiKey').value;
+
+  // Validate the input (you may add more validation as needed)
+  if (apiKeyWeatherInput && geoApiKeyInput) {
+    // Store the entered API keys
+    apiKeyWeather = apiKeyWeatherInput;
+    geoApiKey = geoApiKeyInput;
+
+    // Proceed with the rest of the function
+    getLocation();
+
+    // Close the modal
+    const modal = new bootstrap.Modal(document.getElementById('apiKeyModal'));
+    modal.hide();
+  } else {
+    console.error('API keys are required. Please try again.');
+  }
+}
 
 // Function to fetch weather data by latitude and longitude
 function fetchWeatherData(latitude, longitude) {
@@ -138,6 +160,15 @@ function getLocation() {
   }
 }
 
-// Add an event listener to the div element with the ID "liveToastBtn"
+/**
+
+// Add an event listener to the button element
 const liveToastBtn = document.getElementById('liveToastBtn');
-liveToastBtn.addEventListener('click', getLocation);
+liveToastBtn.addEventListener('click', function () {
+  // Show the modal when the button is clicked
+  const modal = new bootstrap.Modal(document.getElementById('apiKeyModal'));
+  modal.show();
+});
+
+ */
+
