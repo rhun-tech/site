@@ -1,5 +1,5 @@
-const apiKeyWeather = 'Tohw5l3zWKrl1RrJCfwoa4Se6DIO2P9a';
-const geoApiKey = '65ad23d869b3f305308628iuraf245b';
+const apiKeyWeather = '';
+const geoApiKey = '';
 
 // Function to fetch weather data by latitude and longitude
 function fetchWeatherData(latitude, longitude) {
