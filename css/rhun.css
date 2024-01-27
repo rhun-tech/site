@@ -32,7 +32,7 @@
 
 :root.blue {
     --background-color: #212529;
-    --background-image: url('../images/C0C0C0-Blurry.svg');
+    --background-image: url('../images/DE9435-Blurry.svg');
     --border-color: #96668C;
     --text-color: #DE9435;
     --text-color-hover: #DE9435;
@@ -73,6 +73,7 @@ body {
     background-color: #212529;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     transition: opacity 2s ease;
 }
 
