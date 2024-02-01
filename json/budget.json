@@ -1,0 +1,22 @@
+{
+    "budget": {
+        "income": {
+            "salary": 5000,
+            "bonus": 1000,
+            "other_income": 500
+        },
+        "savings": {
+            "emergency_fund": 1000,
+            "retirement": 1500,
+            "other_savings": 500
+        },
+        "expenditures": {
+            "housing": 1500,
+            "utilities": 200,
+            "groceries": 300,
+            "transportation": 150,
+            "entertainment": 100,
+            "miscellaneous": 50
+        }
+    }
+}
