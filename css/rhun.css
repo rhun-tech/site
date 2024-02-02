@@ -315,6 +315,11 @@ a:hover {
     border-radius: .5rem;
 }
 
+/* Hide choose file button */
+#jsonFileInput {
+    display: none;
+}
+
 /* Javascript Support */
 #fademe {
     opacity: 0;
