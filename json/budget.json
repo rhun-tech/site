@@ -11,6 +11,7 @@
         },
         "Expenditures": {
             "Housing": 1500,
+            "Savings": 500,
             "Utilities": 200,
             "Groceries": 300,
             "Miscellaneous": 50,

@@ -4,10 +4,18 @@ class Header extends HTMLElement {
     }
 
     connectedCallback() {
+        // Define the theme details based on the selected theme
+        const themeDetails = {
+            '': 'Smoldering Glacier. It inevitably, slowly burns towards you as it melts. Drawing you ever closer.',
+            'red': 'Autumn. In the distant night, all is ablaze with the colors of autum.',
+            'blue': 'True Night. Much like halloween, or much like a childrens novel.',
+            'green': 'Gayfeather. Tall and vibrant in the midsummer sky.'
+        };
+
         this.innerHTML = `
         <nav class="navbar navbar-dark bg-dark fixed-top shadow">
         <div class="container-fluid">
-            <a class="navbar-brand rhun-text fw-bold rhun-2" href="Index.html">Rhun</a>
+            <a class="navbar-brand rhun-text fw-bold rhun-2" href="index.html">Rhun</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                 aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <div class="fw-bold h1 ms-auto">
@@ -28,32 +36,47 @@ class Header extends HTMLElement {
                     <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="myTab" role="tablist">
                         <div class="bg-body-tertiary p-3 rounded-2 shadow">
                             <div class="pb-3">
-                                <a href="Library.html" class="row rhun-text" type="button">
+                                <a href="library.html" class="row rhun-text" type="button">
                                     <span class="col-9">Library</span>
                                     <span class="iconify rhun-2 col-3" data-icon="game-icons:bookshelf"></span>
                                 </a>
                             </div>
     
                             <div class="pb-3">
-                                <a href="Code.html" class="row rhun-text" type="button">
+                                <a href="code.html" class="row rhun-text" type="button">
                                     <span class="col-9">Code</span>
                                     <span class="iconify rhun-2 col-3" data-icon="game-icons:scroll-quill"></span>
                                 </a>
                             </div>
     
                             <div class="pb-3">
-                                <a href="Shopper.html" class="row rhun-text" type="button">
+                                <a href="shopper.html" class="row rhun-text" type="button">
                                     <span class="col-9">Shopper</span>
                                     <span class="iconify rhun-2 col-3" data-icon="game-icons:meat"></span>
                                 </a>
                             </div>
     
                             <div class="pb-3">
-                                <a href="Spells.html" class="row rhun-text" type="button">
+                                <a href="spells.html" class="row rhun-text" type="button">
                                     <span class="col-9">Spells</span>
                                     <span class="iconify rhun-2 col-3" data-icon="game-icons:book-pile"></span>
                                 </a>
                             </div>
+
+                            <div class="pb-3">
+                                <a href="depictions.html" class="row rhun-text" type="button">
+                                    <span class="col-9">Depictions</span>
+                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:book-aura"></span>
+                                </a>
+                            </div>
+
+                            <div class="pb-3">
+                                <a href="attributions.html" class="row rhun-text" type="button">
+                                    <span class="col-9">Attributions</span>
+                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:pointy-hat"></span>
+                                </a>
+                            </div>
+
                         </div>
     
                         <div class="pt-3"></div>
@@ -107,8 +130,8 @@ class Header extends HTMLElement {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto rhun-text">
-                                    Color mode details coming soon.
+                                <div id="colorModeDetails" class="col-auto rhun-text">
+                                    Smoldering Glacier. It inevitably, slowly burns towards you as it melts. Drawing you ever closer.
                                 </div>
                             </div>
                         </div>
@@ -134,6 +157,8 @@ class Header extends HTMLElement {
                 currentTheme = this.value;
                 root.className = currentTheme;
                 sessionStorage.setItem('theme', currentTheme);
+
+                colorModeDetails.textContent = themeDetails[currentTheme] || 'Color mode details coming soon.';
             });
 
             if (radio.value === currentTheme) {
@@ -143,6 +168,7 @@ class Header extends HTMLElement {
 
         if (currentTheme !== 'default') {
             root.className = currentTheme;
+            colorModeDetails.textContent = themeDetails[currentTheme] || 'Color mode details coming soon.';
         }
     }
 }

@@ -21,7 +21,6 @@
 
     <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
       <div class="hstack pb-2">
-
         <div class="btn rhun-button col-auto" id="liveToastBtn" data-bs-toggle="modal" data-bs-target="#apiKeyModal"
           data-bs-title="Check your weather. Rhun.tech will need your location." data-bs-toggle="tooltip"
           data-bs-placement="bottom" data-bs-custom-class="custom-tooltip">
@@ -73,10 +72,10 @@
         </div>
         <div class="modal-body">
           <label for="weatherApiKey" class="form-label">Weather API Key:</label>
-          <input type="text" class="form-control custom-input rhun-text" id="weatherApiKey" name="rhunWeatherApiKey" autocomplete="on">
+          <input type="text" class="form-control custom-input rhun-text" id="weatherApiKey" name="rhunWeatherApiKey" autocomplete="on" placeholder="your key from tomorrow.io">
 
           <label for="geoApiKey" class="form-label mt-2">Geocode API Key:</label>
-          <input type="text" class="form-control custom-input rhun-text" id="geoApiKey" name="rhunGeoApiKey" autocomplete="on">
+          <input type="text" class="form-control custom-input rhun-text" id="geoApiKey" name="rhunGeoApiKey" autocomplete="on" placeholder="optional">
 
           <div id="weather-data">
             <weather-loading></weather-loading>

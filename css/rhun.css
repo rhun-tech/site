@@ -3,12 +3,16 @@
 :root {
     --background-color: #212529;
     --background-image: url('../images/4D8EAA-Blurry.svg');
-    --border-color: #4D8EAA40;
+    --border-color: #B0C4DE;
+    --border-color-secondary: #C33C54;
+    --border-color-tertiary: #4D8EAA;
+    --border-color-callout: #96668C;    
     --text-color: #B0C4DE;
     --text-color-hover: #B0C4DE;
     --text-fade-color: #4D8EAA40;
     --text-color-secondary: #C33C54;
     --text-color-tertiary: #4D8EAA;
+    --text-color-callout: #96668C;
     --button-color: #4D8EAA40;
     --button-color-hover: #C33C54;
     --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?width=64&height=64');
@@ -18,12 +22,16 @@
 :root.red {
     --background-color: #212529;
     --background-image: url('../images/C34973-Blurry.svg');
-    --border-color: #EAD95F;
+    --border-color: #C34973;
+    --border-color-secondary: #EAD95F;
+    --border-color-tertiary: #B8860B;
+    --border-color-callout: #96668C;    
     --text-color: #C34973;
     --text-color-hover: #C34973;
     --text-fade-color: #C3497340;
     --text-color-secondary: #EAD95F;
-    --text-color-tertiary: #B8860B; 
+    --text-color-tertiary: #B8860B;
+    --text-color-callout: #96668C;
     --button-color: #EAD95F40;
     --button-color-hover: #EAD95F;
     --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=64&height=64');
@@ -33,12 +41,16 @@
 :root.blue {
     --background-color: #212529;
     --background-image: url('../images/DE9435-Blurry.svg');
-    --border-color: #96668C;
+    --border-color: #DE9435;
+    --border-color-secondary: #DE5A41;
+    --border-color-tertiary: #6BA090;
+    --border-color-callout: #96668C;
     --text-color: #DE9435;
     --text-color-hover: #DE9435;
     --text-fade-color: #6BA090;
     --text-color-secondary: #DE5A41;
-    --text-color-tertiary: #6BA090; 
+    --text-color-tertiary: #6BA090;
+    --text-color-callout: #96668C;
     --button-color: #38608440;
     --button-color-hover: #96668C40;
     --theme-icon: url('https://api.iconify.design/game-icons/night-sleep.svg?width=64&height=64');
@@ -48,12 +60,16 @@
 :root.green {
     --background-color: #212529;
     --background-image: url('../images/BCD755-Blurry.svg');
-    --border-color: #A383F1;
+    --border-color: #BCD755;
+    --border-color-secondary: #A383F1;
+    --border-color-tertiary: #FF91A4;
+    --border-color-callout: #96668C;
     --text-color: #BCD755;
     --text-color-hover: #BCD755;
     --text-fade-color: #BCD75540;
     --text-color-secondary: #A383F1;
     --text-color-tertiary: #FF91A4;
+    --text-color-callout: #96668C;
     --button-color: #A383F140;
     --button-color-hover: #A383F1;
     --theme-icon: url('https://api.iconify.design/game-icons/herbs-bundle.svg?width=64&height=64');
@@ -169,6 +185,26 @@ a:hover {
 
 .rhun-text-tertiary {
     color: var(--text-color-tertiary);
+}
+
+.rhun-text-callout {
+    color: var(--text-color-callout);
+}
+
+.rhun-border {
+    border-color: var(--border-color);
+}
+
+.rhun-border-secondary {
+    border-color: var(--border-color-secondary);
+}
+
+.rhun-border-tertiary {
+    border-color: var(--border-color-tertiary);
+}
+
+.rhun-border-callout {
+    border-color: var(--border-color-callout);
 }
 
 .rhun-text:hover {
@@ -328,5 +364,10 @@ a:hover {
 
 /* Loading */
 #loading {
+    display: none;
+}
+
+/* Loading Weather */
+weather-loading {
     display: none;
 }
