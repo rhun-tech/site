@@ -93,9 +93,9 @@ function displayBudget(budgetData) {
 
         // Display major title in card body
         cardBodyDiv.innerHTML = `<div class="card-title">
-        <div class="row">
-        <span class="col-9 ${titleTextColors[majorTitle]}">${majorTitle}</span>
-        <span class="iconify rhun-2 col-3 ${titleTextColors[majorTitle]}" data-icon="${iconCode}"></span>
+        <div class="hstack">
+        <span class="${titleTextColors[majorTitle]}">${majorTitle}</span>
+        <span class="iconify rhun-2 ms-auto ${titleTextColors[majorTitle]}" data-icon="${iconCode}"></span>
         </div>
         </div>
         <hr />`;
@@ -157,9 +157,9 @@ function displayBudget(budgetData) {
 
     // Display analysis title in card body
     analysisCardBodyDiv.innerHTML = `<div class="card-title">
-    <div class="row rhun-text-callout">
-    <span class="col-9">Analysis</span>
-    <span class="iconify rhun-2 col-3" data-icon="game-icons:standing-potion"></span>
+    <div class="hstack rhun-text-callout">
+    <span>Analysis</span>
+    <span class="iconify rhun-2 ms-auto" data-icon="game-icons:standing-potion"></span>
     </div>
     </div>
     <hr />`;

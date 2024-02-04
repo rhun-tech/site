@@ -18,7 +18,7 @@
 <body data-bs-theme="dark">
   <div class="container p-1 mt-1">
     <header-component></header-component>
-    
+
     <title-component title="Attributions"></title-component>
 
     <div class="row">
@@ -26,39 +26,22 @@
         <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
           <div class="h2">This site uses</div>
 
-          <!-- Attribution 1 -->
-          <div class="mb-2">
-            <div class="rhun-button rhun-cursor rounded p-2" data-bs-toggle="collapse" data-bs-target="#attribution1"
-              aria-expanded="true" aria-controls="attribution1">
-              <div class="hstack h5">
-                Iconify + Game Icons
-              </div>
+          <details class="p-3">
+            <summary class="rhun-text-secondary">Iconify + Game Icons</summary>
+            <div class="p-3">
+              <p>The icons can be found throughout this site.</p>
+              <a href="https://icon-sets.iconify.design/game-icons/">Iconify</a> and
+              <a href="https://github.com/game-icons/icons/blob/master/license.txt">Github</a>
             </div>
-            <div id="attribution1" class="collapse p-2 m-2 show">
-              <div>
-                <p>The icons can be found throughout this site.</p>
-                <a href="https://icon-sets.iconify.design/game-icons/">Iconify</a>
-                <hr>
-                <a href="https://github.com/game-icons/icons/blob/master/license.txt">Github</a>
-              </div>
-            </div>
-          </div>
+          </details>
 
-          <!-- Attribution 2 -->
-          <div class="mb-2">
-            <div class="rhun-button rhun-cursor rounded p-2" data-bs-toggle="collapse" data-bs-target="#attribution2"
-              aria-expanded="true" aria-controls="attribution1">
-              <div class="hstack h5">
-                Prism.js
-              </div>
+          <details class="p-3">
+            <summary class="rhun-text-secondary">Prism.js</summary>
+            <div class="p-3">
+              <p>The code snippets on this site are styled with prism.js.</p>
+              <a href="https://prismjs.com/">Prism.js</a>
             </div>
-            <div id="attribution2" class="collapse p-2 m-2">
-              <div>
-                <p>The code snippets on this site are styled with prism.js.</p>
-                <a href="https://prismjs.com/">Prism.js</a>
-              </div>
-            </div>
-          </div>          
+          </details>
 
         </div>
       </div>
@@ -66,10 +49,35 @@
       <div class="col-md-4">
         <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
           <div class="h2">Favorites</div>
+
+          <details class="p-3">
+            <summary class="rhun-text-secondary">Currently Reading</summary>
+            <div class="p-3">
+              <p>Gardens of the Moon by Steven Erikson</p>
+            </div>
+          </details>
+
         </div>
 
         <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
           <div class="h2">What's Next</div>
+
+          <details class="p-3">
+            <summary class="rhun-text-secondary">Templates</summary>
+            <div class="p-3">
+              <p>There are currently four out of ten templates. The header, which includes the navigation panel, the title section,
+                the dynamic background, and the weather loading placeholders.</p>
+              <label for="templates">Goal: </label>
+              <meter id="templates" value="4" min="0" max="10">4 out of 10</meter><br>
+            </div>
+          </details>
+
+          <details class="p-3">
+            <summary class="rhun-text-secondary">Doughnut Chart</summary>
+            <div class="p-3">
+              <p>The depiction for budget.json could use a doughnut chart.</p>
+            </div>
+          </details>
         </div>
       </div>
     </div>

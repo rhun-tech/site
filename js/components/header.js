@@ -123,15 +123,15 @@ class Header extends HTMLElement {
                         <div class="pt-3"></div>
     
                         <div class="container bg-body-tertiary rounded p-3 shadow">
-                            <div class="row">
-                                <div class="col-auto">
+                            <div class="hstack p-1">
+                            <div id="colorModeDetails" class="ms-auto rhun-text">
+                                Smoldering Glacier. It inevitably, slowly burns towards you as it melts. Drawing you ever closer.
+                            </div>
+                            <div class="ms-auto">
                                     <div class="rhun-theme-icon">
                                         <div class="rhun-icon-gradient">
                                         </div>
                                     </div>
-                                </div>
-                                <div id="colorModeDetails" class="col-auto rhun-text">
-                                    Smoldering Glacier. It inevitably, slowly burns towards you as it melts. Drawing you ever closer.
                                 </div>
                             </div>
                         </div>
