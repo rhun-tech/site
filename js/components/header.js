@@ -64,13 +64,6 @@ class Header extends HTMLElement {
                             </div>
 
                             <div class="pb-3">
-                                <a href="depictions.html" class="row rhun-text" type="button">
-                                    <span class="col-9">Depictions</span>
-                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:book-aura"></span>
-                                </a>
-                            </div>
-
-                            <div class="pb-3">
                                 <a href="legend.html" class="row rhun-text" type="button">
                                     <span class="col-9">Legend</span>
                                     <span class="iconify rhun-2 col-3" data-icon="game-icons:pointy-hat"></span>
