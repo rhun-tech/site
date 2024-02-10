@@ -13,29 +13,33 @@
   <link href="/css/prism.css" rel="stylesheet">
 
   <script src="/js/components/header.js" type="text/javascript" defer></script>
+  <script src="/js/components/title.js" type="text/javascript" defer></script>
   <script src="/js/components/background.js" type="text/javascript" defer></script>
 </head>
 
 <body data-bs-theme="dark" class="container p-1 mt-1">
   <header-component></header-component>
 
-  <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
-    <div class="nav nav-pills" id="nav-tab" role="tablist">
-      <a class="nav-link mx-1 my-1 shadow active" id="nav-snippets-tab" data-bs-toggle="tab" href="#nav-snippets"
-        role="tab">Snippets</a>
-      <a class="nav-link mx-1 my-1 shadow" id="nav-github-tab" data-bs-toggle="tab" href="#nav-github"
-        role="tab">GitHub</a>
+  <title-component title="Code" icon="game-icons:scroll-quill"></title-component>
+
+  <div class="row">
+    <div class="col-md-2 col-lg-2">
+      <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
+        <div class="nav nav-pills" id="nav-tab" role="tablist">
+          <a class="nav-link mx-1 my-1 shadow active" id="nav-csharp-hello-world-tab" data-bs-toggle="tab" href="#nav-csharp-hello-world"
+            role="tab">C# - Hello World</a>
+          <a class="nav-link mx-1 my-1 shadow" id="nav-github-tab" data-bs-toggle="tab" href="#nav-github"
+            role="tab">GitHub</a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="bg-body-tertiary p-3 rounded-2 shadow" id="fademe">
-    <div class="tab-content bg-body-tertiary p-3 rounded-2" id="nav-tabContent">
+    <div class="col-md-10 col-lg-10">
+      <div class="bg-body-tertiary p-3 rounded-2 shadow" id="fademe">
+        <div class="tab-content bg-body-tertiary p-3 rounded-2" id="nav-tabContent">
 
-      <div class="tab-pane fade show active" id="nav-snippets" role="tabpanel">
-        <div class="fw-bold pb-4">Snippets</div>
-        <p>Code!</p>
-
-        <pre class="language-csharp rounded"><code>using System;
+          <div class="tab-pane fade show active" id="nav-csharp-hello-world" role="tabpanel">
+            <pre class="language-csharp rounded"><code>using System;
           
 class Program
 {
@@ -45,30 +49,31 @@ class Program
   }
 }</code></pre>
 
-      </div>
-
-      <div class="tab-pane fade" id="nav-github" role="tabpanel">
-        <div class="form-group pb-4">
-          <div class="fw-bold pb-4">Search GitHub profiles</div>
-          <div class="row g-3">
-            <div class="col-auto">
-              <input type="text" id="username-input" class="form-control custom-input" placeholder="rhun-tech">
-            </div>
-            <div class="col-auto">
-              <button id="search-button" class="btn rhun-button"><span class="iconify rhun-2"
-                  data-icon="game-icons:archive-research"></span></button>
-            </div>
           </div>
-        </div>
-        <div id="user-info"></div>
-        <div class="row g-3">
-          <div class="col-auto">
-            <div id="repo-list" class="list-group col-auto"></div>
+
+          <div class="tab-pane fade" id="nav-github" role="tabpanel">
+            <div class="form-group pb-4">
+              <div class="fw-bold pb-4">Search GitHub profiles</div>
+              <div class="row g-3">
+                <div class="col-auto">
+                  <input type="text" id="username-input" class="form-control custom-input" placeholder="rhun-tech">
+                </div>
+                <div class="col-auto">
+                  <button id="search-button" class="btn rhun-button"><span class="iconify rhun-2"
+                      data-icon="game-icons:archive-research"></span></button>
+                </div>
+              </div>
+            </div>
+            <div id="user-info"></div>
+            <div class="row g-3">
+              <div class="col-auto">
+                <div id="repo-list" class="list-group col-auto"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
 </body>
 
 <script src="/js/prism.js"></script>

@@ -19,13 +19,48 @@
   <div class="container p-1 mt-1">
     <header-component></header-component>
 
-    <title-component title="Attributions"></title-component>
+    <title-component title="Legend" icon="game-icons:pointy-hat"></title-component>
 
     <div class="row">
       <div class="col-md-8">
         <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
-          <div class="h2">This site uses</div>
 
+          <div class="h2">Favorites</div>
+
+          <details class="p-3">
+            <summary class="rhun-text-secondary">Currently Reading</summary>
+            <div class="p-3">
+              <p>Gardens of the Moon by Steven Erikson</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
+          <div class="h2">What's Next</div>
+          <details class="p-3">
+            <summary class="rhun-text-secondary">Templates</summary>
+            <div class="p-3">
+              <p>There are currently four out of ten templates. The header, which includes the navigation panel, the
+                title section,
+                the dynamic background, and the weather loading placeholders.</p>
+              <label for="templates">Goal: </label>
+              <meter id="templates" value="4" min="0" max="10">4 out of 10</meter><br>
+            </div>
+          </details>
+
+          <details class="p-3">
+            <summary class="rhun-text-secondary">Doughnut Chart</summary>
+            <div class="p-3">
+              <p>The depiction for budget.json could use a doughnut chart.</p>
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
+          <div class="h2">Attributions</div>
           <details class="p-3">
             <summary class="rhun-text-secondary">Iconify + Game Icons</summary>
             <div class="p-3">
@@ -40,42 +75,6 @@
             <div class="p-3">
               <p>The code snippets on this site are styled with prism.js.</p>
               <a href="https://prismjs.com/">Prism.js</a>
-            </div>
-          </details>
-
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
-          <div class="h2">Favorites</div>
-
-          <details class="p-3">
-            <summary class="rhun-text-secondary">Currently Reading</summary>
-            <div class="p-3">
-              <p>Gardens of the Moon by Steven Erikson</p>
-            </div>
-          </details>
-
-        </div>
-
-        <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
-          <div class="h2">What's Next</div>
-
-          <details class="p-3">
-            <summary class="rhun-text-secondary">Templates</summary>
-            <div class="p-3">
-              <p>There are currently four out of ten templates. The header, which includes the navigation panel, the title section,
-                the dynamic background, and the weather loading placeholders.</p>
-              <label for="templates">Goal: </label>
-              <meter id="templates" value="4" min="0" max="10">4 out of 10</meter><br>
-            </div>
-          </details>
-
-          <details class="p-3">
-            <summary class="rhun-text-secondary">Doughnut Chart</summary>
-            <div class="p-3">
-              <p>The depiction for budget.json could use a doughnut chart.</p>
             </div>
           </details>
         </div>

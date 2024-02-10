@@ -11,74 +11,83 @@
   <link rel="stylesheet" type="text/css" href="../css/rhun.css">
 
   <script src="/js/components/header.js" type="text/javascript" defer></script>
+  <script src="/js/components/title.js" type="text/javascript" defer></script>
   <script src="/js/components/background.js" type="text/javascript" defer></script>
 </head>
 
 <body data-bs-theme="dark" class="container p-1 mt-1">
   <header-component></header-component>
 
-  <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
-    <label for="inputText" class="form-label">Build a
-      shopping list</label>
+  <title-component title="Shopper" icon="game-icons:meat"></title-component>
 
-    <div class="row">
-      <div class="col-auto">
-        <select id="menu" class="form-control custom-input rhun-text rounded-2 mb-3" onchange="menuFunction()">
-          <div class="custom-input rhun-text">
-            <option value="">Selection Options</option>
-            <option value="meals">Meals</option>
-            <option value="meat">Meat</option>
-            <option value="produce">Produce</option>
+  <div class="row">
+    <div class="col-md-4 col-lg-4">
+      <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
+        <label for="inputText" class="form-label">Build a
+          shopping list</label>
+
+        <div class="row">
+          <div class="col-auto">
+            <select id="menu" class="form-control custom-input rhun-text rounded-2 mb-3" onchange="menuFunction()">
+              <div class="custom-input rhun-text">
+                <option value="">Selection Options</option>
+                <option value="meals">Meals</option>
+                <option value="meat">Meat</option>
+                <option value="produce">Produce</option>
+              </div>
+            </select>
           </div>
-        </select>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="groceryList"></div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <div id="groceryList"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-body-tertiary p-3 rounded-2 shadow">
-    <div class="hstack">
-      <div class="fw-bold pb-4">Shopping List</div>
-      <button class="btn rhun-button rhun-text ms-auto" id="liveToastBtn"
-        data-bs-title="Copy the shopping list to your clipboard." data-bs-toggle="tooltip" data-bs-placement="bottom"
-        data-bs-custom-class="custom-tooltip" onclick="copyShoppingListToClipboard(); setupToast();">
-        <span class="iconify rhun-2" data-icon="game-icons:notebook"></span>
-      </button>
-    </div>
-    <div id="shoppingList">
-      <div>Meals</div>
-      <div class="p-1" id="MealSorter">
-        <div class="placeholder-glow">
-          <div class="placeholder rounded col-3"></div>
+    <div class="col-md-8 col-lg-8">
+      <div class="bg-body-tertiary p-3 rounded-2 shadow">
+        <div class="hstack">
+          <div class="fw-bold pb-4">Shopping List</div>
+          <button class="btn rhun-button rhun-text ms-auto" id="liveToastBtn"
+            data-bs-title="Copy the shopping list to your clipboard." data-bs-toggle="tooltip"
+            data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+            onclick="copyShoppingListToClipboard(); setupToast();">
+            <span class="iconify rhun-2" data-icon="game-icons:notebook"></span>
+          </button>
         </div>
-      </div>
-      <div>Meat</div>
-      <div class="p-1" id="MeatSorter">
-        <div class="placeholder-glow">
-          <div class="placeholder rounded col-3"></div>
-        </div>
-      </div>
-      <div>Dairy</div>
-      <div class="p-1" id="DairySorter">
-        <div class="placeholder-glow">
-          <div class="placeholder rounded col-3"></div>
-        </div>
-      </div>
-      <div>Produce</div>
-      <div class="p-1" id="ProduceSorter">
-        <div class="placeholder-glow">
-          <div class="placeholder rounded col-3"></div>
-        </div>
-      </div>
-      <div>Other</div>
-      <div class="p-1" id="OtherSorter" contenteditable="true">
-        <div class="placeholder-glow">
-          <div class="placeholder rounded col-3"></div>
+        <div id="shoppingList">
+          <div>Meals</div>
+          <div class="p-1" id="MealSorter">
+            <div class="placeholder-glow">
+              <div class="placeholder rounded col-3"></div>
+            </div>
+          </div>
+          <div>Meat</div>
+          <div class="p-1" id="MeatSorter">
+            <div class="placeholder-glow">
+              <div class="placeholder rounded col-3"></div>
+            </div>
+          </div>
+          <div>Dairy</div>
+          <div class="p-1" id="DairySorter">
+            <div class="placeholder-glow">
+              <div class="placeholder rounded col-3"></div>
+            </div>
+          </div>
+          <div>Produce</div>
+          <div class="p-1" id="ProduceSorter">
+            <div class="placeholder-glow">
+              <div class="placeholder rounded col-3"></div>
+            </div>
+          </div>
+          <div>Other</div>
+          <div class="p-1" id="OtherSorter" contenteditable="true">
+            <div class="placeholder-glow">
+              <div class="placeholder rounded col-3"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

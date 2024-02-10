@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../css/rhun.css">
 
   <script src="/js/components/header.js" type="text/javascript" defer></script>
+  <script src="/js/components/title.js" type="text/javascript" defer></script>
   <script src="/js/components/background.js" type="text/javascript" defer></script>
   <script src="/js/spells/shuffle.js" type="text/javascript" defer></script>
   <script src="/js/spells/time-since.js" type="text/javascript" defer></script>
@@ -19,116 +20,125 @@
 <body data-bs-theme="dark" class="container p-1 mt-1">
   <header-component></header-component>
 
-  <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
-    <div class="nav nav-pills" id="nav-tab" role="tablist">
-      <a class="nav-link mx-1 my-1 shadow active" id="nav-shuffle-tab" data-bs-toggle="tab" href="#nav-shuffle"
-        role="tab">Shuffle</a>
-      <a class="nav-link mx-1 my-1 shadow" id="nav-time-since-tab" data-bs-toggle="tab" href="#nav-time-since"
-        role="tab">Time Since</a>
-      <a class="nav-link mx-1 my-1 shadow" id="nav-color-change-tab" data-bs-toggle="tab" href="#nav-color-change"
-        role="tab">Color Change</a>
+  <title-component title="Spells" icon="game-icons:book-pile"></title-component>
+
+  <div class="row">
+    <div class="col-md-2 col-lg-2">
+      <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
+        <div class="nav nav-pills" id="nav-tab" role="tablist">
+          <a class="nav-link mx-1 my-1 shadow active" id="nav-shuffle-tab" data-bs-toggle="tab" href="#nav-shuffle"
+            role="tab">Shuffle</a>
+          <a class="nav-link mx-1 my-1 shadow" id="nav-time-since-tab" data-bs-toggle="tab" href="#nav-time-since"
+            role="tab">Time Since</a>
+          <a class="nav-link mx-1 my-1 shadow" id="nav-color-change-tab" data-bs-toggle="tab" href="#nav-color-change"
+            role="tab">Color Change</a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
-    <div class=" tab-content bg-body-tertiary p-3 rounded-2" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-shuffle" role="tabpanel">
-        <label for="inputText" class="form-label">Text to shuffle</label>
-        <div class="row pb-3">
-          <div class="col-auto">
-            <input type="text" class="form-control custom-input rhun-text" id="inputText"
-              oninput="updateshuffledText()">
+    <div class="col-md-10 col-lg-10">
+      <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
+        <div class=" tab-content bg-body-tertiary p-3 rounded-2" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-shuffle" role="tabpanel">
+            <label for="inputText" class="form-label">Text to shuffle</label>
+            <div class="row pb-3">
+              <div class="col-auto">
+                <input type="text" class="form-control custom-input rhun-text" id="inputText"
+                  oninput="updateshuffledText()">
+              </div>
+            </div>
+
+            <div class="pb-3">Results</div>
+
+            <div class="row">
+              <div class="col"><span id="shuffledText1">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span>
+              </div>
+              <div class="col"><span id="shuffledText2">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText3">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+            </div>
+            <div class="row">
+              <div class="col"><span id="shuffledText4">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText5">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText6">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+            </div>
+            <div class="row">
+              <div class="col"><span id="shuffledText7">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText8">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText9">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+            </div>
           </div>
-        </div>
 
-        <div class="pb-3">Results</div>
+          <div class="tab-pane fade" id="nav-time-since" role="tabpanel">
+            <label for="inputDate" class="form-label">Time Since</label>
+            <div class="row pb-3">
+              <div class="col-auto">
+                <input type="date" class="form-control custom-input rhun-text" id="inputDate"
+                  oninput="calculateTimeSince()">
+              </div>
+            </div>
+            <div class="pb-3">Results</div>
 
-        <div class="row">
-          <div class="col"><span id="shuffledText1">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span>
+            <div class="row">
+              <div class="col"><span id="result">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="col"><span id="shuffledText2">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span></div>
-          <div class="col"><span id="shuffledText3">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span></div>
-        </div>
-        <div class="row">
-          <div class="col"><span id="shuffledText4">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span></div>
-          <div class="col"><span id="shuffledText5">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span></div>
-          <div class="col"><span id="shuffledText6">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span></div>
-        </div>
-        <div class="row">
-          <div class="col"><span id="shuffledText7">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span></div>
-          <div class="col"><span id="shuffledText8">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span></div>
-          <div class="col"><span id="shuffledText9">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span></div>
+
+          <div class="tab-pane fade" id="nav-color-change" role="tabpanel">
+            <button type="button" id="btn-color-change" class="btn rhun-button" onclick="changeButtonColor()">Change
+              Button Color</button>
+
+            <script>
+              function changeButtonColor() {
+                var button = document.getElementById('btn-color-change');
+                var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16) + "40";
+                button.style.backgroundColor = randomColor;
+              }
+            </script>
+          </div>
         </div>
       </div>
-
-      <div class="tab-pane fade" id="nav-time-since" role="tabpanel">
-        <label for="inputDate" class="form-label">Time Since</label>
-        <div class="row pb-3">
-          <div class="col-auto">
-            <input type="date" class="form-control custom-input rhun-text" id="inputDate"
-              oninput="calculateTimeSince()">
-          </div>
-        </div>
-        <div class="pb-3">Results</div>
-
-        <div class="row">
-          <div class="col"><span id="result">
-              <p class="placeholder-glow">
-                <span class="placeholder rounded col-3"></span>
-              </p>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="tab-pane fade" id="nav-color-change" role="tabpanel">
-        <button type="button" id="btn-color-change" class="btn rhun-button" onclick="changeButtonColor()">Change
-          Button Color</button>
-
-        <script>
-          function changeButtonColor() {
-            var button = document.getElementById('btn-color-change');
-            var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16) + "40";
-            button.style.backgroundColor = randomColor;
-          }
-        </script>
-      </div>
+    </div>
 
 </body>
 

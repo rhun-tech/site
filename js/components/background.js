@@ -2,7 +2,7 @@ function getRandomNumber(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function createBlurredCircle(color, stdDeviation) {
+function createBlurredCircle(color, stdDeviation, radius) {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("width", "200");
   svg.setAttribute("height", "200");
@@ -26,7 +26,7 @@ function createBlurredCircle(color, stdDeviation) {
   const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
   circle.setAttribute("cx", "100");
   circle.setAttribute("cy", "100");
-  circle.setAttribute("r", "50");
+  circle.setAttribute("r", radius);
   circle.setAttribute("fill", color);
   circle.setAttribute("filter", "url(#blurFilter)");
 
@@ -43,6 +43,6 @@ function createBlurredCircle(color, stdDeviation) {
   document.body.appendChild(svg);
 }
 
-createBlurredCircle("var(--text-color)", "20");
-createBlurredCircle("var(--text-color-secondary)", "15");
-createBlurredCircle("var(--text-color-tertiary)", "25");
+createBlurredCircle("var(--text-color)", "20", "60");
+createBlurredCircle("var(--text-color-secondary)", "15", "50");
+createBlurredCircle("var(--text-color-tertiary)", "25", "40");
