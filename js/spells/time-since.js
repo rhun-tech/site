@@ -10,8 +10,22 @@ function calculateTimeSince() {
         const weeksDifference = Math.floor(daysDifference / 7);
 
         const resultDiv = document.getElementById("result");
-        resultDiv.innerHTML = `<div>${weeksDifference} weeks and ${daysDifference % 7} days</div>`;
-        resultDiv.innerHTML += `<div>or</div>`;
-        resultDiv.innerHTML += `<div>${daysDifference} days</div>`;
+        resultDiv.innerHTML = `<div class='row'>
+            <div class='col-md-6 mb-4'>
+                <div class='card shadow border-2 rhun-border rhun-text'>
+                    <div class='card-title m-2'>Weeks</div>
+                        <div class='card-body'>${weeksDifference} weeks and ${daysDifference % 7} days
+                        </div>
+                    </div>
+                </div>
+            <div class='col-md-6 mb-4'>
+                <div class='card shadow border-2 rhun-border rhun-text'>
+                    <div class='card-title m-2'>Days</div>
+                        <div class='card-body'>${daysDifference} days
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`;
     }
 }

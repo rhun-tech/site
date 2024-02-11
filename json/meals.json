@@ -26,9 +26,7 @@
         "id": "2",
         "meal": "Bulgogi Bowls",
         "meat": "Pork",
-        "dairy": [
-            ""
-        ],
+        "dairy": "",
         "produce": [
             "Carrot",
             "Garlic",
@@ -84,9 +82,7 @@
         "id": "5",
         "meal": "Chicken Schnitzel",
         "meat": "Chicken",
-        "dairy": [
-            ""
-        ],
+        "dairy": "",
         "produce": [
             "Potato",
             "Green Beans"
@@ -141,9 +137,7 @@
         "dairy": [
             "Butter"
         ],
-        "produce": [
-            ""
-        ],
+        "produce": "",
         "other": [
             "Flour"
         ],
@@ -153,9 +147,7 @@
         "id": "9",
         "meal": "Hungarian Goulash",
         "meat": "Beef Chuck",
-        "dairy": [
-            ""
-        ],
+        "dairy": "",
         "produce": [
             "White Onion",
             "Garlic"
@@ -172,9 +164,7 @@
         "id": "10",
         "meal": "Mushroom Gnocchi",
         "meat": "",
-        "dairy": [
-            ""
-        ],
+        "dairy": "",
         "produce": [
             "Mushroom",
             "Garlic",
@@ -189,9 +179,7 @@
         "id": "11",
         "meal": "Pork Bibimbap",
         "meat": "Pork",
-        "dairy": [
-            ""
-        ],
+        "dairy": "",
         "produce": [
             "Carrot",
             "Zucchini",
@@ -206,9 +194,7 @@
     {
         "id": "12",
         "meal": "Ricotta Pasta",
-        "meat": [
-            ""
-        ],
+        "meat": "",
         "dairy": [
             "Ricotta",
             "Parmesan"
@@ -225,17 +211,13 @@
         "id": "13",
         "meal": "Roast Chicken Leftover Soup",
         "meat": "Leftover Chicken",
-        "dairy": [
-            ""
-        ],
+        "dairy": "",
         "produce": [
             "Onion",
             "Carrot",
             "Celery"
         ],
-        "other": [
-            ""
-        ],
+        "other": "",
         "icon": "🥣"
     },
     {
@@ -277,16 +259,12 @@
         "id": "16",
         "meal": "Spiced Roast Chicken",
         "meat": "Chicken Whole",
-        "dairy": [
-            ""
-        ],
+        "dairy": "",
         "produce": [
             "Potato",
             "Salad"
         ],
-        "other": [
-            ""
-        ],
+        "other": "",
         "icon": "🍗"
     }
 ]

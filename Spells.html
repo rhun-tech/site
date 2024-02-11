@@ -9,11 +9,12 @@
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="../css/rhun.css">
-
-  <link href="/css/prism.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/prism.css">
 
   <script src="/js/components/header.js" type="text/javascript" defer></script>
   <script src="/js/components/title.js" type="text/javascript" defer></script>
+  <script src="/js/components/title-section.js" type="text/javascript" defer></script>
+  <script src="/js/components/title-section-depiction.js" type="text/javascript" defer></script>
   <script src="/js/components/background.js" type="text/javascript" defer></script>
   <script src="/js/components/depictions-modal.js" type="text/javascript" defer></script>
 
@@ -22,23 +23,21 @@
 </head>
 
 <body data-bs-theme="dark" class="container p-1 mt-1">
+  
   <header-component></header-component>
-
   <title-component title="Spells" icon="game-icons:book-pile"></title-component>
 
   <div class="row">
     <div class="col-md-2 col-lg-2">
       <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
         <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
-          Minor Spells
+          <h6>Minor Spells</h6>
           <a class="nav-link mx-1 my-1 shadow active" id="nav-shuffle-tab" data-bs-toggle="tab" href="#nav-shuffle"
             role="tab">Shuffle</a>
           <a class="nav-link mx-1 my-1 shadow" id="nav-time-since-tab" data-bs-toggle="tab" href="#nav-time-since"
             role="tab">Time Since</a>
-          <a class="nav-link mx-1 my-1 shadow" id="nav-color-change-tab" data-bs-toggle="tab" href="#nav-color-change"
-            role="tab">Color Change</a>
           <hr>
-          Major Spells
+          <h6>Major Spells</h6>
           <a class="nav-link mx-1 my-1 shadow" id="nav-depictions-tab" data-bs-toggle="tab" href="#nav-depictions"
             role="tab">Depictions</a>
         </div>
@@ -49,6 +48,7 @@
       <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
         <div class="tab-content bg-body-tertiary p-3 rounded-2" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-shuffle" role="tabpanel">
+            <title-section-component title="Shuffle"></title-section-component>
             <label for="inputText" class="form-label">Text to shuffle</label>
             <div class="row pb-3">
               <div class="col-auto">
@@ -114,6 +114,7 @@
           </div>
 
           <div class="tab-pane fade" id="nav-time-since" role="tabpanel">
+            <title-section-component title="Time Since"></title-section-component>
             <label for="inputDate" class="form-label">Time Since</label>
             <div class="row pb-3">
               <div class="col-auto">
@@ -133,25 +134,8 @@
             </div>
           </div>
 
-          <div class="tab-pane fade" id="nav-color-change" role="tabpanel">
-            <button type="button" id="btn-color-change" class="btn rhun-button" onclick="changeButtonColor()">Change
-              Button Color</button>
-
-            <script>
-              function changeButtonColor() {
-                var button = document.getElementById('btn-color-change');
-                var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16) + "40";
-                button.style.backgroundColor = randomColor;
-              }
-            </script>
-          </div>
-
           <div class="tab-pane fade" id="nav-depictions" role="tabpanel">
-              <div class="btn rhun-button ms-auto" id="liveToastBtn" data-bs-toggle="modal"
-                data-bs-target="#uploadModal" data-bs-title="" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-custom-class="custom-tooltip">
-                <span class="iconify rhun-2" data-icon="game-icons:book-aura"></span>
-              </div>
+            <title-section-depiction-component title="Depictions" icon="game-icons:chisel" target="#uploadModal"></title-section-depiction-component>
             <div id="output"></div>
           </div>
 
@@ -171,7 +155,7 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 
-  <script src="/js/displayJson.js" defer></script>
+  <script src="/js/spells/displayJson.js" defer></script>
 </body>
 
 </html>

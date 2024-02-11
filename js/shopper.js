@@ -14,12 +14,18 @@ function addMeal(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var MealDisplay = '';
+        var MealDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                MealDisplay += '<div class="row"><div class="col-9">' + item + '</div><div class="col-3 text-right">' + count[item] + '</div></div>';
+                MealDisplay += `<div class="hstack pb-2 m-2">
+                    <div>${item}</div>
+                    <div class="ms-auto">${count[item]}</div>
+                </div>`;
             }
         }
+
+        MealDisplay += "</div></div></div>";
 
         document.getElementById("MealSorter").innerHTML = MealDisplay;
     }
@@ -41,12 +47,18 @@ function addMeat(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var MeatDisplay = '';
+        var MeatDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                MeatDisplay += '<div class="row"><div class="col-9">' + item + '</div><div class="col-3 text-right">' + count[item] + '</div></div>';
+                MeatDisplay += `<div class="hstack pb-2 m-2">
+                <div>${item}</div>
+                <div class="ms-auto">${count[item]}</div>
+            </div>`;
             }
         }
+
+        MeatDisplay += "</div></div></div>";
 
         document.getElementById("MeatSorter").innerHTML = MeatDisplay;
     }
@@ -68,12 +80,18 @@ function addDairy(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var DairyDisplay = '';
+        var DairyDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                DairyDisplay += '<div class="row"><div class="col-9">' + item + '</div><div class="col-3 text-right">' + count[item] + '</div></div>';
+                DairyDisplay += `<div class="hstack pb-2 m-2">
+                <div>${item}</div>
+                <div class="ms-auto">${count[item]}</div>
+            </div>`;
             }
         }
+
+        DairyDisplay += "</div></div></div>";
 
         document.getElementById("DairySorter").innerHTML = DairyDisplay;
     }
@@ -95,12 +113,18 @@ function addProduce(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var ProduceDisplay = '';
+        var ProduceDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                ProduceDisplay += '<div class="row"><div class="col-9">' + item + '</div><div class="col-3 text-right">' + count[item] + '</div></div>';
+                ProduceDisplay += `<div class="hstack pb-2 m-2">
+                <div>${item}</div>
+                <div class="ms-auto">${count[item]}</div>
+            </div>`;
             }
         }
+
+        ProduceDisplay += "</div></div></div>";
 
         document.getElementById("ProduceSorter").innerHTML = ProduceDisplay;
     }
@@ -122,12 +146,18 @@ function addOther(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var OtherDisplay = '';
+        var OtherDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                OtherDisplay += '<div class="row"><div class="col-9">' + item + '</div><div class="col-3 text-right">' + count[item] + '</div></div>';
+                OtherDisplay += `<div class="hstack pb-2 m-2">
+                <div>${item}</div>
+                <div class="ms-auto">${count[item]}</div>
+            </div>`;
             }
         }
+
+        OtherDisplay += "</div></div></div>";
 
         document.getElementById("OtherSorter").innerHTML = OtherDisplay;
     }

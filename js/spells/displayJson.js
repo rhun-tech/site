@@ -27,7 +27,7 @@ function displayJSONContent(content, fileName) {
             displayBudget(jsonData);
         } else {
             const prettyJson = JSON.stringify(jsonData, null, 2);
-            outputDiv.innerHTML = '<hr /><pre class="language-json rounded"><code>' + prettyJson + '</code></pre>';
+            outputDiv.innerHTML = '<pre class="language-json rounded"><code>' + prettyJson + '</code></pre>';
         }
 
         Prism.highlightAll();
@@ -42,7 +42,6 @@ function displayBudget(budgetData) {
 
     // Clear previous content
     outputDiv.innerHTML = '';
-    outputDiv.innerHTML += '<hr />';
 
     // Create a Bootstrap row for major titles (savings, income, expenditures)
     const rowDiv = document.createElement('div');
