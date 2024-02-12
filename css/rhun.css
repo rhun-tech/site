@@ -2,12 +2,51 @@
 
 :root {
     --background-color: #212529;
+    --border-color: #e0e0e0;
+    --border-color-secondary: #e0e0e0;
+    --border-color-tertiary: #e0e0e0;
+    --border-color-callout: #e0e0e0;    
+    --text-color: #e0e0e0;
+    --text-color-link: #e0e0e025;
+    --text-color-hover: #e0e0e0;
+    --text-fade-color: #e0e0e040;
+    --text-color-secondary: #e0e0e0;
+    --text-color-tertiary: #e0e0e0;
+    --text-color-callout: #e0e0e0;
+    --button-color: #e0e0e025;
+    --button-color-hover: #e0e0e040;
+    --theme-icon: url('https://api.iconify.design/game-icons/moon.svg?width=64&height=64');
+    --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
+}
+
+:root.winterforest {
+    --background-color: #212529; /* Soft white background */
+    --border-color: #88bda0; /* Soft green border color */
+    --border-color-secondary: #88bda0;
+    --border-color-tertiary: #88bda0;
+    --border-color-callout: #88bda0;    
+    --text-color: #3a5d39; /* Deep green text color */
+    --text-color-link: #3a5d3950; /* Semi-transparent green text for links */
+    --text-color-hover: #3a5d39;
+    --text-fade-color: #3a5d3940;
+    --text-color-secondary: #3a5d39;
+    --text-color-tertiary: #3a5d39;
+    --text-color-callout: #3a5d39;
+    --button-color: #88bda025; /* Semi-transparent green button color */
+    --button-color-hover: #88bda040; /* Lighter green button color on hover */
+    --theme-icon: url('https://api.iconify.design/game-icons/circle-forest.svg?width=64&height=64');
+    --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
+}
+
+:root.glacier {
+    --background-color: #212529;
     --background-image: url('../images/4D8EAA-Blurry.svg');
     --border-color: #B0C4DE;
     --border-color-secondary: #C33C54;
     --border-color-tertiary: #4D8EAA;
     --border-color-callout: #B0B0B0;    
     --text-color: #B0C4DE;
+    --text-color-link: #B0C4DE25;    
     --text-color-hover: #B0C4DE;
     --text-fade-color: #4D8EAA40;
     --text-color-secondary: #C33C54;
@@ -19,26 +58,27 @@
     --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
 }
 
-:root.red {
+:root.autumn {
     --background-color: #212529;
     --background-image: url('../images/C34973-Blurry.svg');
     --border-color: #C34973;
-    --border-color-secondary: #EAD95F;
+    --border-color-secondary: #EAD95F75;
     --border-color-tertiary: #B8860B;
     --border-color-callout: #E07A5F;    
     --text-color: #C34973;
+    --text-color-link: #C3497325;      
     --text-color-hover: #C34973;
     --text-fade-color: #C3497340;
-    --text-color-secondary: #EAD95F;
+    --text-color-secondary: #EAD95F75;
     --text-color-tertiary: #B8860B;
     --text-color-callout: #E07A5F;
     --button-color: #EAD95F40;
-    --button-color-hover: #EAD95F;
+    --button-color-hover: #EAD95F75;
     --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--button-color), var(--text-color), var(--text-color-hover));
 }
 
-:root.blue {
+:root.monobat {
     --background-color: #212529;
     --background-image: url('../images/DE9435-Blurry.svg');
     --border-color: #DE9435;
@@ -46,6 +86,7 @@
     --border-color-tertiary: #6BA090;
     --border-color-callout: #96668C;
     --text-color: #DE9435;
+    --text-color-link: #DE943525;      
     --text-color-hover: #DE9435;
     --text-fade-color: #6BA090;
     --text-color-secondary: #DE5A41;
@@ -53,11 +94,11 @@
     --text-color-callout: #96668C;
     --button-color: #38608440;
     --button-color-hover: #96668C40;
-    --theme-icon: url('https://api.iconify.design/game-icons/night-sleep.svg?width=64&height=64');
+    --theme-icon: url('https://api.iconify.design/game-icons/bat.svg?width=64&height=64');
     --gradient-style: linear-gradient(to top, var(--button-color), var(--text-color-hover), var(--text-color));
 }
 
-:root.green {
+:root.gayfeather {
     --background-color: #212529;
     --background-image: url('../images/BCD755-Blurry.svg');
     --border-color: #BCD755;
@@ -65,6 +106,7 @@
     --border-color-tertiary: #FF91A4;
     --border-color-callout: #8FAC9E;
     --text-color: #BCD755;
+    --text-color-link: #BCD75525;      
     --text-color-hover: #BCD755;
     --text-fade-color: #BCD75540;
     --text-color-secondary: #A383F1;

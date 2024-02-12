@@ -6,10 +6,12 @@ class Header extends HTMLElement {
     connectedCallback() {
         // Define the theme details based on the selected theme
         const themeDetails = {
-            '': 'Smoldering Glacier. It inevitably, slowly burns towards you as it melts. Drawing you ever closer.',
-            'red': 'Autumn. In the distant night, all is ablaze with the colors of autum.',
-            'blue': 'True Night. Much like halloween, or much like a childrens novel.',
-            'green': 'Gayfeather. Tall and vibrant in the midsummer sky.'
+            '': 'Moon. It is there, always there. Behind clouds or not.',
+            'winterforest': 'Winter Forest. It is true, just has not snowed yet.',
+            'glacier': 'Smoldering Glacier. It inevitably, slowly burns towards you as it melts. Drawing you ever closer.',
+            'autumn': 'Autumn. In the distant night, all is ablaze with the colors of autum.',
+            'monobat': 'Monobat. Much like halloween, much like a favorite theme, or much like a childrens novel.',
+            'gayfeather': 'Gayfeather. Tall and vibrant in the midsummer sky.'
         };
 
         this.innerHTML = `
@@ -83,13 +85,29 @@ class Header extends HTMLElement {
                                         <input class="form-check-input" type="radio" name="theme" id="theme1" value=""
                                             checked>
                                         <label class="form-check-label" for="theme1">
+                                            Moon
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check col rhun-text">
+                                    <input class="form-check-input" type="radio" name="theme" id="theme2" value="winterforest">
+                                        <label class="form-check-label" for="theme2">
+                                            Winter Forest
+                                        </label>
+                                    </div>
+                                </div>                            
+
+                                <div class="row p-2">
+                                    <div class="form-check col rhun-text">
+                                        <input class="form-check-input" type="radio" name="theme" id="theme3" value="glacier">
+                                        <label class="form-check-label" for="theme3">
                                             Smoldering Glacier
                                         </label>
                                     </div>
     
                                     <div class="form-check col rhun-text">
-                                        <input class="form-check-input" type="radio" name="theme" id="theme2" value="red">
-                                        <label class="form-check-label" for="theme2">
+                                        <input class="form-check-input" type="radio" name="theme" id="theme4" value="autumn">
+                                        <label class="form-check-label" for="theme4">
                                             Autumn
                                         </label>
                                     </div>
@@ -97,14 +115,14 @@ class Header extends HTMLElement {
     
                                 <div class="row p-2">
                                     <div class="form-check col rhun-text">
-                                        <input class="form-check-input" type="radio" name="theme" id="theme3" value="blue">
-                                        <label class="form-check-label" for="theme3">
-                                            True Night
+                                        <input class="form-check-input" type="radio" name="theme" id="theme5" value="monobat">
+                                        <label class="form-check-label" for="theme5">
+                                            Monobat
                                         </label>
                                     </div>
                                     <div class="form-check col rhun-text">
-                                        <input class="form-check-input" type="radio" name="theme" id="theme4" value="green">
-                                        <label class="form-check-label" for="theme4">
+                                        <input class="form-check-input" type="radio" name="theme" id="theme6" value="gayfeather">
+                                        <label class="form-check-label" for="theme6">
                                             Gayfeather
                                         </label>
                                     </div>
@@ -118,7 +136,7 @@ class Header extends HTMLElement {
                         <div class="container bg-body-tertiary rounded p-3 shadow">
                             <div class="hstack p-1">
                             <div id="colorModeDetails" class="ms-auto rhun-text">
-                                Smoldering Glacier. It inevitably, slowly burns towards you as it melts. Drawing you ever closer.
+                                Moon. It is there, always there. Behind clouds or not.
                             </div>
                             <div class="ms-auto">
                                     <div class="rhun-theme-icon">
