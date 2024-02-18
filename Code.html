@@ -27,8 +27,19 @@
     <div class="col-md-2 col-lg-2">
       <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
         <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
+          <h6>C#</h6>
           <a class="nav-link mx-1 my-1 shadow active" id="nav-csharp-hello-world-tab" data-bs-toggle="tab"
-            href="#nav-csharp-hello-world" role="tab">C# - Hello World</a>
+            href="#nav-csharp-hello-world" role="tab">Hello World</a>
+          <a class="nav-link mx-1 my-1 shadow" id="nav-csharp-yarp-tab" data-bs-toggle="tab" href="#nav-csharp-yarp"
+            role="tab">YARP</a>
+          <hr />
+          <h6>Html</h6>
+          <a class="nav-link mx-1 my-1 shadow" id="nav-html-details-tab" data-bs-toggle="tab" href="#nav-html-details"
+            role="tab">Details</a>
+          <a class="nav-link mx-1 my-1 shadow" id="nav-html-templates-tab" data-bs-toggle="tab"
+            href="#nav-html-templates" role="tab">Templates</a>
+          <hr />
+          <h6>General</h6>
           <a class="nav-link mx-1 my-1 shadow" id="nav-github-tab" data-bs-toggle="tab" href="#nav-github"
             role="tab">GitHub</a>
         </div>
@@ -40,7 +51,7 @@
         <div class="tab-content bg-body-tertiary p-3 rounded-2" id="nav-tabContent">
 
           <div class="tab-pane fade show active" id="nav-csharp-hello-world" role="tabpanel">
-            <title-section-component title="C# - Hello World"></title-section-component>
+            <title-section-component title="Hello World"></title-section-component>
             <pre class="language-csharp rounded"><code>using System;
           
 class Program
@@ -50,8 +61,70 @@ class Program
     Console.WriteLine("Hello, World!");
   }
 }</code></pre>
-
           </div>
+
+          <div class="tab-pane fade" id="nav-csharp-yarp" role="tabpanel">
+            <title-section-component title="YARP"></title-section-component>
+            <p>What's neat is loading the routes and clusters definitions from memory using <code>LoadFromMemory()</code>
+              as opposed to <code>LoadFromConfig()</code>.</p>
+            <pre class="language-csharp rounded"><code>services.AddReverseProxy()
+  .LoadFromMemory(routes, clusters)</code></pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html-details" role="tabpanel">
+            <title-section-component title="Details"></title-section-component>
+            <p>Have you ever felt late to a party? The details tag allows user to expand and collapse content. Add an
+              <code>open</code> attribute to the details tag have the content automatically expanded.</p>
+            <p>Html</p>
+            <div class="pb-2">
+              <pre class="language-html rounded">
+  <code>&lt;details class="p-3"&gt;
+    &lt;summary class="rhun-text-secondary"&gt;Currently Reading&lt;/summary&gt;
+    &lt;div class="p-3"&gt;
+      &lt;p&gt;Gardens of the Moon by Steven Erikson&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;</code></pre>
+            </div>
+            <p>Example</p>
+            <details class="p-3">
+              <summary class="rhun-text-secondary">Currently Reading</summary>
+              <div class="p-3">
+                <p>Gardens of the Moon by Steven Erikson</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html-templates" role="tabpanel">
+            <title-section-component title="Template"></title-section-component>
+            <p>Each section on this page has it's own reference tag to the title-section-component.</p>
+            <p>Html</p>
+            <pre class="language-html rounded">
+<code>&lt;title-section-component title="Template"&gt;
+&lt;/title-section-component&gt;</code></pre>
+            <p>Javascript</p>
+            <pre class="language-js rounded">
+<code>class TitleSection extends HTMLElement {
+  constructor() {
+      super();
+  }
+
+  connectedCallback() {
+      const titleText = this.getAttribute('title') || 'Default Title';
+      const titleIcon = this.getAttribute('icon') || '';
+
+      this.innerHTML = `
+        &lt;div class="hstack pb-2"&gt;
+        &lt;div id="title" class="h4"&gt;${titleText}&lt;/div&gt;
+        &lt;span class="iconify rhun-2 ms-auto" data-icon="${titleIcon}"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;hr /&gt;
+      `;
+  }
+}
+            
+customElements.define('title-section-component', TitleSection);</code></pre>
+          </div>
+
 
           <div class="tab-pane fade" id="nav-github" role="tabpanel">
             <title-section-component title="GitHub"></title-section-component>
@@ -75,6 +148,7 @@ class Program
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>

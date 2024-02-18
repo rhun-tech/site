@@ -18,7 +18,7 @@ function addMeal(x) {
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                MealDisplay += `<div class="hstack pb-2 m-2">
+                MealDisplay += `<div class="hstack m-2">
                     <div>${item}</div>
                     <div class="ms-auto">${count[item]}</div>
                 </div>`;
@@ -51,7 +51,7 @@ function addMeat(x) {
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                MeatDisplay += `<div class="hstack pb-2 m-2">
+                MeatDisplay += `<div class="hstack m-2">
                 <div>${item}</div>
                 <div class="ms-auto">${count[item]}</div>
             </div>`;
@@ -84,7 +84,7 @@ function addDairy(x) {
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                DairyDisplay += `<div class="hstack pb-2 m-2">
+                DairyDisplay += `<div class="hstack m-2">
                 <div>${item}</div>
                 <div class="ms-auto">${count[item]}</div>
             </div>`;
@@ -117,7 +117,7 @@ function addProduce(x) {
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                ProduceDisplay += `<div class="hstack pb-2 m-2">
+                ProduceDisplay += `<div class="hstack m-2">
                 <div>${item}</div>
                 <div class="ms-auto">${count[item]}</div>
             </div>`;
@@ -150,7 +150,7 @@ function addOther(x) {
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
-                OtherDisplay += `<div class="hstack pb-2 m-2">
+                OtherDisplay += `<div class="hstack m-2">
                 <div>${item}</div>
                 <div class="ms-auto">${count[item]}</div>
             </div>`;

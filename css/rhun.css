@@ -20,20 +20,20 @@
 }
 
 :root.winterforest {
-    --background-color: #212529; /* Soft white background */
-    --border-color: #88bda0; /* Soft green border color */
-    --border-color-secondary: #88bda0;
-    --border-color-tertiary: #88bda0;
-    --border-color-callout: #88bda0;    
-    --text-color: #3a5d39; /* Deep green text color */
-    --text-color-link: #3a5d3950; /* Semi-transparent green text for links */
-    --text-color-hover: #3a5d39;
-    --text-fade-color: #3a5d3940;
-    --text-color-secondary: #3a5d39;
-    --text-color-tertiary: #3a5d39;
-    --text-color-callout: #3a5d39;
-    --button-color: #88bda025; /* Semi-transparent green button color */
-    --button-color-hover: #88bda040; /* Lighter green button color on hover */
+    --background-color: #212529;
+    --border-color: #4caf50;
+    --border-color-secondary: #4caf50;
+    --border-color-tertiary: #4caf50;
+    --border-color-callout: #4caf50;    
+    --text-color: #4caf50;
+    --text-color-link: #4caf5050;
+    --text-color-hover: #4caf50;
+    --text-fade-color: #4caf5040;
+    --text-color-secondary: #4caf50;
+    --text-color-tertiary: #4caf50;
+    --text-color-callout: #4caf50;
+    --button-color: #4caf5025;
+    --button-color-hover: #4caf5040;
     --theme-icon: url('https://api.iconify.design/game-icons/circle-forest.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
 }
@@ -60,15 +60,15 @@
 
 :root.autumn {
     --background-color: #212529;
-    --background-image: url('../images/C34973-Blurry.svg');
-    --border-color: #C34973;
+     /* --background-image: url('../images/C34973-Blurry.svg'); */
+    --border-color: #BD4F5B;
     --border-color-secondary: #EAD95F75;
     --border-color-tertiary: #B8860B;
     --border-color-callout: #E07A5F;    
-    --text-color: #C34973;
-    --text-color-link: #C3497325;      
-    --text-color-hover: #C34973;
-    --text-fade-color: #C3497340;
+    --text-color: #BD4F5B;
+    --text-color-link: #BD4F5B25;      
+    --text-color-hover: #BD4F5B;
+    --text-fade-color: #BD4F5B40;
     --text-color-secondary: #EAD95F75;
     --text-color-tertiary: #B8860B;
     --text-color-callout: #E07A5F;
@@ -133,6 +133,10 @@ body {
     background-size: cover;
     background-attachment: fixed;
     transition: opacity 2s ease;
+}
+
+code {
+    color: var(--text-color-callout);
 }
 
 a {
