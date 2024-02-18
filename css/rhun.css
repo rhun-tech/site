@@ -3,14 +3,14 @@
 :root {
     --background-color: #212529;
     --border-color: #e0e0e0;
-    --border-color-secondary: #e0e0e0;
+    --border-color-secondary: #D0745E;
     --border-color-tertiary: #e0e0e0;
     --border-color-callout: #e0e0e0;    
     --text-color: #e0e0e0;
     --text-color-link: #e0e0e025;
     --text-color-hover: #e0e0e0;
     --text-fade-color: #e0e0e040;
-    --text-color-secondary: #e0e0e0;
+    --text-color-secondary: #D0745E;
     --text-color-tertiary: #e0e0e0;
     --text-color-callout: #e0e0e0;
     --button-color: #e0e0e025;
@@ -62,18 +62,18 @@
     --background-color: #212529;
      /* --background-image: url('../images/C34973-Blurry.svg'); */
     --border-color: #BD4F5B;
-    --border-color-secondary: #EAD95F75;
-    --border-color-tertiary: #B8860B;
-    --border-color-callout: #E07A5F;    
+    --border-color-secondary: #D8B86D;
+    --border-color-tertiary: #A8730B;
+    --border-color-callout: #D0745E;    
     --text-color: #BD4F5B;
     --text-color-link: #BD4F5B25;      
     --text-color-hover: #BD4F5B;
     --text-fade-color: #BD4F5B40;
-    --text-color-secondary: #EAD95F75;
-    --text-color-tertiary: #B8860B;
-    --text-color-callout: #E07A5F;
-    --button-color: #EAD95F40;
-    --button-color-hover: #EAD95F75;
+    --text-color-secondary: #D8B86D;
+    --text-color-tertiary: #A8730B;
+    --text-color-callout: #D0745E;
+    --button-color: #D8B86D40;
+    --button-color-hover: #D8B86D;
     --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--button-color), var(--text-color), var(--text-color-hover));
 }
