@@ -71,15 +71,15 @@
     /* --background-image: url('../images/C34973-Blurry.svg'); */
     --border-color: #BD4F5B;
     --border-color-secondary: #D8B86D;
-    --border-color-tertiary: #A8730B;
-    --border-color-callout: #D0745E;
+    --border-color-tertiary: #D0745E;
+    --border-color-callout: #A8730B;
     --text-color: #BD4F5B;
     --text-color-link: #BD4F5B25;
     --text-color-hover: #BD4F5B;
     --text-fade-color: #BD4F5B40;
     --text-color-secondary: #D8B86D;
-    --text-color-tertiary: #A8730B;
-    --text-color-callout: #D0745E;
+    --text-color-tertiary: #D0745E;
+    --text-color-callout: #A8730B;
     --button-color: #D8B86D40;
     --button-color-hover: #D8B86D;
     --theme-icon: url('https://api.iconify.design/game-icons/leaf-swirl.svg?width=64&height=64');

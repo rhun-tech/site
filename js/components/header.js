@@ -29,7 +29,7 @@ class Header extends HTMLElement {
     
                 <div class="offcanvas-header">
                     <div class="offcanvas-title rhun-text rhun-2 top-0 start-0 position-absolute p-1"
-                        id="offcanvasDarkNavbarLabel"><a href="Index.html">Rhun</a></div>
+                        id="offcanvasDarkNavbarLabel"><a href="index.html">Rhun</a></div>
                     <button type="button" class="btn rhun-2 top-0 end-0 position-absolute" data-bs-dismiss="offcanvas"
                         aria-label="Close"><span class="iconify rhun-text"
                             data-icon="game-icons:closed-doors"></span></button>
