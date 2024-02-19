@@ -2,29 +2,33 @@
 
 :root {
     --background-color: #212529;
-    --border-color: #e0e0e0;
+    --background-color-secondary: #343a40;
+    --background-color-tertiary: #2b3035;
+    --border-color: #D4D4D4;
     --border-color-secondary: #D0745E;
-    --border-color-tertiary: #e0e0e0;
-    --border-color-callout: #e0e0e0;    
-    --text-color: #e0e0e0;
-    --text-color-link: #e0e0e025;
-    --text-color-hover: #e0e0e0;
-    --text-fade-color: #e0e0e040;
+    --border-color-tertiary: #5E995E;
+    --border-color-callout: #4D8EAA;
+    --text-color: #D4D4D4;
+    --text-color-link: #D4D4D425;
+    --text-color-hover: #D4D4D4;
+    --text-fade-color: #D4D4D440;
     --text-color-secondary: #D0745E;
-    --text-color-tertiary: #e0e0e0;
-    --text-color-callout: #e0e0e0;
-    --button-color: #e0e0e025;
-    --button-color-hover: #e0e0e040;
+    --text-color-tertiary: #5E995E;
+    --text-color-callout: #4D8EAA;
+    --button-color: #D4D4D425;
+    --button-color-hover: #D4D4D440;
     --theme-icon: url('https://api.iconify.design/game-icons/moon.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
 }
 
 :root.winterforest {
     --background-color: #212529;
+    --background-color-secondary: #343a40;
+    --background-color-tertiary: #2b3035;
     --border-color: #4caf50;
     --border-color-secondary: #4caf50;
     --border-color-tertiary: #4caf50;
-    --border-color-callout: #4caf50;    
+    --border-color-callout: #4caf50;
     --text-color: #4caf50;
     --text-color-link: #4caf5050;
     --text-color-hover: #4caf50;
@@ -40,13 +44,15 @@
 
 :root.glacier {
     --background-color: #212529;
+    --background-color-secondary: #343a40;
+    --background-color-tertiary: #2b3035;
     --background-image: url('../images/4D8EAA-Blurry.svg');
     --border-color: #B0C4DE;
     --border-color-secondary: #C33C54;
     --border-color-tertiary: #4D8EAA;
-    --border-color-callout: #B0B0B0;    
+    --border-color-callout: #B0B0B0;
     --text-color: #B0C4DE;
-    --text-color-link: #B0C4DE25;    
+    --text-color-link: #B0C4DE25;
     --text-color-hover: #B0C4DE;
     --text-fade-color: #4D8EAA40;
     --text-color-secondary: #C33C54;
@@ -60,13 +66,15 @@
 
 :root.autumn {
     --background-color: #212529;
-     /* --background-image: url('../images/C34973-Blurry.svg'); */
+    --background-color-secondary: #343a40;
+    --background-color-tertiary: #2b3035;
+    /* --background-image: url('../images/C34973-Blurry.svg'); */
     --border-color: #BD4F5B;
     --border-color-secondary: #D8B86D;
     --border-color-tertiary: #A8730B;
-    --border-color-callout: #D0745E;    
+    --border-color-callout: #D0745E;
     --text-color: #BD4F5B;
-    --text-color-link: #BD4F5B25;      
+    --text-color-link: #BD4F5B25;
     --text-color-hover: #BD4F5B;
     --text-fade-color: #BD4F5B40;
     --text-color-secondary: #D8B86D;
@@ -80,13 +88,15 @@
 
 :root.monobat {
     --background-color: #212529;
+    --background-color-secondary: #343a40;
+    --background-color-tertiary: #2b3035;
     --background-image: url('../images/DE9435-Blurry.svg');
     --border-color: #DE9435;
     --border-color-secondary: #DE5A41;
     --border-color-tertiary: #6BA090;
     --border-color-callout: #96668C;
     --text-color: #DE9435;
-    --text-color-link: #DE943525;      
+    --text-color-link: #DE943525;
     --text-color-hover: #DE9435;
     --text-fade-color: #6BA090;
     --text-color-secondary: #DE5A41;
@@ -100,13 +110,15 @@
 
 :root.gayfeather {
     --background-color: #212529;
+    --background-color-secondary: #343a40;
+    --background-color-tertiary: #2b3035;    
     --background-image: url('../images/BCD755-Blurry.svg');
     --border-color: #BCD755;
     --border-color-secondary: #A383F1;
     --border-color-tertiary: #FF91A4;
     --border-color-callout: #8FAC9E;
     --text-color: #BCD755;
-    --text-color-link: #BCD75525;      
+    --text-color-link: #BCD75525;
     --text-color-hover: #BCD755;
     --text-fade-color: #BCD75540;
     --text-color-secondary: #A383F1;
@@ -137,6 +149,9 @@ body {
 
 code {
     color: var(--text-color-callout);
+    background-color: var(--background-color-secondary);
+    border-radius: 0.5rem;
+    padding: 0.1rem;
 }
 
 a {

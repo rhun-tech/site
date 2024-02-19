@@ -9,7 +9,7 @@ class DepictionsModal extends HTMLElement {
         <div class="modal-dialog rhun-border rhun-border-radius">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title rhun-text me-auto rhun-text-tertiary" id="uploadModal">File Upload</h5>
+                    <h5 class="modal-title rhun-text me-auto rhun-text-secondary" id="uploadModal">File Upload</h5>
                     <button type="button" class="btn rhun-2" data-bs-dismiss="modal"><span
                             class="iconify rhun-text opacity-50" data-icon="game-icons:closed-doors"></span></button>
                 </div>
@@ -19,7 +19,7 @@ class DepictionsModal extends HTMLElement {
                     </div>
                     <div class="hstack pb-2">
                         <details class="p-3">
-                            <summary class="rhun-text-secondary">Budget</summary>
+                            <summary class="rhun-text-tertiary">Budget</summary>
                             <span>Make a file called budget.json</span>
                             <pre class="language-json rounded"><code>{
     "Budget": {
@@ -47,7 +47,7 @@ class DepictionsModal extends HTMLElement {
                     </div>
                     <div class="hstack pb-2">
                         <details class="p-3">
-                            <summary class="rhun-text-secondary">Anything Else</summary>
+                            <summary class="rhun-text-tertiary">Anything Else</summary>
                             <span>Any file not named budget.json e.g., rhun.json</span>
 <pre class="language-json rounded"><code>{
     "id": "9",
