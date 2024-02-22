@@ -85,7 +85,7 @@ function displayBudget(budgetData) {
 
         // Create card body
         const cardBodyDiv = document.createElement('div');
-        cardBodyDiv.classList.add('card-body', 'text-light-subtle');
+        cardBodyDiv.classList.add('card-body', titleTextColors[majorTitle]);
 
         // Set icon based on the major title
         const iconCode = titleIcons[majorTitle] || 'default-icon-code';
@@ -152,7 +152,7 @@ function displayBudget(budgetData) {
 
     // Create card body for analysis card
     const analysisCardBodyDiv = document.createElement('div');
-    analysisCardBodyDiv.classList.add('card-body', 'text-light-subtle');
+    analysisCardBodyDiv.classList.add('card-body', 'rhun-text-callout');
 
     // Display analysis title in card body
     analysisCardBodyDiv.innerHTML = `<div class="card-title">
