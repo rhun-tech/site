@@ -27,15 +27,15 @@ class Header extends HTMLElement {
             <div class="offcanvas offcanvas-end text-bg-dark rhun-border rounded" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
     
-                <div class="offcanvas-header">
-                    <div class="offcanvas-title rhun-text rhun-2 top-0 start-0 position-absolute p-1"
+                <div class="offcanvas-header border-bottom-dark shadow">
+                    <div class="offcanvas-title rhun-text rhun-2 p-1"
                         id="offcanvasDarkNavbarLabel"><a href="index.html">Rhun</a></div>
-                    <button type="button" class="btn rhun-2 top-0 end-0 position-absolute" data-bs-dismiss="offcanvas"
+                    <button type="button" class="btn rhun-2" data-bs-dismiss="offcanvas"
                         aria-label="Close"><span class="iconify rhun-text"
                             data-icon="game-icons:closed-doors"></span></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="myTab" role="tablist">
+                    <div class="navbar-nav justify-content-end flex-grow-1 p-3" id="myTab" role="tablist">
                         <div class="bg-body-tertiary p-3 rounded-2 shadow">
                             <div class="pb-3">
                                 <a href="library.html" class="row rhun-text" type="button">
