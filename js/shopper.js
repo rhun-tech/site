@@ -14,7 +14,7 @@ function addMeal(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var MealDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+        var MealDisplay = '<div class="row"><div class="col-12"><div class="rhun-text">';
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
@@ -47,7 +47,7 @@ function addMeat(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var MeatDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+        var MeatDisplay = '<div class="row"><div class="col-12"><div class="rhun-text">';
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
@@ -80,7 +80,7 @@ function addDairy(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var DairyDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+        var DairyDisplay = '<div class="row"><div class="col-12"><div class="rhun-text">';
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
@@ -113,7 +113,7 @@ function addProduce(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var ProduceDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+        var ProduceDisplay = '<div class="row"><div class="col-12"><div class="rhun-text">';
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {
@@ -146,7 +146,7 @@ function addOther(x) {
             count[el] = count[el] + 1 || 1;
         });
 
-        var OtherDisplay = '<div class="row"><div class="col-12"><div class="card border-2 rhun-text rhun-border-callout">';
+        var OtherDisplay = '<div class="row"><div class="col-12"><div class="rhun-text">';
 
         for (var item in count) {
             if (count.hasOwnProperty(item)) {

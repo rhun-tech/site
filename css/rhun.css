@@ -343,6 +343,26 @@ a:hover {
     cursor: pointer;
 }
 
+.rhun-stone {
+    background-color: var(--background-color);
+    border: 0.2rem var(--border-color) solid;
+    border-radius: 0.4rem !important;
+    padding: 0.4rem;
+    margin: 0.4rem;
+}
+
+.rhun-center {
+    text-align: center;
+}
+
+.rhun-stone-title {
+    font-size: 1rem;
+}
+
+.rhun-stone-body {
+    font-size: 1rem;
+}
+
 .active {
     color: var(--text-color) !important;
 }

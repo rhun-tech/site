@@ -13,6 +13,7 @@
   <script src="/js/components/header.js" type="text/javascript" defer></script>
   <script src="/js/components/title.js" type="text/javascript" defer></script>
   <script src="/js/components/background.js" type="text/javascript" defer></script>
+  <script src="/js/components/stone.js" type="text/javascript" defer></script>
 </head>
 
 <body data-bs-theme="dark" class="container p-1 mt-1">
@@ -59,38 +60,67 @@
           </button>
         </div>
         <hr />
-        
+
         <div id="shoppingList">
-          <div>Meals</div>
-          <div class="p-1" id="MealSorter">
-            <div class="placeholder-glow">
-              <div class="placeholder rounded col-3"></div>
-            </div>
+
+          <div class="row">
+            <stone-component title="Meals" icon="game-icons:hot-meal">
+              <div class="p1" id="MealSorter">
+                <div class="placeholder-glow">
+                  <div class="placeholder rounded col-3"></div>
+                  <div class="placeholder rounded col-1"></div>
+                </div>
+              </div>
+            </stone-component>
           </div>
-          <div>Meat</div>
-          <div class="p-1" id="MeatSorter">
-            <div class="placeholder-glow">
-              <div class="placeholder rounded col-3"></div>
+
+          <div class="row">
+            <div class="col-4">
+              <stone-component title="Meat" icon="game-icons:meat">
+                <div class="p1" id="MeatSorter">
+                  <div class="placeholder-glow">
+                    <div class="placeholder rounded col-3"></div>
+                    <div class="placeholder rounded col-1"></div>                    
+                  </div>
+                </div>
             </div>
-          </div>
-          <div>Dairy</div>
-          <div class="p-1" id="DairySorter">
-            <div class="placeholder-glow">
-              <div class="placeholder rounded col-3"></div>
+            </stone-component>
+
+            <div class="col-4">
+              <stone-component title="Dairy" icon="game-icons:cheese-wedge">
+                <div class="p1" id="DairySorter">
+                  <div class="placeholder-glow">
+                    <div class="placeholder rounded col-3"></div>
+                    <div class="placeholder rounded col-1"></div>                       
+                  </div>
+                </div>
+              </stone-component>
             </div>
+
+            <div class="col-4">
+              <stone-component title="Produce" icon="game-icons:broccoli">
+                <div class="p1" id="ProduceSorter">
+                  <div class="placeholder-glow">
+                    <div class="placeholder rounded col-3"></div>
+                    <div class="placeholder rounded col-1"></div>                       
+                  </div>
+                </div>
+              </stone-component>
+            </div>  
           </div>
-          <div>Produce</div>
-          <div class="p-1" id="ProduceSorter">
-            <div class="placeholder-glow">
-              <div class="placeholder rounded col-3"></div>
-            </div>
+
+          <div class="row">
+            <stone-component title="Other" icon="game-icons:stone-pile">
+              <div class="p1" id="OtherSorter" contenteditable="true">
+                <div class="placeholder-glow">
+                  <div class="placeholder rounded col-3"></div>
+                  <div class="placeholder rounded col-1"></div>                     
+                </div>
+              </div>
+            </stone-component>
           </div>
-          <div>Other</div>
-          <div class="p-1" id="OtherSorter" contenteditable="true">
-            <div class="placeholder-glow">
-              <div class="placeholder rounded col-3"></div>
-            </div>
-          </div>
+
+
         </div>
       </div>
     </div>
