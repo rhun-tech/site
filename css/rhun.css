@@ -345,7 +345,7 @@ a:hover {
 
 .rhun-stone {
     background-color: var(--background-color);
-    border: 0.2rem var(--border-color) solid;
+    border: 0.2rem var(--text-fade-color) solid;
     border-radius: 0.4rem !important;
     padding: 0.4rem;
     margin: 0.4rem;

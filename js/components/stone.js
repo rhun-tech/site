@@ -10,13 +10,14 @@ class Stone extends HTMLElement {
 
       this.innerHTML = `
               <div class="rhun-stone">
-              <div class="rhun-center">
+                <div class="rhun-center">
                 <span class="iconify rhun-2" data-icon="${titleIcon}"></span>
-              </div>              
+                </div>              
 
                 <hr />
+                
                 <div class="rhun-stone-body">
-                  ${content}
+                    ${content}
                 </div>
               </div>
       `;

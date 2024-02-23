@@ -20,7 +20,7 @@ function addMeal(x) {
             if (count.hasOwnProperty(item)) {
                 MealDisplay += `<div class="hstack m-2">
                     <div>${item}</div>
-                    <div class="ms-auto">${count[item]}</div>
+                    <div class="ms-auto rhun-text-secondary">${count[item]}</div>
                 </div>`;
             }
         }
@@ -53,7 +53,7 @@ function addMeat(x) {
             if (count.hasOwnProperty(item)) {
                 MeatDisplay += `<div class="hstack m-2">
                 <div>${item}</div>
-                <div class="ms-auto">${count[item]}</div>
+                <div class="ms-auto rhun-text-secondary">${count[item]}</div>
             </div>`;
             }
         }
@@ -86,7 +86,7 @@ function addDairy(x) {
             if (count.hasOwnProperty(item)) {
                 DairyDisplay += `<div class="hstack m-2">
                 <div>${item}</div>
-                <div class="ms-auto">${count[item]}</div>
+                <div class="ms-auto rhun-text-secondary">${count[item]}</div>
             </div>`;
             }
         }
@@ -119,7 +119,7 @@ function addProduce(x) {
             if (count.hasOwnProperty(item)) {
                 ProduceDisplay += `<div class="hstack m-2">
                 <div>${item}</div>
-                <div class="ms-auto">${count[item]}</div>
+                <div class="ms-auto rhun-text-secondary">${count[item]}</div>
             </div>`;
             }
         }
@@ -152,7 +152,7 @@ function addOther(x) {
             if (count.hasOwnProperty(item)) {
                 OtherDisplay += `<div class="hstack m-2">
                 <div>${item}</div>
-                <div class="ms-auto">${count[item]}</div>
+                <div class="ms-auto rhun-text-secondary">${count[item]}</div>
             </div>`;
             }
         }
