@@ -9,10 +9,9 @@
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/rhun.css">
+  <link rel="stylesheet" type="text/css" href="/css/prism.css">  
 
-  <script src="/js/components/header.js" type="text/javascript" defer></script>
-  <script src="/js/components/title.js" type="text/javascript" defer></script>
-  <script src="/js/components/background.js" type="text/javascript" defer></script>
+  <script src="/js/components/components.js" type="module" defer></script>  
 </head>
 
 <body data-bs-theme="dark">
@@ -24,35 +23,41 @@
     <div class="row">
       <div class="col-md-8">
         <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
-
           <div class="h2">Favorites</div>
 
-          <details class="p-3">
-            <summary class="rhun-text-tertiary">Currently Reading</summary>
-            <div class="p-3">
-              <p>Gardens of the Moon by Steven Erikson</p>
-            </div>
-          </details>
+          <details-component summary="Currently Reading" open>
+            <p>Gardens of the Moon by Steven Erikson</p>
+          </details-component>
+
         </div>
 
         <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
           <div class="h2">What's Next</div>
-          <details class="p-3">
-            <summary class="rhun-text-tertiary">Templates</summary>
-            <div class="p-3">
-              <p>There are currently seven out of a desired ten templates. This includes the header, which includes the navigation panel, the
-                title section, the dynamic background, the weather loading placeholders, the modal for the depictions spell, the title section, and now a stone template (which I am using a card type display).</p>
-              <label for="templates">Goal: </label>
-              <meter id="templates" value="8" min="0" max="10">8 out of 10</meter><br>
-            </div>
-          </details>
 
-          <details class="p-3">
-            <summary class="rhun-text-tertiary">Doughnut Chart</summary>
-            <div class="p-3">
-              <p>The depiction for budget.json could use a doughnut chart.</p>
-            </div>
-          </details>
+          <details-component summary="Templates" open>
+            <p>I have been enjoying html / js templates. I have nine so far and would like to add one more.</p>
+            <label for="templates">Goal: </label>
+            <meter id="templates" value="9" min="0" max="10">9 out of 10</meter><br>
+            <pre class="language-js rounded">
+<code>import './background.js';
+import './depictions-modal.js';
+import './details.js';
+import './header.js';
+import './stone.js';
+import './title-section-depiction.js';
+import './title-section.js';
+import './title.js';
+import './weather-loading.js';</code></pre>
+          </details-component>
+
+          <details-component summary="Doughnut Chart">
+            <p>The depiction for budget.json could use a doughnut chart.</p>
+          </details-component>     
+          
+          <details-component summary="Details Template Post">
+            <p>The code page could use a how to on combining details and templates.</p>
+          </details-component>              
+
         </div>
 
       </div>
@@ -60,25 +65,26 @@
       <div class="col-md-4">
         <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
           <div class="h2">Attributions</div>
-          <details class="p-3">
-            <summary class="rhun-text-tertiary">Iconify + Game Icons</summary>
-            <div class="p-3">
-              <p>The icons can be found throughout this site.</p>
-              <a href="https://icon-sets.iconify.design/game-icons/">Iconify</a> and
-              <a href="https://github.com/game-icons/icons/blob/master/license.txt">Game-Icons</a>
-            </div>
-          </details>
+          
+          <details-component summary="Iconify + Game Icons" open>
+            <p>The icons can be found throughout this site.</p>            
+            <a href="https://icon-sets.iconify.design/game-icons/">Iconify</a> and
+            <a href="https://github.com/game-icons/icons/blob/master/license.txt">Game-Icons</a>
+          </details-component>    
 
-          <details class="p-3">
-            <summary class="rhun-text-tertiary">Prism.js</summary>
-            <div class="p-3">
-              <p>The code snippets on this site are styled with prism.js.</p>
-              <a href="https://prismjs.com/">Prism.js</a>
-            </div>
-          </details>
+          <details-component summary="Prism.js">
+            <p>The code snippets on this site are styled with prism.js.</p>
+            <a href="https://prismjs.com/">Prism.js</a>
+          </details-component>    
+
         </div>
       </div>
     </div>
+
+    <script src="/js/prism.js"></script>
+    <script>
+      Prism.highlightAll();
+    </script>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
