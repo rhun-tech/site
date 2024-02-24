@@ -103,11 +103,12 @@ function displayWeatherData(data) {
   fetchVillage(location.lat, location.lon)
     .then(addressName => {
       const weatherInfo = `
-        <div class="col-auto p-1 rhun-text-tertiary">Current Conditions</div>
+        <hr />
+        <div class="col-auto p-1 rhun-text-secondary">Current Conditions</div>
         <div class="hstack">
           <div class="col-auto p-1">${Math.round(currentWeather.temperatureApparent)}</div>
         </div>
-        <div class="col-auto p-1 rhun-text-tertiary">Forecast</div>
+        <div class="col-auto p-1 rhun-text-secondary">Forecast</div>
         <div class="hstack">
           <div class="col-auto p-1">${formatMonthAndDay(dailyWeatherTime0)}</div>
           <div class="col-auto p-1">L: ${Math.round(dailyWeather0.temperatureApparentMin)}</div>

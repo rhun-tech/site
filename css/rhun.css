@@ -92,16 +92,16 @@
     --background-color-tertiary: #2b3035;
     --background-image: url('../images/DE9435-Blurry.svg');
     --border-color: #DE9435;
-    --border-color-secondary: #DE5A41;
+    --border-color-secondary: #96668C;
     --border-color-tertiary: #6BA090;
-    --border-color-callout: #96668C;
+    --border-color-callout: #DE5A41;
     --text-color: #DE9435;
     --text-color-link: #DE943525;
     --text-color-hover: #DE9435;
     --text-fade-color: #6BA090;
-    --text-color-secondary: #DE5A41;
+    --text-color-secondary: #96668C;
     --text-color-tertiary: #6BA090;
-    --text-color-callout: #96668C;
+    --text-color-callout: #DE5A41;
     --button-color: #38608440;
     --button-color-hover: #96668C40;
     --theme-icon: url('https://api.iconify.design/game-icons/bat.svg?width=64&height=64');
@@ -158,12 +158,14 @@ a {
     color: var(--text-color);
     font-weight: bold;
     text-decoration: none;
+    transition: color 1s ease, font-weight 1s ease, text-decoration 1s ease;    
 }
 
 a:hover {
-    color: var(--text-color-hover) !important;
+    color: var(--text-color-secondary) !important;
     font-weight: bold;
     text-decoration: none;
+    transition: color 100ms ease 1ms, font-weight 100ms ease 1ms, text-decoration 100ms ease 1ms;
 }
 
 #moving-svg-right {
