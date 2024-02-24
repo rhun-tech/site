@@ -8,7 +8,7 @@ class Header extends HTMLElement {
         const themeDetails = {
             '': 'Moon. It is there, always there. Behind clouds or not.',
             'winterforest': 'Winter Forest. It is true, just has not snowed yet.',
-            'glacier': 'Smoldering Glacier. It inevitably, slowly burns towards you as it melts. Drawing you ever closer.',
+            'glacier': 'Glacier. It inevitably, slowly pulls you towards it. Drawing you ever closer. Ever colder.',
             'autumn': 'Autumn. In the distant night, all is ablaze with the colors of autum.',
             'monobat': 'Monobat. Much like halloween, much like a favorite theme, or much like a childrens novel.',
             'gayfeather': 'Gayfeather. Tall and vibrant in the midsummer sky.'
@@ -52,16 +52,16 @@ class Header extends HTMLElement {
                             </div>
     
                             <div class="pb-3">
-                                <a href="shopper.html" class="row rhun-text" type="button">
-                                    <span class="col-9">Shopper</span>
-                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:meat"></span>
-                                </a>
-                            </div>
-    
-                            <div class="pb-3">
                                 <a href="spells.html" class="row rhun-text" type="button">
                                     <span class="col-9">Spells</span>
                                     <span class="iconify rhun-2 col-3" data-icon="game-icons:book-pile"></span>
+                                </a>
+                            </div>                            
+
+                            <div class="pb-3">
+                                <a href="shopper.html" class="row rhun-text" type="button">
+                                    <span class="col-9">Shopper</span>
+                                    <span class="iconify rhun-2 col-3" data-icon="game-icons:meat"></span>
                                 </a>
                             </div>
 
@@ -101,7 +101,7 @@ class Header extends HTMLElement {
                                     <div class="form-check col rhun-text">
                                         <input class="form-check-input" type="radio" name="theme" id="theme3" value="glacier">
                                         <label class="form-check-label" for="theme3">
-                                            Smoldering Glacier
+                                            Glacier
                                         </label>
                                     </div>
     

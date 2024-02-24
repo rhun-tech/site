@@ -46,20 +46,20 @@
     --background-color: #212529;
     --background-color-secondary: #343a40;
     --background-color-tertiary: #2b3035;
-    --background-image: url('../images/4D8EAA-Blurry.svg');
+    /* --background-image: url('../images/4D8EAA-Blurry.svg'); */
     --border-color: #B0C4DE;
-    --border-color-secondary: #C33C54;
+    --border-color-secondary: #00796B;
     --border-color-tertiary: #4D8EAA;
     --border-color-callout: #B0B0B0;
     --text-color: #B0C4DE;
     --text-color-link: #B0C4DE25;
     --text-color-hover: #B0C4DE;
     --text-fade-color: #4D8EAA40;
-    --text-color-secondary: #C33C54;
+    --text-color-secondary: #00796B;
     --text-color-tertiary: #4D8EAA;
     --text-color-callout: #B0B0B0;
     --button-color: #4D8EAA40;
-    --button-color-hover: #C33C54;
+    --button-color-hover: #00796B;
     --theme-icon: url('https://api.iconify.design/game-icons/icebergs.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
 }
