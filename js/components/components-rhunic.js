@@ -1,4 +1,4 @@
-import './background.js';
+import './background-rhunic.js';
 import './depictions-modal.js';
 import './details.js';
 import './header.js';

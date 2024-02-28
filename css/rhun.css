@@ -347,10 +347,19 @@ a:hover {
 
 .rhun-stone {
     background-color: var(--background-color);
-    border: 0.2rem var(--text-fade-color) solid;
+    border: 0.2rem var(--button-color) solid;
     border-radius: 0.4rem !important;
     padding: 0.4rem;
     margin: 0.4rem;
+}
+
+.rhun-stone:hover {
+    background-color: var(--background-color);
+    border: 0.2rem var(--button-color-hover) solid;
+    border-radius: 0.4rem !important;
+    padding: 0.4rem;
+    margin: 0.4rem;
+    cursor: pointer;
 }
 
 .rhun-center {

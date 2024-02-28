@@ -29,7 +29,7 @@ function createTextLinesFromArray(textArray, fontSize, randomColor) {
 
   svg.appendChild(textGroup);
 
-  const randomX = getRandomNumber(0, window.innerWidth - 200);
+  const randomX = getRandomNumber(-100, window.innerWidth - 100);
   const randomY = getRandomNumber(0, window.innerHeight - textArray.length * fontSize);
 
   svg.style.position = "absolute";
