@@ -5,7 +5,6 @@ class WeatherLoading extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <hr />
         <div class="placeholder-glow">
         <div class="col-auto p-1 rhun-text-secondary">Current Conditions</div>
         <div class="hstack">

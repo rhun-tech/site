@@ -49,22 +49,7 @@ function createTextLinesFromArray(textArray, fontSize, randomColor, previousWidt
 
   var rhunfallDiv = document.getElementById('rhunfall');
 
-  if (rhunfallDiv) {
     rhunfallDiv.appendChild(svg);
-  } else {
-    console.error('The specified div does not exist.');
-  }
-
-  let opacityOffset = Math.random();
-
-  setInterval(() => {
-    textGroup.childNodes.forEach((text, index) => {
-      const waveOpacity = Math.sin(opacityOffset + (index / textArray.length) * Math.PI) * 0.35 + 0.65;
-      text.setAttribute("opacity", waveOpacity);
-    });
-
-    opacityOffset += 0.1;
-  }, 84);
 
   return previousWidth + 20;
 }

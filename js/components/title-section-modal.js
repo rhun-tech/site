@@ -1,4 +1,4 @@
-class TitleSectionDepiction extends HTMLElement {
+class TitleSectionModal extends HTMLElement {
   constructor() {
       super();
   }
@@ -23,4 +23,4 @@ class TitleSectionDepiction extends HTMLElement {
 }
 
 // Define the custom element
-customElements.define('title-section-depiction-component', TitleSectionDepiction);
+customElements.define('title-section-modal-component', TitleSectionModal);

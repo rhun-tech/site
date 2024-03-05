@@ -19,12 +19,6 @@
 
     <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
       <div class="hstack pb-2" style="background-color: #2b3035;">
-        <div class="btn rhun-button col-auto" id="liveToastBtn" data-bs-toggle="modal" data-bs-target="#apiKeyModal"
-          data-bs-title="Check your weather. Rhun.tech will need your location." data-bs-toggle="tooltip"
-          data-bs-placement="bottom" data-bs-custom-class="custom-tooltip">
-          <span class="iconify rhun-2" data-icon="game-icons:sun-cloud"></span>
-        </div>
-
         <div class="btn rhun-button col-auto ms-auto" id="liveToastBtnCard" data-bs-title="Cast a rune!"
           data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
           onclick="fetchAndCreateCard()"><span class="iconify rhun-2" data-icon="game-icons:card-random"></span></div>
@@ -60,33 +54,6 @@
     </div>
   </div>
 
-  <div class="modal fade" id="apiKeyModal">
-    <div class="modal-dialog rhun-border rhun-border-radius">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title me-auto rhun-text-secondary" id="apiKeyModal">Weather</h5>
-          <button type="button" class="btn rhun-2" data-bs-dismiss="modal"><span class="iconify rhun-text opacity-50"
-              data-icon="game-icons:closed-doors"></span></button>
-        </div>
-        <div class="modal-body">
-          <label for="weatherApiKey" class="form-label rhun-text-secondary">Weather API Key:</label>
-          <input type="text" class="form-control custom-input rhun-text" id="weatherApiKey" name="rhunWeatherApiKey" autocomplete="on" placeholder="your key from tomorrow.io">
-
-          <label for="geoApiKey" class="form-label rhun-text-secondary mt-2">Geocode API Key:</label>
-          <input type="text" class="form-control custom-input rhun-text" id="geoApiKey" name="rhunGeoApiKey" autocomplete="on" placeholder="optional">
-
-          <div id="weather-data">
-            <weather-loading></weather-loading>
-          </div>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn rhun-button" onclick="promptForAPIKeys()">Get Weather</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="liveToastCard" class="toast rhun-border" role="alert" data-bs-autohide="false">
       <div class="toast-header">
@@ -115,7 +82,6 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 
-  <script src="/js/weather.js" type="text/javascript" defer></script>
   <script src="/js/toast.js" type="text/javascript" defer></script>
   <script src="/js/futhark.js" type="text/javascript" defer></script>
 
