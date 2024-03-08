@@ -10,40 +10,19 @@
 
   <link rel="stylesheet" type="text/css" href="css/rhun.css">
 
-  <script src="/js/components/components.js" type="module" defer></script> 
+  <script src="/js/components/components.js" type="module" defer></script>
 </head>
 
 <body data-bs-theme="dark">
   <div class="container p-1 mt-1">
     <header-component></header-component>
 
-    <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
-      <div class="hstack pb-2" style="background-color: #2b3035;">
-        <div class="btn rhun-button col-auto ms-auto" id="liveToastBtnCard" data-bs-title="Cast a rune!"
-          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
-          onclick="fetchAndCreateCard()"><span class="iconify rhun-2" data-icon="game-icons:card-random"></span></div>
-      </div>
-    </div>
+    <title-component title="Rhun" icon="game-icons:birch-trees"></title-component>
 
     <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
-      <p>
-        Once upon a time, in a world governed by lines of code and algorithms, there existed a skilled artisan known as
-        a
-        code smith.
-      </p>
-      <p>
-        With nimble fingers dancing across the keyboard like a maestro conducting a symphony, this individual crafted
-        digital realms and brought ideas to life in the virtual landscape.
-      </p>
-      <p>
-        In the echoing chambers of binary, where ones and zeros wove the fabric of existence, the code smith navigated
-        the
-        intricate tapestry of programming languages, weaving tales of functionality and innovation.
-      </p>
-      <p>
-        Each keystroke resonated with the potential to shape the future, and in this enchanting realm of technology, the
-        code smith stood as a creator, molding the intangible into tangible marvels through the power of programming.
-      </p>
+      <stone-component title="Rhuns" icon="game-icons:stone-tower">
+        <div class="rhun-center" id="repeatedTextContainer">Welcome to Rhun.tech - where the magic of code meets the whimsy of it's creator! Embark on a digital journey through the realms of fun and creativity. Explore our playful corners, where pixels dance, and lines of code weave tales of whimsical wonders. This is not just a website; it's a canvas of imagination. So, dive in, enjoy the adventure, and let the tech enchantment begin!</div>
+      </stone-component>
     </div>
 
     <div class="bg-body-tertiary p-3 rounded-2 shadow" style="position: relative; overflow: hidden;">
@@ -54,44 +33,55 @@
     </div>
   </div>
 
-  <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="liveToastCard" class="toast rhun-border" role="alert" data-bs-autohide="false">
-      <div class="toast-header">
-        <strong class="rhun-text me-auto rhun-text-secondary">Rune Cast</strong>
-
-        <button type="button" class="btn rhun-2" data-bs-dismiss="toast" aria-label="Close"><span
-            class="iconify rhun-text opacity-50" data-icon="game-icons:closed-doors"></span></button>
-
-      </div>
-      <div class="toast-body">
-        <div id="card-container">
-          <div class="placeholder-glow">
-            <div class="placeholder rounded col-12 p-1"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-
-  </div>
-  </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 
-  <script src="/js/toast.js" type="text/javascript" defer></script>
-  <script src="/js/futhark.js" type="text/javascript" defer></script>
-
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      fetchAndCreateCard().then(function (cardHTML) {
-        document.getElementById('card-container').innerHTML = cardHTML;
-      });
-    });
+    /*
+    function generateRepeatedText() {
+      const textArray = ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "ᛉ", "ᛊ", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛜ", "ᛞ", "ᛟ"];
+
+      const shuffledArray = [...textArray];
+      for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+      }
+
+      const repeatedTextArray = shuffledArray.concat(shuffledArray);
+      const fontSize = 20;
+      const colorArray = ["var(--text-color)", "var(--text-color-secondary)", "var(--text-color-tertiary)", "var(--text-color-callout)"];
+
+      const repeatCount = 1;
+
+      let repeatedText = '';
+      for (let i = 0; i < repeatCount; i++) {
+        const coloredText = shuffledArray.map(char => {
+          const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+          return `<span style="color: ${randomColor};">${char}</span>`;
+        }).join(' ');
+
+        repeatedText += coloredText;
+      }
+
+      return repeatedText;
+    }
+
+    const targetDiv = document.getElementById('repeatedTextContainer');
+
+    if (targetDiv) {
+      targetDiv.innerHTML = '';
+      const numIterations = 10;
+      for (let i = 0; i < numIterations; i++) {
+        targetDiv.innerHTML += generateRepeatedText();
+        targetDiv.innerHTML += '<br />'
+      }
+    } else {
+      console.error('Target div not found');
+    }
+    */
   </script>
+
 </body>
 
 </html>
