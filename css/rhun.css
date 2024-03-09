@@ -333,7 +333,16 @@ a:hover {
     border-radius: .2rem !important;
 }
 
+.rhun-rounded {
+    border-radius: .2rem !important;
+}
+
+.rhun-shadow {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
 .rhun-button {
+    color: var(--text-color);
     background-color: var(--button-color);
 }
 
@@ -348,7 +357,7 @@ a:hover {
 .rhun-stone {
     background-color: var(--background-color);
     border: 0.2rem var(--button-color) solid;
-    border-radius: 0.4rem !important;
+    border-radius: 0.2rem !important;
     padding: 0.4rem;
     margin: 0.4rem;
 }
@@ -356,10 +365,11 @@ a:hover {
 .rhun-stone:hover {
     background-color: var(--background-color);
     border: 0.2rem var(--button-color-hover) solid;
-    border-radius: 0.4rem !important;
+    border-radius: 0.2rem !important;
     padding: 0.4rem;
     margin: 0.4rem;
     cursor: pointer;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
 }
 
 .rhun-center {

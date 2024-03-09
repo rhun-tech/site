@@ -15,10 +15,10 @@ class Header extends HTMLElement {
         };
 
         this.innerHTML = `
-        <nav class="navbar navbar-dark bg-dark fixed-top shadow">
+        <nav class="navbar navbar-dark bg-dark fixed-top rhun-shadow">
         <div class="container-fluid">
             <a class="navbar-brand rhun-text fw-bold rhun-2" href="index.html">Rhun</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            <button class="navbar-toggler rhun-rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                 aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <div class="fw-bold h1 ms-auto">
                     <span class="iconify rhun-text" data-icon="game-icons:dungeon-gate"></span>
@@ -27,7 +27,7 @@ class Header extends HTMLElement {
             <div class="offcanvas offcanvas-end text-bg-dark rhun-border rounded" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
     
-                <div class="offcanvas-header border-bottom-dark shadow">
+                <div class="offcanvas-header border-bottom-dark rhun-shadow">
                     <div class="offcanvas-title rhun-text rhun-2 p-1"
                         id="offcanvasDarkNavbarLabel"><a href="index.html">Rhun</a></div>
                     <button type="button" class="btn rhun-2" data-bs-dismiss="offcanvas"
@@ -36,7 +36,7 @@ class Header extends HTMLElement {
                 </div>
                 <div class="offcanvas-body">
                     <div class="navbar-nav justify-content-end flex-grow-1 p-3" id="myTab" role="tablist">
-                        <div class="bg-body-tertiary p-3 rounded-2 shadow">
+                        <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow">
                             <div class="pb-3">
                                 <a href="library.html" class="row rhun-text" type="button">
                                     <span class="col-9">Library</span>
@@ -83,7 +83,7 @@ class Header extends HTMLElement {
     
                         <div class="pt-3"></div>
     
-                        <div class="container bg-body-tertiary rounded p-3 shadow">
+                        <div class="container bg-body-tertiary rhun-rounded rhun-shadow p-3">
                             <div class="rhun-text">Color Modes</div>
                             <div id="theme-changer" class="hidden w-100">
     
@@ -140,7 +140,7 @@ class Header extends HTMLElement {
     
                         <div class="pt-3"></div>
     
-                        <div class="container bg-body-tertiary rounded p-3 shadow">
+                        <div class="container bg-body-tertiary rhun-rounded rhun-shadow p-3">
                             <div class="hstack p-1">
                             <div id="colorModeDetails" class="ms-auto rhun-text">
                                 Moon. It is there, always there. Behind clouds or not.

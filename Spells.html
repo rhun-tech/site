@@ -24,32 +24,32 @@
 
   <div class="row">
     <div class="col-md-2 col-lg-2">
-      <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow" style="position: relative; overflow: hidden;">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3" style="position: relative; overflow: hidden;">
         <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
           <h6>Minor Spells</h6>
-          <a class="nav-link mx-1 my-1 shadow active" id="nav-shuffle-tab" data-bs-toggle="tab" href="#nav-shuffle"
+          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-shuffle-tab" data-bs-toggle="tab" href="#nav-shuffle"
             role="tab">Shuffle</a>
-          <a class="nav-link mx-1 my-1 shadow" id="nav-time-since-tab" data-bs-toggle="tab" href="#nav-time-since"
+          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-time-since-tab" data-bs-toggle="tab" href="#nav-time-since"
             role="tab">Time Since</a>
           <hr>
           <h6>Major Spells</h6>
-          <a class="nav-link mx-1 my-1 shadow" id="nav-depictions-tab" data-bs-toggle="tab" href="#nav-depictions"
+          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-depictions-tab" data-bs-toggle="tab" href="#nav-depictions"
             role="tab">Depictions</a>
-            <a class="nav-link mx-1 my-1 shadow" id="nav-elemental-tab" data-bs-toggle="tab" href="#nav-elemental"
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-elemental-tab" data-bs-toggle="tab" href="#nav-elemental"
             role="tab">Elemental Power</a>            
         </div>
       </div>
     </div>
 
     <div class="col-md-10 col-lg-10">
-      <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
-        <div class="tab-content bg-body-tertiary p-3 rounded-2" id="nav-tabContent">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
+        <div class="tab-content p-3" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-shuffle" role="tabpanel">
             <title-section-component title="Shuffle" icon="game-icons:perspective-dice-six-faces-random"></title-section-component>
             <label for="inputText" class="form-label">Text to shuffle</label>
             <div class="row pb-3">
               <div class="col-auto">
-                <input type="text" class="form-control custom-input rhun-text" id="inputText"
+                <input type="text" class="form-control custom-input rhun-text rhun-rounded" id="inputText"
                   oninput="updateshuffledText()">
               </div>
             </div>
@@ -115,7 +115,7 @@
             <label for="inputDate" class="form-label">Time Since</label>
             <div class="row pb-3">
               <div class="col-auto">
-                <input type="date" class="form-control custom-input rhun-text" id="inputDate"
+                <input type="date" class="form-control custom-input rhun-text rhun-rounded" id="inputDate"
                   oninput="calculateTimeSince()">
               </div>
             </div>

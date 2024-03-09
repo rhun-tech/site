@@ -22,30 +22,30 @@
 
   <div class="row">
     <div class="col-md-2 col-lg-2">
-      <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
         <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
           <h6>C#</h6>
-          <a class="nav-link mx-1 my-1 shadow active" id="nav-csharp-hello-world-tab" data-bs-toggle="tab"
+          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-csharp-hello-world-tab" data-bs-toggle="tab"
             href="#nav-csharp-hello-world" role="tab">Hello World</a>
-          <a class="nav-link mx-1 my-1 shadow" id="nav-csharp-yarp-tab" data-bs-toggle="tab" href="#nav-csharp-yarp"
+          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-yarp-tab" data-bs-toggle="tab" href="#nav-csharp-yarp"
             role="tab">YARP</a>
           <hr />
           <h6>Html</h6>
-          <a class="nav-link mx-1 my-1 shadow" id="nav-html-details-tab" data-bs-toggle="tab" href="#nav-html-details"
+          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-html-details-tab" data-bs-toggle="tab" href="#nav-html-details"
             role="tab">Details</a>
-          <a class="nav-link mx-1 my-1 shadow" id="nav-html-templates-tab" data-bs-toggle="tab"
+          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-html-templates-tab" data-bs-toggle="tab"
             href="#nav-html-templates" role="tab">Templates</a>
           <hr />
           <h6>General</h6>
-          <a class="nav-link mx-1 my-1 shadow" id="nav-github-tab" data-bs-toggle="tab" href="#nav-github"
+          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-github-tab" data-bs-toggle="tab" href="#nav-github"
             role="tab">GitHub</a>
         </div>
       </div>
     </div>
 
     <div class="col-md-10 col-lg-10">
-      <div class="bg-body-tertiary p-3 rounded-2 shadow" id="fademe">
-        <div class="tab-content bg-body-tertiary p-3 rounded-2" id="nav-tabContent">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow" id="fademe">
+        <div class="tab-content p-3" id="nav-tabContent">
 
           <div class="tab-pane fade show active" id="nav-csharp-hello-world" role="tabpanel">
             <title-section-component title="Hello World"></title-section-component>
@@ -122,17 +122,16 @@ class Program
 customElements.define('title-section-component', TitleSection);</code></pre>
           </div>
 
-
           <div class="tab-pane fade" id="nav-github" role="tabpanel">
             <title-section-component title="GitHub"></title-section-component>
             <div class="form-group pb-4">
               <div class="fw-bold pb-4">Search GitHub profiles</div>
               <div class="row g-3">
                 <div class="col-auto">
-                  <input type="text" id="username-input" class="form-control custom-input" placeholder="rhun-tech">
+                  <input type="text" id="username-input" class="form-control custom-input rhun-text rhun-rounded" placeholder="rhun-tech">
                 </div>
                 <div class="col-auto">
-                  <button id="search-button" class="btn rhun-button"><span class="iconify rhun-2"
+                  <button id="search-button" class="btn rhun-button rhun-rounded rhun-shadow"><span class="iconify rhun-2"
                       data-icon="game-icons:archive-research"></span></button>
                 </div>
               </div>

@@ -20,14 +20,14 @@
 
   <div class="row">
     <div class="col-md-4 col-lg-4">
-      <div class="bg-body-tertiary p-3 rounded-2 mb-3 shadow">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
         <label for="inputText" class="form-label">Build a
           shopping list</label>
 
         <div class="row">
           <div class="col-auto">
-            <select id="menu" class="form-control custom-input rhun-text rounded-2 mb-3" onchange="menuFunction()">
-              <div class="custom-input rhun-text">
+            <select id="menu" class="form-control custom-input rhun-text rhun-rounded mb-3" onchange="menuFunction()">
+              <div class="custom-input rhun-text rhun-rounded">
                 <option value="">Selection Options</option>
                 <option value="meals">Meals</option>
                 <option value="meat">Meat</option>
@@ -45,11 +45,11 @@
     </div>
 
     <div class="col-md-8 col-lg-8">
-      <div class="bg-body-tertiary p-3 rounded-2 shadow">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow">
 
         <div class="hstack pb-2">
           <div class="h4">Shopping List</div>
-          <button class="btn rhun-button rhun-text ms-auto" id="liveToastBtn"
+          <button class="btn rhun-button rhun-rounded rhun-shadow ms-auto" id="liveToastBtn"
             data-bs-title="Copy the shopping list to your clipboard." data-bs-toggle="tooltip"
             data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
             onclick="copyShoppingListToClipboard(); setupToast();">

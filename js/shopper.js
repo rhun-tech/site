@@ -225,7 +225,7 @@ function appendNonMeal(NonMealData) {
 function createMealButton(data) {
     var button = document.createElement("button");
     button.innerHTML = data.icon + " " + data.meal + '\n';
-    button.className = "btn rhun-button rhun-text mx-1 my-1";
+    button.className = "btn rhun-button rhun-text rhun-rounded rhun-shadow mx-1 my-1";
     button.onclick = function () {
         addMeal(data.meal);
         addMeat(data.meat);
@@ -239,7 +239,7 @@ function createMealButton(data) {
 function createNonMealButton(data) {
     var button = document.createElement("button");
     button.innerHTML = data.icon + " " + data.meal + '\n';
-    button.className = "btn rhun-button rhun-text mx-1 my-1";
+    button.className = "btn rhun-button rhun-text rhun-rounded rhun-shadow mx-1 my-1";
     button.onclick = function () {
         addMeat(data.meat);
         addProduce(data.produce);
