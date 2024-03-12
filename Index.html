@@ -17,12 +17,56 @@
   <div class="container p-1 mt-1">
     <header-component></header-component>
 
-    <title-component title="Rhun" icon="game-icons:birch-trees"></title-component>
-
     <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3" style="position: relative; overflow: hidden;">
-      <stone-component title="Rhuns" icon="game-icons:stone-tower">
-        <div class="rhun-center" id="repeatedTextContainer">Welcome to Rhun.tech - where the magic of code meets the whimsy of it's creator! Embark on a digital journey through the realms of fun and creativity. Explore our playful corners, where pixels dance, and lines of code weave tales of whimsical wonders. This is not just a website; it's a canvas of imagination. So, dive in, enjoy the adventure, and let the tech enchantment begin!</div>
-      </stone-component>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="rhun-center" id="repeatedTextContainer">
+            <a href="library">
+              <stone-component title="Library" icon="game-icons:bookshelf">Library</stone-component>
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <a href="code">
+            <stone-component title="Code" icon="game-icons:scroll-quill">
+              <div class="rhun-center" id="repeatedTextContainer">Code</div>
+            </stone-component>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="spells">
+            <stone-component title="SPells" icon="game-icons:book-pile">
+              <div class="rhun-center" id="repeatedTextContainer">Spells</div>
+            </stone-component>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="shopper">
+            <stone-component title="Shopper" icon="game-icons:meat">
+              <div class="rhun-center" id="repeatedTextContainer">Shopper</div>
+            </stone-component>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="rhunfall">
+            <stone-component title="Rhunfall" icon="game-icons:stone-tablet">
+              <div class="rhun-center" id="repeatedTextContainer">Rhunfall</div>
+            </stone-component>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="legend">
+            <stone-component title="Legend" icon="game-icons:pointy-hat">
+              <div class="rhun-center" id="repeatedTextContainer">Legend</div>
+            </stone-component>
+          </a>
+        </div>
+      </div>
+
     </div>
 
     <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow" style="position: relative; overflow: hidden;">
@@ -36,51 +80,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-
-  <script>
-    /*
-    function generateRepeatedText() {
-      const textArray = ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "ᛉ", "ᛊ", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛜ", "ᛞ", "ᛟ"];
-
-      const shuffledArray = [...textArray];
-      for (let i = shuffledArray.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-      }
-
-      const repeatedTextArray = shuffledArray.concat(shuffledArray);
-      const fontSize = 20;
-      const colorArray = ["var(--text-color)", "var(--text-color-secondary)", "var(--text-color-tertiary)", "var(--text-color-callout)"];
-
-      const repeatCount = 1;
-
-      let repeatedText = '';
-      for (let i = 0; i < repeatCount; i++) {
-        const coloredText = shuffledArray.map(char => {
-          const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
-          return `<span style="color: ${randomColor};">${char}</span>`;
-        }).join(' ');
-
-        repeatedText += coloredText;
-      }
-
-      return repeatedText;
-    }
-
-    const targetDiv = document.getElementById('repeatedTextContainer');
-
-    if (targetDiv) {
-      targetDiv.innerHTML = '';
-      const numIterations = 10;
-      for (let i = 0; i < numIterations; i++) {
-        targetDiv.innerHTML += generateRepeatedText();
-        targetDiv.innerHTML += '<br />'
-      }
-    } else {
-      console.error('Target div not found');
-    }
-    */
-  </script>
 
 </body>
 
