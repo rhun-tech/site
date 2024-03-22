@@ -11,14 +11,14 @@
   <link rel="stylesheet" type="text/css" href="../css/rhun.css">
   <link rel="stylesheet" type="text/css" href="/css/prism.css">
 
-  <script src="/js/components/components.js" type="module" defer></script> 
+  <script src="/js/components/components.js" type="module" defer></script>
 
   <script src="/js/spells/shuffle.js" type="text/javascript" defer></script>
   <script src="/js/spells/time-since.js" type="text/javascript" defer></script>
 </head>
 
 <body data-bs-theme="dark" class="container p-1 mt-1">
-  
+
   <header-component></header-component>
   <title-component title="Spells" icon="game-icons:book-pile"></title-component>
 
@@ -26,17 +26,20 @@
     <div class="col-md-2 col-lg-2">
       <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3" style="position: relative; overflow: hidden;">
         <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
-          <h6>Minor Spells</h6>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-shuffle-tab" data-bs-toggle="tab" href="#nav-shuffle"
-            role="tab">Shuffle</a>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-time-since-tab" data-bs-toggle="tab" href="#nav-time-since"
-            role="tab">Time Since</a>
+          <details-component summary="Minor Spells" open>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-shuffle-tab" data-bs-toggle="tab"
+              href="#nav-shuffle" role="tab">Shuffle</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-time-since-tab" data-bs-toggle="tab"
+              href="#nav-time-since" role="tab">Time Since</a>
+          </details-component>
           <hr>
-          <h6>Major Spells</h6>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-depictions-tab" data-bs-toggle="tab" href="#nav-depictions"
-            role="tab">Depictions</a>
-            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-elemental-tab" data-bs-toggle="tab" href="#nav-elemental"
-            role="tab">Elemental Power</a>            
+          <details-component summary="Major Spells">
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-depictions-tab" data-bs-toggle="tab"
+              href="#nav-depictions" role="tab">Depictions</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-elemental-tab" data-bs-toggle="tab"
+              href="#nav-elemental" role="tab">Elemental Power</a>
+          </details-component>
+
         </div>
       </div>
     </div>
@@ -45,7 +48,8 @@
       <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
         <div class="tab-content p-3" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-shuffle" role="tabpanel">
-            <title-section-component title="Shuffle" icon="game-icons:perspective-dice-six-faces-random"></title-section-component>
+            <title-section-component title="Shuffle"
+              icon="game-icons:perspective-dice-six-faces-random"></title-section-component>
             <label for="inputText" class="form-label">Text to shuffle</label>
             <div class="row pb-3">
               <div class="col-auto">
@@ -132,12 +136,14 @@
           </div>
 
           <div class="tab-pane fade" id="nav-depictions" role="tabpanel">
-            <title-section-modal-component title="Depictions" icon="game-icons:chisel" target="#uploadModal"></title-section-modal-component>
+            <title-section-modal-component title="Depictions" icon="game-icons:chisel"
+              target="#uploadModal"></title-section-modal-component>
             <div id="output"></div>
           </div>
 
           <div class="tab-pane fade" id="nav-elemental" role="tabpanel">
-            <title-section-modal-component title="Elemental Power" icon="game-icons:lightning-electron" target="#weatherModal"></title-section-modal-component>
+            <title-section-modal-component title="Elemental Power" icon="game-icons:lightning-electron"
+              target="#weatherModal"></title-section-modal-component>
             <div id="weather-data">
               <weather-loading></weather-loading>
             </div>

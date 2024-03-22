@@ -12,7 +12,7 @@
 
   <link href="/css/prism.css" rel="stylesheet">
 
-  <script src="/js/components/components.js" type="module" defer></script> 
+  <script src="/js/components/components.js" type="module" defer></script>
 </head>
 
 <body data-bs-theme="dark" class="container p-1 mt-1">
@@ -24,21 +24,24 @@
     <div class="col-md-2 col-lg-2">
       <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
         <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
-          <h6>C#</h6>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-csharp-hello-world-tab" data-bs-toggle="tab"
-            href="#nav-csharp-hello-world" role="tab">Hello World</a>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-yarp-tab" data-bs-toggle="tab" href="#nav-csharp-yarp"
-            role="tab">YARP</a>
+          <details-component summary="C#" open>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-csharp-hello-world-tab"
+              data-bs-toggle="tab" href="#nav-csharp-hello-world" role="tab">Hello World</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-yarp-tab" data-bs-toggle="tab"
+              href="#nav-csharp-yarp" role="tab">YARP</a>
+          </details-component>
           <hr />
-          <h6>Html</h6>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-html-details-tab" data-bs-toggle="tab" href="#nav-html-details"
-            role="tab">Details</a>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-html-templates-tab" data-bs-toggle="tab"
-            href="#nav-html-templates" role="tab">Templates</a>
+          <details-component summary="Html">
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-html-details-tab" data-bs-toggle="tab"
+              href="#nav-html-details" role="tab">Details</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-html-templates-tab" data-bs-toggle="tab"
+              href="#nav-html-templates" role="tab">Templates</a>
+          </details-component>
           <hr />
-          <h6>General</h6>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-github-tab" data-bs-toggle="tab" href="#nav-github"
-            role="tab">GitHub</a>
+          <details-component summary="General">
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-github-tab" data-bs-toggle="tab"
+              href="#nav-github" role="tab">GitHub</a>
+          </details-component>
         </div>
       </div>
     </div>
@@ -62,8 +65,10 @@ class Program
 
           <div class="tab-pane fade" id="nav-csharp-yarp" role="tabpanel">
             <title-section-component title="YARP"></title-section-component>
-            <p>What's neat is loading the routes and clusters definitions from memory using <code>LoadFromMemory()</code>
-              as opposed to <code>LoadFromConfig()</code>.</p>
+            <p>What's neat is loading the routes and clusters definitions from memory using
+              <code>LoadFromMemory()</code>
+              as opposed to <code>LoadFromConfig()</code>.
+            </p>
             <pre class="language-csharp rounded"><code>services.AddReverseProxy()
   .LoadFromMemory(routes, clusters)</code></pre>
             <p>Then add your route:</p>
@@ -79,9 +84,9 @@ class Program
       },
       // Cluster to forward to
       ClusterId = "SampleCluster", 
-  };</code></pre> 
-          <p>Finally add your cluster definition:</p>           
-          <pre class="language-csharp rounded"><code>var clusterConfig = new ClusterConfig
+  };</code></pre>
+            <p>Finally add your cluster definition:</p>
+            <pre class="language-csharp rounded"><code>var clusterConfig = new ClusterConfig
   {
       ClusterId = "SampleCluster",
       Destinations = new Dictionary<string, DestinationConfig>
@@ -92,13 +97,16 @@ class Program
           ["backend2"] = new DestinationConfig { Address = "http://backend2:5000" },
       },
   };</code></pre>
-          <p>Then you can access your API through the reverse proxy <code>http://example.com/api/{resource}</code> where <code>{resource}</code> is your desired endpoint.</code></cod></p>      
+            <p>Then you can access your API through the reverse proxy <code>http://example.com/api/{resource}</code>
+              where <code>{resource}</code> is your desired endpoint.</code></cod>
+            </p>
           </div>
 
           <div class="tab-pane fade" id="nav-html-details" role="tabpanel">
             <title-section-component title="Details"></title-section-component>
             <p>Have you ever felt late to a party? The details tag allows user to expand and collapse content. Add an
-              <code>open</code> attribute to the details tag have the content automatically expanded.</p>
+              <code>open</code> attribute to the details tag have the content automatically expanded.
+            </p>
             <p>Html</p>
             <div class="pb-2">
               <pre class="language-html rounded">
@@ -155,11 +163,12 @@ customElements.define('title-section-component', TitleSection);</code></pre>
               <div class="fw-bold pb-4">Search GitHub profiles</div>
               <div class="row g-3">
                 <div class="col-auto">
-                  <input type="text" id="username-input" class="form-control custom-input rhun-text rhun-rounded" placeholder="rhun-tech">
+                  <input type="text" id="username-input" class="form-control custom-input rhun-text rhun-rounded"
+                    placeholder="rhun-tech">
                 </div>
                 <div class="col-auto">
-                  <button id="search-button" class="btn rhun-button rhun-rounded rhun-shadow"><span class="iconify rhun-2"
-                      data-icon="game-icons:archive-research"></span></button>
+                  <button id="search-button" class="btn rhun-button rhun-rounded rhun-shadow"><span
+                      class="iconify rhun-2" data-icon="game-icons:archive-research"></span></button>
                 </div>
               </div>
             </div>

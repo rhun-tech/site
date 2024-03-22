@@ -9,7 +9,7 @@ class Title extends HTMLElement {
 
       this.innerHTML = `
           <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
-              <div class="hstack pb-2">
+              <div class="hstack p-1">
                   <div id="title" class="h2">${titleText}</div>
                   <span class="iconify rhun-2 ms-auto" data-icon="${titleIcon}"></span>
               </div>

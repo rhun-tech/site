@@ -1,23 +1,27 @@
 /* Rhun */
 
+::selection {
+    background-color: var(--background-color-tertiary);
+}
+
 :root {
     --background-color: #212529;
     --background-color-secondary: #343a40;
     --background-color-tertiary: #2b3035;
-    --border-color: #D4D4D4;
-    --border-color-secondary: #007ACC;
-    --border-color-tertiary: #008080;
-    --border-color-callout: #7044FF;
-    --text-color: #D4D4D4;
-    --text-color-link: #D4D4D425;
-    --text-color-hover: #D4D4D4;
-    --text-fade-color: #D4D4D440;
-    --text-color-secondary: #007ACC;
-    --text-color-tertiary: #008080;
-    --text-color-callout: #7044FF;
-    --button-color: #D4D4D425;
-    --button-color-hover: #D4D4D440;
-    --theme-icon: url('https://api.iconify.design/game-icons/moon.svg?width=64&height=64');
+    --border-color: #D4AF37;
+    --border-color-secondary: #4D8EAA;
+    --border-color-tertiary: #5E995E;
+    --border-color-callout: #BD4F5B;
+    --text-color: #D4AF37;
+    --text-color-link: #D4AF3740;
+    --text-color-hover: #D4AF37;
+    --text-fade-color: #D4AF3740;
+    --text-color-secondary: #4D8EAA;
+    --text-color-tertiary: #5E995E;
+    --text-color-callout: #BD4F5B;
+    --button-color: #D4AF3725;
+    --button-color-hover: #D4AF3740;
+    --theme-icon: url('https://api.iconify.design/game-icons/dungeon-gate.svg?width=64&height=64');
     --gradient-style: radial-gradient(var(--text-color), var(--button-color), var(--text-color-hover));
 }
 
@@ -105,7 +109,7 @@
     --button-color: #38608440;
     --button-color-hover: #96668C40;
     --theme-icon: url('https://api.iconify.design/game-icons/bat.svg?width=64&height=64');
-    --gradient-style: linear-gradient(to top, var(--button-color), var(--text-color-hover), var(--text-color));
+    --gradient-style: linear-gradient(to right, var(--button-color), var(--text-color-hover), var(--border-color-callout));
 }
 
 :root.gayfeather {
@@ -255,19 +259,19 @@ a:hover {
 }
 
 .rhun-border {
-    border-color: var(--border-color);
+    border: 2px solid var(--border-color) !important;
 }
 
 .rhun-border-secondary {
-    border-color: var(--border-color-secondary);
+    border: 2px solid var(--border-color-secondary) !important;
 }
 
 .rhun-border-tertiary {
-    border-color: var(--border-color-tertiary);
+    border: 2px solid var(--border-color-tertiary) !important;
 }
 
 .rhun-border-callout {
-    border-color: var(--border-color-callout);
+    border: 2px solid var(--border-color-callout) !important;
 }
 
 .rhun-text:hover {
@@ -317,10 +321,6 @@ a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* mask-image: linear-gradient(to right, var(--text-color), var(--border-color)); */
-}
-
-.rhun-border {
-    border: 2px solid var(--border-color) !important;
 }
 
 .rhun-border-gradient {

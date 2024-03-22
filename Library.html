@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" type="text/css" href="../css/rhun.css">
 
-  <script src="/js/components/components.js" type="module" defer></script> 
+  <script src="/js/components/components.js" type="module" defer></script>
 </head>
 
 <body data-bs-theme="dark" class="container p-1 mt-1">
@@ -22,12 +22,12 @@
     <div class="col-md-2 col-lg-2">
       <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
         <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-possessions-tab" data-bs-toggle="tab"
-            href="#nav-possessions" role="tab">Possessions</a>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-obsessions-tab" data-bs-toggle="tab" href="#nav-obsessions"
-            role="tab">Obsessions</a>
-          <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-rhuns-notes-tab" data-bs-toggle="tab" href="#nav-rhuns-notes"
-            role="tab">Rhun's Notes</a>
+          <details-component summary="Nonsense" open>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-possessions-tab" data-bs-toggle="tab"
+              href="#nav-possessions" role="tab">Possessions</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-obsessions-tab" data-bs-toggle="tab"
+              href="#nav-obsessions" role="tab">Obsessions</a>
+          </details-component>
         </div>
       </div>
     </div>
@@ -45,13 +45,6 @@
             <p>Are you obsessed with numbers? Do you like to look at them and think about what they mean?</p>
             <p>Do you like to look at even more of them and think even further about what they mean?</p>
             <p>Do you like to think about how important numbers are?</p>
-          </div>
-          <div class="tab-pane fade" id="nav-rhuns-notes" role="tabpanel">
-            <title-section-component title="Rhun's Notes"></title-section-component>
-            <p>Entry: Initial Setup.</p>
-            <p>Entry: Weatherbit API expired.</p>
-            <p>Entry: Tomorrow.io registered for weather. Using geocode.maps for village name.</p>
-            <p>Entry: Added more shadows.</p>
           </div>
         </div>
       </div>

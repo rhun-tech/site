@@ -6,7 +6,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         // Define the theme details based on the selected theme
         const themeDetails = {
-            '': 'Moon. It is there, always there. Behind clouds or not.',
+            '': 'Rhun. This is the main theme.',
             'winterforest': 'Winter Forest. It is true, just has not snowed yet.',
             'glacier': 'Glacier. It inevitably, slowly pulls you towards it. Drawing you ever closer. Ever colder.',
             'autumn': 'Autumn. In the distant night, all is ablaze with the colors of autum.',
@@ -92,7 +92,7 @@ class Header extends HTMLElement {
                                         <input class="form-check-input" type="radio" name="theme" id="theme1" value=""
                                             checked>
                                         <label class="form-check-label" for="theme1">
-                                            Moon
+                                            Rhun
                                         </label>
                                     </div>
 
@@ -143,7 +143,7 @@ class Header extends HTMLElement {
                         <div class="container bg-body-tertiary rhun-rounded rhun-shadow p-3">
                             <div class="hstack p-1">
                             <div id="colorModeDetails" class="ms-auto rhun-text">
-                                Moon. It is there, always there. Behind clouds or not.
+                                Rhun. This is the main theme.
                             </div>
                             <div class="ms-auto">
                                     <div class="rhun-theme-icon">
