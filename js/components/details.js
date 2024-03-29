@@ -9,9 +9,9 @@ class Details extends HTMLElement {
       const open = this.getAttribute('open') || '';
 
       this.innerHTML = `
-        <details class="p-1" ${this.hasAttribute('open') ? 'open' : ''}>
+        <details class="pb-3" ${this.hasAttribute('open') ? 'open' : ''}>
             <summary class="rhun-text-tertiary">${summaryText}</summary>
-            <div class="p-1">
+            <div class="m-3">
                 ${contentText}
             </div>
         </details>
