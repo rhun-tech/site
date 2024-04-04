@@ -9,17 +9,16 @@ class DepictionsModal extends HTMLElement {
         <div class="modal-dialog rhun-border rhun-border-radius">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title rhun-text me-auto rhun-text-secondary" id="uploadModal">File Upload</h5>
+                    <h5 class="modal-title rhun-text me-auto rhun-text" id="uploadModal">File Upload</h5>
                     <button type="button" class="btn rhun-2" data-bs-dismiss="modal"><span
                             class="iconify rhun-text opacity-50" data-icon="game-icons:closed-doors"></span></button>
                 </div>
                 <div class="modal-body">
-                    <div class="hstack pb-2">
+                    <div class="pb-2">
                         <span>Choose a json file. For example formats check the details below.</span>
                     </div>
-                    <div class="hstack pb-2">
-                        <details class="p-3">
-                            <summary class="rhun-text-tertiary">Budget</summary>
+                    <div class="p-3">
+                        <details-component summary='Budget'>
                             <span>Make a file called budget.json</span>
                             <pre class="language-json rounded"><code>{
     "Budget": {
@@ -43,11 +42,10 @@ class DepictionsModal extends HTMLElement {
         }
     }
 }</code></pre>
-                        </details>
+                        </details-component>
                     </div>
-                    <div class="hstack pb-2">
-                        <details class="p-3">
-                            <summary class="rhun-text-tertiary">Anything Else</summary>
+                    <div class="p-3">
+                        <details-component summary='Anything Else'>
                             <span>Any file not named budget.json e.g., rhun.json</span>
 <pre class="language-json rounded"><code>{
     "id": "9",
@@ -68,7 +66,7 @@ class DepictionsModal extends HTMLElement {
     ],
     "icon": "🍲"
 }</code></pre>
-                        </details>
+                        </details-component>
                     </div>
                 </div>
                 <div class="modal-footer">
