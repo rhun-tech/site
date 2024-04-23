@@ -151,6 +151,10 @@ body {
     transition: opacity 2s ease;
 }
 
+pre {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
 code {
     color: var(--text-color-callout);
     background-color: var(--background-color-secondary);
@@ -256,6 +260,10 @@ a:hover {
 
 .rhun-text-callout {
     color: var(--text-color-callout);
+}
+
+.rhun-text-shadow {
+    text-shadow: .1em .1em var(--background-color);
 }
 
 .rhun-border {

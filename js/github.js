@@ -2,7 +2,7 @@ const apiUrl = 'https://api.github.com/users';
 
 function searchGitHubUser(username) {
     const userUrl = `${apiUrl}/${username}`;
-    
+
     fetch(userUrl)
         .then((response) => {
             if (!response.ok) {
@@ -11,12 +11,12 @@ function searchGitHubUser(username) {
             return response.json();
         })
         .then((user) => {
-            const userContainer = document.getElementById("user-info");
-
-            userContainer.innerHTML = `
-                <div>User: ${user.login}</div>
-                <p>Public Repositories: ${user.public_repos}</p>
+            const userInfo = `
+                <div class="rhun-text-tertiary">User: <span class="rhun-text">${user.login}</span></div>
+                <div class="rhun-text-tertiary">Public Repositories: <span class="rhun-text">${user.public_repos}</span></div>
             `;
+
+            document.getElementById("user-info").innerHTML = userInfo;
 
             const userReposUrl = `${userUrl}/repos`;
             return fetch(userReposUrl);
@@ -28,39 +28,26 @@ function searchGitHubUser(username) {
             return response.json();
         })
         .then((repos) => {
-            const userList = document.getElementById("repo-list");
+            const repoItems = repos.map((repo) => {
+                return `
+                    <div class="col-lg-6 col-md-12">
+                        <a href="${repo.html_url}">
+                            <stone-component title="${repo.full_name}" class="p-3 rhun-rounded rhun-shadow">
+                                <div class="rhun-text-tertiary">Description: <span class="rhun-text">${repo.description || 'N/A'}</span></div>
+                                <div class="rhun-text-tertiary">Language: <span class="rhun-text">${repo.language || 'N/A'}</span></div>
+                            </stone-component>
+                        </a>
+                    </div>
+                `;
+            }).join('');
 
-            userList.innerHTML = "";
-            repos.forEach((repo) => {
-                const listItem = document.createElement("li");
-                listItem.className = "list-group-item";
-                
-                // Create a link for the repository name
-                const repoLink = document.createElement("a");
-                repoLink.href = repo.html_url;
-                repoLink.textContent = repo.full_name;
-                
-                // Create a <div> for the repository description
-                const repoDescription = document.createElement("div");
-                repoDescription.textContent = `Description: ${repo.description}`;
-                
-                // Create a <div> for the repository language
-                const repoLanguage = document.createElement("div");
-                repoLanguage.textContent = `Language: ${repo.language}`;
-                
-                listItem.appendChild(repoLink);
-                listItem.appendChild(repoDescription);
-                listItem.appendChild(repoLanguage);
-                userList.appendChild(listItem);
-            });
-            
+            const repoListContainer = document.getElementById("repo-list");
+            repoListContainer.innerHTML = `<div class="row">${repoItems}</div>`;
         })
         .catch((error) => {
             console.error(error);
-            const userContainer = document.getElementById("user-info");
-            const userList = document.getElementById("repo-list");
-            userContainer.innerHTML = "Unable to fetch user data";
-            userList.innerHTML = "";
+            document.getElementById("user-info").innerHTML = "Unable to fetch user data";
+            document.getElementById("repo-list").innerHTML = "";
         });
 }
 
@@ -71,9 +58,7 @@ searchButton.addEventListener("click", () => {
     if (usernameInput) {
         searchGitHubUser(usernameInput);
     } else {
-        const userContainer = document.getElementById("user-info");
-        const userList = document.getElementById("repo-list");
-        userContainer.innerHTML = "";
-        userList.innerHTML = "";
+        document.getElementById("user-info").innerHTML = "";
+        document.getElementById("repo-list").innerHTML = "";
     }
 });
