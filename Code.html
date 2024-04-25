@@ -13,6 +13,7 @@
   <link href="/css/prism.css" rel="stylesheet">
 
   <script src="/js/components/components.js" type="module" defer></script>
+  <script src="/js/code/code.js" type="module" defer></script>
 </head>
 
 <body data-bs-theme="dark" class="container p-1 mt-1">
@@ -29,6 +30,8 @@
               data-bs-toggle="tab" href="#nav-csharp-hello-world" role="tab">Hello World</a>
             <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-yarp-tab" data-bs-toggle="tab"
               href="#nav-csharp-yarp" role="tab">YARP</a>
+              <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-visitor-pattern-tab" data-bs-toggle="tab"
+              href="#nav-csharp-visitor-pattern" role="tab">Visitor Pattern</a>              
           </details-component>
           <hr />
           <details-component summary="Html">
@@ -52,109 +55,27 @@
 
           <div class="tab-pane fade show active" id="nav-csharp-hello-world" role="tabpanel">
             <title-section-component title="Hello World"></title-section-component>
-            <pre class="language-csharp rounded"><code>using System;
-          
-class Program
-{
-  static void Main()
-  {
-    Console.WriteLine("Hello, World!");
-  }
-}</code></pre>
+            <hello-world-code></hello-world-code>
           </div>
 
           <div class="tab-pane fade" id="nav-csharp-yarp" role="tabpanel">
             <title-section-component title="YARP"></title-section-component>
-            <p>What's neat is loading the routes and clusters definitions from memory using
-              <code>LoadFromMemory()</code>
-              as opposed to <code>LoadFromConfig()</code>.
-            </p>
-            <pre class="language-csharp rounded"><code>services.AddReverseProxy()
-  .LoadFromMemory(routes, clusters)</code></pre>
-            <p>Then add your route:</p>
-            <pre class="language-csharp rounded"><code>var routeConfig = new RouteConfig
-  {
-      RouteId = "SampleRoute",
-      Match = new RouteMatch
-      {
-          // Host to match
-          Hosts = new[] { "example.com" },
-          // Path to match
-          Path = "/api", 
-      },
-      // Cluster to forward to
-      ClusterId = "SampleCluster", 
-  };</code></pre>
-            <p>Finally add your cluster definition:</p>
-            <pre class="language-csharp rounded"><code>var clusterConfig = new ClusterConfig
-  {
-      ClusterId = "SampleCluster",
-      Destinations = new Dictionary<string, DestinationConfig>
-      {
-          // Backend server address
-          ["backend1"] = new DestinationConfig { Address = "http://backend1:5000" },
-          // Another backend server address
-          ["backend2"] = new DestinationConfig { Address = "http://backend2:5000" },
-      },
-  };</code></pre>
-            <p>Then you can access your API through the reverse proxy <code>http://example.com/api/{resource}</code>
-              where <code>{resource}</code> is your desired endpoint.</code></cod>
-            </p>
+            <yarp-code></yarp-code>
           </div>
+
+          <div class="tab-pane fade" id="nav-csharp-visitor-pattern" role="tabpanel">
+            <title-section-component title="Visitor Pattern"></title-section-component>
+            <visitor-pattern-code></visitor-pattern-code>
+          </div>          
 
           <div class="tab-pane fade" id="nav-html-details" role="tabpanel">
             <title-section-component title="Details"></title-section-component>
-            <p>Have you ever felt late to a party? The details tag allows user to expand and collapse content. Add an
-              <code>open</code> attribute to the details tag have the content automatically expanded.
-            </p>
-            <p>Html</p>
-            <div class="pb-2">
-              <pre class="language-html rounded">
-  <code>&lt;details class="p-3"&gt;
-    &lt;summary class="rhun-text-tertiary"&gt;Currently Reading&lt;/summary&gt;
-    &lt;div class="p-3"&gt;
-      &lt;p&gt;Gardens of the Moon by Steven Erikson&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;</code></pre>
-            </div>
-            <p>Example</p>
-            <details class="p-3">
-              <summary class="rhun-text-tertiary">Currently Reading</summary>
-              <div class="p-3">
-                <p>Gardens of the Moon by Steven Erikson</p>
-              </div>
-            </details>
+            <details-code></details-code>
           </div>
 
           <div class="tab-pane fade" id="nav-html-templates" role="tabpanel">
-            <title-section-component title="Template"></title-section-component>
-            <p>Each section on this page has it's own reference tag to the title-section-component.</p>
-            <p>Html</p>
-            <pre class="language-html rounded">
-<code>&lt;title-section-component title="Template"&gt;
-&lt;/title-section-component&gt;</code></pre>
-            <p>Javascript</p>
-            <pre class="language-js rounded">
-<code>class TitleSection extends HTMLElement {
-  constructor() {
-      super();
-  }
-
-  connectedCallback() {
-      const titleText = this.getAttribute('title') || 'Default Title';
-      const titleIcon = this.getAttribute('icon') || '';
-
-      this.innerHTML = `
-        &lt;div class="hstack pb-2"&gt;
-        &lt;div id="title" class="h4"&gt;${titleText}&lt;/div&gt;
-        &lt;span class="iconify rhun-2 ms-auto" data-icon="${titleIcon}"&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;hr /&gt;
-      `;
-  }
-}
-            
-customElements.define('title-section-component', TitleSection);</code></pre>
+            <title-section-component title="Templates"></title-section-component>
+            <templates-code></templates-code>
           </div>
 
           <div class="tab-pane fade" id="nav-github" role="tabpanel">
