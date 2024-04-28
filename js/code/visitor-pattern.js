@@ -5,7 +5,7 @@ class VisitorPattern extends HTMLElement {
   
     connectedCallback() {  
         this.innerHTML = `
-<div class="pb-4">
+<div class="pb-2">
   <p>The Visitor Pattern is a behavioral design pattern that allows you to separate algorithms from the objects on which they operate.</p>
 </div>
 
