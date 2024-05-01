@@ -1,5 +1,6 @@
 import './hello-world.js';
 import './encapsulation.js';
+import './inheritance.js';
 import './yarp.js';
 import './visitor-pattern.js';
 

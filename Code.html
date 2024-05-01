@@ -28,11 +28,13 @@
           <details-component summary="C#" open>
             <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-csharp-hello-world-tab"
               data-bs-toggle="tab" href="#nav-csharp-hello-world" role="tab">Hello World</a>
-              <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-encapsulation-tab" data-bs-toggle="tab"
-              href="#nav-csharp-encapsulation" role="tab">Encapsulation</a>              
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-encapsulation-tab" data-bs-toggle="tab"
+              href="#nav-csharp-encapsulation" role="tab">Encapsulation</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-inheritance-tab" data-bs-toggle="tab"
+              href="#nav-csharp-inheritance" role="tab">Inheritance</a>                           
             <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-yarp-tab" data-bs-toggle="tab"
               href="#nav-csharp-yarp" role="tab">YARP</a>
-              <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-visitor-pattern-tab" data-bs-toggle="tab"
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-csharp-visitor-pattern-tab" data-bs-toggle="tab"
               href="#nav-csharp-visitor-pattern" role="tab">Visitor Pattern</a>              
           </details-component>
           <hr />
@@ -51,7 +53,7 @@
       </div>
     </div>
 
-    <div class="col-md-10 col-lg-10">
+    <div class="col-md-10 col-lg-10 pb-4">
       <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow" id="fademe">
         <div class="tab-content p-3" id="nav-tabContent">
 
@@ -63,7 +65,12 @@
           <div class="tab-pane fade" id="nav-csharp-encapsulation" role="tabpanel">
             <title-section-component title="Encapsulation" icon="game-icons:wrapped-sweet"></title-section-component>
             <encapsulation-code></encapsulation-code>
-          </div>          
+          </div>
+          
+          <div class="tab-pane fade" id="nav-csharp-inheritance" role="tabpanel">
+            <title-section-component title="Inheritance" icon="game-icons:abstract-120"></title-section-component>
+            <inheritance-code></inheritance-code>
+          </div>              
 
           <div class="tab-pane fade" id="nav-csharp-yarp" role="tabpanel">
             <title-section-component title="YARP" icon="game-icons:abstract-009"></title-section-component>
@@ -122,6 +129,8 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
   <script src="/js/github.js" type="text/javascript" defer></script>
+  <script src="/js/url-parameters.js" type="text/javascript" defer></script> 
+
 </body>
 
 </html>
