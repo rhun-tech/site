@@ -25,6 +25,11 @@ class Polymorphism  extends HTMLElement {
     {
         Console.WriteLine($"Attacking with {name} - Damage: {damage}");
     }
+
+    public string GetName()
+    {
+        return name;
+    }
 }</code></pre>
 </div>
 
@@ -92,7 +97,7 @@ public class Bow : Weapon
     public void EquipWeapon(Weapon newWeapon)
     {
         weapon = newWeapon;
-        Console.WriteLine($"{name} has equipped {weapon.name}!");
+        Console.WriteLine($"{name} has equipped {weapon.GetName()}!");
     }
 
     // Method demonstrating polymorphism
