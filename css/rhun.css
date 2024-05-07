@@ -392,6 +392,10 @@ a:hover {
     font-size: 1rem;
 }
 
+.rhun-char {
+    transition: opacity 2s ease;
+  }
+
 .active {
     color: var(--text-color) !important;
 }
