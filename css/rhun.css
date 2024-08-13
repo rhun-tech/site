@@ -166,14 +166,14 @@ a {
     color: var(--text-color);
     font-weight: bold;
     text-decoration: none;
-    transition: color 1s ease, font-weight 1s ease, text-decoration 1s ease;    
+    transition: color ease-in-out 1s, font-weight ease-in-out 1s, text-decoration ease-in-out 1s;    
 }
 
 a:hover {
     color: var(--text-color-secondary) !important;
     font-weight: bold;
     text-decoration: none;
-    transition: color 100ms ease 1ms, font-weight 100ms ease 1ms, text-decoration 100ms ease 1ms;
+    transition: color ease-in-out 1s, font-weight ease-in-out 1s, text-decoration ease-in-out 1s;
 }
 
 #moving-svg-right {
@@ -368,6 +368,7 @@ a:hover {
     border-radius: 0.2rem !important;
     padding: 0.4rem;
     margin: 0.4rem;
+    transition: border ease-in-out 3s;
 }
 
 .rhun-stone:hover {
@@ -378,6 +379,7 @@ a:hover {
     margin: 0.4rem;
     cursor: pointer;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    transition: border ease-in-out 3s;
 }
 
 .rhun-center {
