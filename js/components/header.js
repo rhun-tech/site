@@ -166,7 +166,7 @@ class Header extends HTMLElement {
         var themeChanger = document.querySelector('#theme-changer'),
             root = document.querySelector(':root'),
             themeRadios = document.querySelectorAll('input[name="theme"]'),
-            currentTheme = sessionStorage.getItem("theme") || 'default';
+            currentTheme = sessionStorage.getItem("theme") || 'autumn';
 
         themeChanger.classList.remove('hidden');
 
