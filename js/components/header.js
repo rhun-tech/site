@@ -89,8 +89,7 @@ class Header extends HTMLElement {
     
                                 <div class="row p-2">
                                     <div class="form-check col rhun-text">
-                                        <input class="form-check-input" type="radio" name="theme" id="theme1" value=""
-                                            checked>
+                                        <input class="form-check-input" type="radio" name="theme" id="theme1" value="">
                                         <label class="form-check-label" for="theme1">
                                             Rhun
                                         </label>
@@ -166,7 +165,7 @@ class Header extends HTMLElement {
         var themeChanger = document.querySelector('#theme-changer'),
             root = document.querySelector(':root'),
             themeRadios = document.querySelectorAll('input[name="theme"]'),
-            currentTheme = sessionStorage.getItem("theme") || 'autumn';
+            currentTheme = sessionStorage.getItem("theme") || 'glacier';
 
         themeChanger.classList.remove('hidden');
 
